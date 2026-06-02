@@ -129,7 +129,40 @@ For your premium account, **use `anthropic/claude-3.5-sonnet` for both agents**.
 
 ### API format
 
-OpenRouter uses the **OpenAI-compatible API format**, which is slightly different from direct Claude API. You don't need the Anthropic SDK — just use `axios` (which you already have) or `node-fetch`.
+it uses the openrouter sdk
+
+import { OpenRouter } from "@openrouter/sdk";
+
+const openrouter = new OpenRouter({
+  apiKey: "<OPENROUTER_API_KEY>"
+});
+
+// Stream the response to get reasoning tokens in usage
+const stream = await openrouter.chat.send({
+  model: "anthropic/claude-sonnet-4.6",
+  messages: [
+    {
+      role: "user",
+      content: "How many r's are in the word 'strawberry'?"
+    }
+  ],
+  stream: true
+});
+
+let response = "";
+for await (const chunk of stream) {
+  const content = chunk.choices[0]?.delta?.content;
+  if (content) {
+    response += content;
+    process.stdout.write(content);
+  }
+
+  // Usage information comes in the final chunk
+  if (chunk.usage) {
+    console.log("\nReasoning tokens:", chunk.usage.reasoningTokens);
+  }
+}
+sample code
 
 ### Environment variables
 

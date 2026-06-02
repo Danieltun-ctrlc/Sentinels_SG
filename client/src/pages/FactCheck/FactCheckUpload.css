@@ -1,0 +1,374 @@
+.factcheck-upload {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-lg) var(--space-md);
+}
+
+.factcheck-upload__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.factcheck-upload__back {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-cyan);
+  text-decoration: none;
+}
+
+.factcheck-upload__page-title {
+  font-family: var(--font-header);
+  font-size: 14px;
+  color: var(--color-text-bright);
+  letter-spacing: 2px;
+}
+
+/* Title */
+.factcheck-upload__title-section {
+  margin-bottom: var(--space-xl);
+}
+
+.factcheck-upload__title {
+  font-family: var(--font-header);
+  font-size: 22px;
+  color: var(--color-text-bright);
+  margin-bottom: var(--space-sm);
+  letter-spacing: 1px;
+}
+
+.factcheck-upload__subtitle {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: var(--space-sm);
+}
+
+.factcheck-upload__privacy {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+/* Pipeline */
+.factcheck-upload__pipeline {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.factcheck-upload__pipeline-title {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-muted);
+  letter-spacing: 2px;
+  margin-bottom: var(--space-lg);
+}
+
+.factcheck-upload__pipeline-flow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  overflow-x: auto;
+}
+
+.factcheck-upload__pipeline-step {
+  background: var(--color-elevated);
+  border: 1px solid var(--color-border);
+  padding: var(--space-md);
+  min-width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+  text-align: center;
+}
+
+.factcheck-upload__pipeline-step--agent1 {
+  border-color: var(--color-cyan-dim);
+}
+
+.factcheck-upload__pipeline-step--agent2 {
+  border-color: var(--color-green);
+}
+
+.factcheck-upload__pipeline-step--result {
+  border-color: var(--color-gold);
+}
+
+.factcheck-upload__pipeline-badge {
+  font-family: var(--font-header);
+  font-size: 8px;
+  background: var(--color-cyan);
+  color: var(--color-bg);
+  padding: 2px 8px;
+  letter-spacing: 1px;
+}
+
+.factcheck-upload__pipeline-agent-name {
+  font-family: var(--font-header);
+  font-size: 10px;
+  color: var(--color-text-bright);
+  letter-spacing: 1px;
+}
+
+.factcheck-upload__pipeline-icon {
+  font-size: 24px;
+  margin-bottom: var(--space-xs);
+}
+
+.factcheck-upload__pipeline-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--color-text);
+  letter-spacing: 1px;
+}
+
+.factcheck-upload__pipeline-desc {
+  font-size: 10px;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+.factcheck-upload__pipeline-check {
+  color: var(--color-green);
+  font-size: 16px;
+}
+
+.factcheck-upload__pipeline-shield {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--color-green);
+  color: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-header);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.factcheck-upload__pipeline-arrow {
+  font-size: 18px;
+  color: var(--color-cyan-dim);
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.factcheck-upload__pipeline-note {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  text-align: center;
+  margin-top: var(--space-lg);
+  font-style: italic;
+}
+
+/* Drop Zone */
+.factcheck-upload__dropzone {
+  background: var(--color-surface);
+  border: 2px dashed var(--color-border-light);
+  padding: var(--space-2xl) var(--space-lg);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: var(--space-md);
+}
+
+.factcheck-upload__dropzone:hover,
+.factcheck-upload__dropzone--active {
+  border-color: var(--color-cyan);
+  background: rgba(0, 217, 255, 0.03);
+}
+
+.factcheck-upload__dropzone--has-file {
+  border-color: var(--color-green);
+  border-style: solid;
+}
+
+.factcheck-upload__dropzone-icon { font-size: 32px; display: block; margin-bottom: var(--space-sm); }
+.factcheck-upload__dropzone-text { font-size: 16px; color: var(--color-text); margin-bottom: 4px; }
+.factcheck-upload__dropzone-hint { font-size: 12px; color: var(--color-text-muted); margin-bottom: var(--space-md); }
+.factcheck-upload__dropzone-formats { font-family: var(--font-mono); font-size: 10px; color: var(--color-text-muted); margin-top: var(--space-md); }
+
+.factcheck-upload__type-tabs {
+  display: flex;
+  gap: var(--space-sm);
+  justify-content: center;
+}
+
+.factcheck-upload__type-tab {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  padding: 6px 12px;
+  background: var(--color-elevated);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.factcheck-upload__type-tab--active {
+  border-color: var(--color-cyan);
+  color: var(--color-text);
+  background: rgba(0, 217, 255, 0.08);
+}
+
+.factcheck-upload__file-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.factcheck-upload__file-name { font-family: var(--font-mono); font-size: 13px; color: var(--color-text-bright); }
+.factcheck-upload__file-size { font-size: 11px; color: var(--color-text-muted); }
+.factcheck-upload__file-remove {
+  font-size: 11px; color: var(--color-red); background: none; border: none; cursor: pointer;
+  font-family: var(--font-mono);
+}
+
+/* Text input */
+.factcheck-upload__text-input {
+  width: 100%;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  padding: var(--space-md);
+  resize: vertical;
+  margin-bottom: var(--space-lg);
+}
+
+.factcheck-upload__text-input::placeholder { color: var(--color-text-muted); }
+
+/* Analyse button */
+.factcheck-upload__analyse-btn {
+  display: block;
+  width: fit-content;
+  margin: 0 auto var(--space-sm);
+  font-family: var(--font-header);
+  font-size: 12px;
+  padding: 14px 32px;
+  background: var(--color-border);
+  color: var(--color-text-muted);
+  border: 2px solid var(--color-border);
+  cursor: not-allowed;
+  letter-spacing: 2px;
+  transition: all 0.2s ease;
+}
+
+.factcheck-upload__analyse-btn--active {
+  background: var(--color-cyan);
+  color: var(--color-bg);
+  border-color: var(--color-cyan);
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(0, 217, 255, 0.3);
+}
+
+.factcheck-upload__analyse-btn--active:hover {
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+}
+
+.factcheck-upload__timing {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--color-cyan-dim);
+  text-align: center;
+  margin-bottom: var(--space-xl);
+  padding: 6px;
+  border: 1px solid var(--color-cyan-dim);
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Knowledge Base Sources */
+.factcheck-upload__sources {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.factcheck-upload__sources-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.factcheck-upload__sources-icon { font-size: 16px; }
+.factcheck-upload__sources-title { font-family: var(--font-header); font-size: 10px; color: var(--color-text); letter-spacing: 2px; }
+.factcheck-upload__sources-meta { font-family: var(--font-mono); font-size: 10px; color: var(--color-text-muted); margin-left: auto; }
+
+.factcheck-upload__sources-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.factcheck-upload__source-pill {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-green);
+  padding: 4px 10px;
+  background: rgba(16, 249, 129, 0.06);
+  border: 1px solid rgba(16, 249, 129, 0.15);
+}
+
+/* Report Banner */
+.factcheck-upload__report-banner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  border: 1px solid var(--color-magenta);
+  background: rgba(255, 46, 99, 0.04);
+  flex-wrap: wrap;
+}
+
+.factcheck-upload__report-icon { font-size: 18px; }
+.factcheck-upload__report-text { font-size: 13px; color: var(--color-text); flex: 1; min-width: 200px; }
+
+.factcheck-upload__report-btn {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  padding: 8px 16px;
+  border: 1px solid var(--color-text-muted);
+  color: var(--color-text);
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.factcheck-upload__report-btn:hover {
+  border-color: var(--color-text);
+}
+
+.factcheck-upload__report-btn--pink {
+  border-color: var(--color-magenta);
+  color: var(--color-magenta);
+}
+
+.factcheck-upload__report-btn--pink:hover {
+  background: var(--color-magenta);
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .factcheck-upload__pipeline-flow {
+    flex-direction: column;
+    align-items: center;
+  }
+  .factcheck-upload__pipeline-arrow {
+    transform: rotate(90deg);
+  }
+  .factcheck-upload__pipeline-step {
+    min-width: 100%;
+  }
+}
