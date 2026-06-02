@@ -1,0 +1,279 @@
+.mission-brief {
+  max-width: 900px;
+  margin: 0 auto;
+  animation: fadeIn 0.4s ease;
+}
+
+.mission-brief__header {
+  margin-bottom: var(--space-xl);
+  padding-bottom: var(--space-lg);
+  border-bottom: 2px solid var(--color-border);
+  animation: slideUp 0.3s ease;
+}
+
+.mission-brief__code {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--color-gold);
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: var(--space-xs);
+}
+
+.mission-brief__title {
+  font-size: 20px;
+  color: var(--color-text-bright);
+  letter-spacing: 0.04em;
+  margin-bottom: var(--space-sm);
+}
+
+.mission-brief__intro {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+/* Intel */
+.mission-brief__intel {
+  background: var(--color-surface);
+  border: 2px solid var(--color-amber);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-xl);
+  animation: slideUp 0.3s ease 0.1s both;
+}
+
+.mission-brief__intel-title {
+  font-family: var(--font-header);
+  font-size: 10px;
+  color: var(--color-amber);
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-md);
+}
+
+.mission-brief__intel-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.mission-brief__intel-item {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-text);
+}
+
+/* Roles */
+.mission-brief__roles {
+  margin-bottom: var(--space-xl);
+  animation: slideUp 0.3s ease 0.2s both;
+}
+
+.mission-brief__roles-title {
+  font-family: var(--font-header);
+  font-size: 11px;
+  color: var(--color-text-muted);
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-lg);
+}
+
+.mission-brief__role-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+}
+
+.mission-brief__role {
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  padding: var(--space-xl);
+  cursor: pointer;
+  transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  position: relative;
+}
+
+.mission-brief__role::after {
+  content: 'CLICK TO SELECT';
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  font-family: var(--font-mono);
+  font-size: 8px;
+  color: var(--color-text-muted);
+  opacity: 0.5;
+  letter-spacing: 0.06em;
+}
+
+.mission-brief__role:hover {
+  transform: translateY(-3px);
+  border-color: var(--color-border-light);
+  background: var(--color-elevated);
+}
+
+.mission-brief__role:active {
+  transform: scale(0.98);
+}
+
+.mission-brief__role--selected {
+  border-color: var(--color-cyan);
+  background: rgba(0, 217, 255, 0.05);
+}
+
+.mission-brief__role--selected::after {
+  content: '✓ SELECTED';
+  color: var(--color-cyan);
+  opacity: 1;
+}
+
+.mission-brief__role--selected.mission-brief__role--attacker {
+  border-color: var(--color-magenta);
+  background: rgba(255, 46, 99, 0.05);
+}
+
+.mission-brief__role--selected.mission-brief__role--attacker::after {
+  color: var(--color-magenta);
+}
+
+.mission-brief__role-badge {
+  font-family: var(--font-header);
+  font-size: 8px;
+  padding: 3px 10px;
+  letter-spacing: 0.1em;
+  width: fit-content;
+  border: 1px solid;
+}
+
+.mission-brief__role-badge--cyan { color: var(--color-cyan); border-color: var(--color-cyan); }
+.mission-brief__role-badge--magenta { color: var(--color-magenta); border-color: var(--color-magenta); }
+
+.mission-brief__role-title {
+  font-family: var(--font-header);
+  font-size: 12px;
+  color: var(--color-text-bright);
+  letter-spacing: 0.04em;
+}
+
+.mission-brief__role-desc {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+.mission-brief__role-context {
+  background: var(--color-elevated);
+  padding: var(--space-md);
+  border-left: 3px solid var(--color-border-light);
+}
+
+.mission-brief__role-context p {
+  font-size: 12px;
+  color: var(--color-text);
+  line-height: 1.4;
+}
+
+.mission-brief__role-label {
+  font-family: var(--font-mono);
+  font-size: 8px;
+  color: var(--color-text-muted);
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.mission-brief__creature-list {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.mission-brief__creature-tag {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--color-cyan);
+  border: 1px solid var(--color-cyan);
+  padding: 2px 8px;
+}
+
+.mission-brief__creature-tag--red {
+  color: var(--color-magenta);
+  border-color: var(--color-magenta);
+}
+
+/* Education */
+.mission-brief__education {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-xl);
+  animation: slideUp 0.3s ease 0.3s both;
+}
+
+.mission-brief__edu-title {
+  font-family: var(--font-header);
+  font-size: 10px;
+  color: var(--color-text-muted);
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-sm);
+}
+
+.mission-brief__edu-text {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* Actions */
+.mission-brief__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  padding-top: var(--space-lg);
+  border-top: 2px solid var(--color-border);
+  animation: slideUp 0.3s ease 0.4s both;
+}
+
+.mission-brief__start-btn {
+  font-family: var(--font-header);
+  font-size: 11px;
+  padding: var(--space-md) var(--space-2xl);
+  background: var(--color-cyan);
+  color: var(--color-bg);
+  border: 2px solid var(--color-cyan);
+  letter-spacing: 0.06em;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.mission-brief__start-btn:hover:not(:disabled) {
+  background: transparent;
+  color: var(--color-cyan);
+  transform: translateY(-2px);
+}
+
+.mission-brief__start-btn:disabled {
+  opacity: 0.4;
+  background: var(--color-border);
+  border-color: var(--color-border);
+  color: var(--color-text-muted);
+}
+
+.mission-brief__back-btn {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.mission-brief__back-btn:hover {
+  color: var(--color-text);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mission-brief__role-cards {
+    grid-template-columns: 1fr;
+  }
+}

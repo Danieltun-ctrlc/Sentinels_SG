@@ -1,0 +1,34 @@
+.dialogue-box {
+  background: var(--color-surface);
+  border: 2px solid var(--color-cyan);
+  padding: var(--space-md) var(--space-lg);
+  position: relative;
+  cursor: pointer;
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dialogue-box__speaker {
+  font-family: var(--font-header);
+  font-size: 9px;
+  color: var(--color-cyan);
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-xs);
+}
+
+.dialogue-box__text {
+  font-size: 14px;
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+.dialogue-box__indicator {
+  position: absolute;
+  bottom: 8px;
+  right: 12px;
+  font-size: 10px;
+  color: var(--color-text-muted);
+  animation: pulse 1.5s infinite;
+}

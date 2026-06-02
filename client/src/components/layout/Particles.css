@@ -1,0 +1,21 @@
+.particles-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.particles-bg__dot {
+  position: absolute;
+  bottom: -10px;
+  width: 2px;
+  height: 2px;
+  opacity: 0;
+  animation: particleDrift linear infinite;
+}
+
+.particles-bg__dot:nth-child(3n+1) { background: var(--color-cyan); }
+.particles-bg__dot:nth-child(3n+2) { background: var(--color-magenta); }
+.particles-bg__dot:nth-child(3n) { background: var(--color-amber); }
+.particles-bg__dot:nth-child(4n) { background: var(--color-green); width: 3px; height: 3px; }

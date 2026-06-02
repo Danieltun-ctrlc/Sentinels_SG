@@ -1,0 +1,269 @@
+/* ===========================
+   MOVE SELECTOR — Pixel Trading Card Slots
+   =========================== */
+.move-selector {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 8px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* === MOVE CARD === */
+.move-selector__btn {
+  position: relative;
+  background:
+    repeating-linear-gradient(135deg, transparent, transparent 3px, rgba(255,255,255,0.008) 3px, rgba(255,255,255,0.008) 4px),
+    linear-gradient(180deg, #1a2333 0%, #0f1729 100%);
+  border: 2px solid var(--type-color, #00D9FF);
+  border-top: none;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 0;
+  box-shadow:
+    inset 1px 1px 0 rgba(255,255,255,0.06),
+    inset -1px -1px 0 rgba(0,0,0,0.4),
+    0 0 8px var(--type-glow, rgba(0,217,255,0.15));
+  transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.15s ease;
+}
+
+/* Top accent bar */
+.move-selector__accent {
+  display: block;
+  width: 100%;
+  height: 5px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px var(--type-glow, rgba(0,217,255,0.2));
+  animation: accentPulse 3s ease-in-out infinite;
+}
+
+@keyframes accentPulse {
+  0%, 100% { opacity: 0.75; }
+  50% { opacity: 1; }
+}
+
+/* Corner brackets — pixel targeting reticle */
+.move-selector__corner {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.move-selector__corner--tl {
+  top: 6px;
+  left: 4px;
+  border-top: 2px solid var(--color-cyan, #00D9FF);
+  border-left: 2px solid var(--color-cyan, #00D9FF);
+  opacity: 0.9;
+}
+
+.move-selector__corner--tr {
+  top: 6px;
+  right: 4px;
+  border-top: 2px solid var(--color-cyan, #00D9FF);
+  border-right: 2px solid var(--color-cyan, #00D9FF);
+  opacity: 0.6;
+}
+
+.move-selector__corner--bl {
+  bottom: 4px;
+  left: 4px;
+  border-bottom: 2px solid var(--color-cyan, #00D9FF);
+  border-left: 2px solid var(--color-cyan, #00D9FF);
+  opacity: 0.6;
+}
+
+.move-selector__corner--br {
+  bottom: 4px;
+  right: 4px;
+  border-bottom: 2px solid var(--color-cyan, #00D9FF);
+  border-right: 2px solid var(--color-cyan, #00D9FF);
+  opacity: 0.9;
+}
+
+/* Content area */
+.move-selector__content {
+  padding: 10px 14px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  gap: 6px;
+}
+
+.move-selector__top-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.move-selector__bottom-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Move name — dramatic pixel font */
+.move-selector__name {
+  font-family: var(--font-header, 'Press Start 2P', monospace);
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: 1px;
+  text-shadow: 0 0 6px var(--type-glow, rgba(0,217,255,0.3));
+  line-height: 1.3;
+}
+
+/* Type badge — pill shape */
+.move-selector__type-badge {
+  font-family: var(--font-mono, 'JetBrains Mono', monospace);
+  font-size: 8px;
+  letter-spacing: 2px;
+  padding: 2px 6px;
+  border: 1px solid;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Category indicator */
+.move-selector__category {
+  font-family: var(--font-mono, 'JetBrains Mono', monospace);
+  font-size: 9px;
+  color: #9CA3AF;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.move-selector__cat-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.move-selector__cat-dot--attack { background: #FF3838; }
+.move-selector__cat-dot--status { background: #3B82F6; }
+
+/* PP counter */
+.move-selector__pp {
+  font-family: var(--font-mono, 'JetBrains Mono', monospace);
+  font-size: 11px;
+  color: #00D9FF;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
+}
+
+.move-selector__pp--low {
+  color: #FFB800;
+  animation: ppPulse 1.5s ease-in-out infinite;
+}
+
+.move-selector__pp--depleted {
+  color: #FF3838;
+  text-decoration: line-through;
+}
+
+@keyframes ppPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* === STATES === */
+
+/* Hover — glow only, no lift */
+.move-selector__btn:hover:not(:disabled) {
+  box-shadow:
+    inset 1px 1px 0 rgba(255,255,255,0.08),
+    inset -1px -1px 0 rgba(0,0,0,0.3),
+    0 0 16px var(--type-glow, rgba(0,217,255,0.35)),
+    0 0 6px var(--type-glow, rgba(0,217,255,0.2));
+  border-color: var(--type-color, #00D9FF);
+  background:
+    repeating-linear-gradient(135deg, transparent, transparent 3px, rgba(255,255,255,0.012) 3px, rgba(255,255,255,0.012) 4px),
+    linear-gradient(180deg, #222e42 0%, #141e30 100%);
+}
+
+/* .move-selector__btn:hover:not(:disabled) .move-selector__accent {
+  opacity: 1;
+  box-shadow: 0 3px 12px var(--type-glow, rgba(0,217,255,0.4));
+}
+
+.move-selector__btn:hover:not(:disabled) .move-selector__corner {
+  opacity: 1;
+  border-color: #fff;
+} */
+
+/* Active/click */
+.move-selector__btn:active:not(:disabled) {
+  transform: translateY(0) scale(0.97);
+  box-shadow: 0 0 4px var(--type-glow, rgba(0,217,255,0.1));
+  transition-duration: 50ms;
+}
+
+.move-selector__btn:active:not(:disabled)::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.12);
+  animation: clickFlash 0.1s ease forwards;
+  pointer-events: none;
+  z-index: 5;
+}
+
+@keyframes clickFlash {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Disabled / empty */
+.move-selector__btn--empty {
+  opacity: 0.3;
+  filter: grayscale(0.9);
+  cursor: not-allowed;
+}
+
+.move-selector__btn--empty .move-selector__accent {
+  animation: none;
+  opacity: 0.3;
+}
+
+.move-selector__btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.move-selector__btn:disabled:hover {
+  transform: none;
+  box-shadow: 0 0 8px var(--type-glow, rgba(0,217,255,0.15));
+  background:
+    repeating-linear-gradient(135deg, transparent, transparent 3px, rgba(255,255,255,0.008) 3px, rgba(255,255,255,0.008) 4px),
+    linear-gradient(180deg, #1a2333 0%, #0f1729 100%);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 600px) {
+  .move-selector {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+  .move-selector__btn { min-height: 70px; }
+  .move-selector__name { font-size: 10px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .move-selector__accent { animation: none; }
+  .move-selector__pp--low { animation: none; }
+}

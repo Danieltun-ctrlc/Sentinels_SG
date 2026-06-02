@@ -1,0 +1,16 @@
+.type-badge {
+  font-family: var(--font-header);
+  font-size: 8px;
+  letter-spacing: 0.1em;
+  padding: 2px 8px;
+  border: 1px solid currentColor;
+  display: inline-block;
+}
+
+.type-badge--cyan { color: var(--color-cyan); }
+.type-badge--magenta { color: var(--color-magenta); }
+.type-badge--green { color: var(--color-green); }
+.type-badge--gold { color: var(--color-gold); }
+.type-badge--amber { color: var(--color-amber); }
+.type-badge--purple { color: var(--color-purple); }
+.type-badge--red { color: var(--color-red); }

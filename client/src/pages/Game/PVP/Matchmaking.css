@@ -1,0 +1,123 @@
+.matchmaking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: var(--space-xl);
+  gap: var(--space-xl);
+}
+
+/* Radar Sweep */
+.matchmaking__radar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 3px solid var(--color-cyan);
+  position: relative;
+  box-shadow: var(--glow-cyan), inset 0 0 30px rgba(0, 217, 255, 0.1);
+}
+
+.matchmaking__radar::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-cyan), transparent);
+  transform-origin: left center;
+  animation: radarSweep 2s linear infinite;
+}
+
+.matchmaking__radar::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background: var(--color-cyan);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: var(--glow-cyan);
+}
+
+@keyframes radarSweep {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Progress Bar */
+.matchmaking__progress-wrap {
+  width: 300px;
+  max-width: 80vw;
+}
+
+.matchmaking__progress-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-xs);
+  text-align: center;
+}
+
+.matchmaking__progress-bar {
+  width: 100%;
+  height: 8px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.matchmaking__progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-cyan), var(--color-purple));
+  border-radius: 4px;
+  transition: width 0.1s linear;
+}
+
+/* Terminal Messages */
+.matchmaking__terminal {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-green);
+  text-align: center;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.matchmaking__terminal-text {
+  animation: typewriter 0.5s steps(20);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Found State */
+.matchmaking__found {
+  font-family: var(--font-header);
+  font-size: 18px;
+  color: var(--color-magenta);
+  text-shadow: var(--glow-magenta);
+  animation: foundPulse 0.5s ease-out;
+}
+
+@keyframes foundPulse {
+  0% { transform: scale(0.5); opacity: 0; }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.matchmaking__status {
+  font-family: var(--font-header);
+  font-size: 14px;
+  color: var(--color-cyan);
+  text-shadow: var(--glow-cyan);
+}

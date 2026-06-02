@@ -1,0 +1,137 @@
+/* ===========================
+   CORE KEYFRAMES
+   =========================== */
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+/* ===========================
+   CYBERPUNK KEYFRAMES
+   =========================== */
+@keyframes pixelScanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 4px currentColor; }
+  50% { box-shadow: 0 0 12px currentColor; }
+}
+
+@keyframes screenShake {
+  0%, 100% { transform: translate(0); }
+  20% { transform: translate(-3px, 2px); }
+  40% { transform: translate(3px, -2px); }
+  60% { transform: translate(-2px, -1px); }
+  80% { transform: translate(2px, 1px); }
+}
+
+@keyframes damageFlash {
+  0%, 100% { filter: brightness(1); }
+  50% { filter: brightness(2) saturate(0.5); }
+}
+
+@keyframes floatUp {
+  0% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-30px); }
+}
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes crtFlicker {
+  0%, 97%, 100% { opacity: 1; }
+  98% { opacity: 0.95; }
+}
+
+@keyframes particleDrift {
+  0% { transform: translateY(0) translateX(0); opacity: 0; }
+  10% { opacity: 0.12; }
+  90% { opacity: 0.12; }
+  100% { transform: translateY(-100vh) translateX(20px); opacity: 0; }
+}
+
+@keyframes pixelReveal {
+  0% { transform: scale(0.8) rotate(-3deg); opacity: 0; }
+  60% { transform: scale(1.05) rotate(1deg); }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+@keyframes hpBarPulseLow {
+  0%, 100% { background: var(--color-red); }
+  50% { background: var(--color-amber); }
+}
+
+@keyframes rgbGlitch {
+  0%, 100% { text-shadow: none; }
+  25% { text-shadow: -2px 0 var(--color-cyan), 2px 0 var(--color-magenta); }
+  50% { text-shadow: 2px 0 var(--color-cyan), -2px 0 var(--color-magenta); }
+  75% { text-shadow: -1px 1px var(--color-cyan), 1px -1px var(--color-magenta); }
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0); }
+  50% { transform: scale(1.15); }
+  70% { transform: scale(0.95); }
+  100% { transform: scale(1); }
+}
+
+@keyframes shakeSmall {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-2px); }
+  75% { transform: translateX(2px); }
+}
+
+@keyframes lunge {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(30px); }
+}
+
+@keyframes lungeLeft {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-30px); }
+}
+
+@keyframes confettiBurst {
+  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(-200px) rotate(720deg); opacity: 0; }
+}
+
+@keyframes stampIn {
+  0% { transform: scale(2) rotate(10deg); opacity: 0; }
+  60% { transform: scale(0.9) rotate(-2deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+@keyframes drawUnderline {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* ===========================
+   UTILITY CLASSES
+   =========================== */
+.animate-fade-in { animation: fadeIn 0.3s ease; }
+.animate-slide-up { animation: slideUp 0.4s ease; }
+.animate-pulse { animation: pulse 2s infinite; }
+.animate-shake { animation: screenShake 0.3s ease; }
+.animate-damage-flash { animation: damageFlash 0.2s ease; }
+.animate-float-up { animation: floatUp 0.8s ease forwards; }
+.animate-bounce-in { animation: bounceIn 0.4s ease; }
+.animate-stamp-in { animation: stampIn 0.3s ease; }
+.animate-lunge { animation: lunge 0.2s ease; }
+.animate-lunge-left { animation: lungeLeft 0.2s ease; }
+.animate-rgb-glitch { animation: rgbGlitch 0.4s ease; }
+.animate-glow-pulse { animation: glowPulse 1.5s infinite; }
+
+/* Reduced motion override */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

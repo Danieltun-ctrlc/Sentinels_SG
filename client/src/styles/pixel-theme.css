@@ -1,0 +1,147 @@
+/* ===========================
+   PIXEL THEME — Micro-interactions
+   =========================== */
+
+/* Buttons — hover lift + active press */
+button:not(:disabled), .btn, [role="button"] {
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+
+button:not(:disabled):hover, .btn:hover {
+  transform: translateY(-2px);
+}
+
+button:not(:disabled):active, .btn:active {
+  transform: translateY(0) scale(0.96);
+}
+
+/* Pixel corner brackets on hover (for primary buttons) */
+.pixel-corners {
+  position: relative;
+}
+
+.pixel-corners::before, .pixel-corners::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-style: solid;
+  border-color: var(--color-cyan);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.pixel-corners::before {
+  top: -2px;
+  left: -2px;
+  border-width: 2px 0 0 2px;
+}
+
+.pixel-corners::after {
+  bottom: -2px;
+  right: -2px;
+  border-width: 0 2px 2px 0;
+}
+
+.pixel-corners:hover::before, .pixel-corners:hover::after {
+  opacity: 1;
+}
+
+/* Cards — hover lift */
+.card, [class*="__card"], [class*="__pillar"], [class*="__mode"] {
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.2s ease;
+}
+
+/* Navbar active link underline */
+.navbar__link--active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  background: var(--color-cyan);
+  animation: drawUnderline 0.3s ease forwards;
+}
+
+/* Input focus glow */
+input:focus, textarea:focus, select:focus {
+  border-color: var(--color-cyan);
+  box-shadow: 0 0 0 2px rgba(0, 217, 255, 0.15);
+}
+
+/* Invalid shake */
+input:invalid:not(:focus):not(:placeholder-shown) {
+  animation: shakeSmall 0.3s ease;
+  border-color: var(--color-red);
+}
+
+/* Pixel loading spinner */
+.loading-screen__spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid var(--color-border);
+  border-top-color: var(--color-cyan);
+  border-right-color: var(--color-magenta);
+  border-bottom-color: var(--color-amber);
+  border-left-color: var(--color-green);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+/* Stat number styling */
+.stat-number {
+  font-family: var(--font-mono);
+  font-weight: 700;
+}
+
+/* Pixel border utility */
+.pixel-border {
+  border: 2px solid var(--color-cyan);
+}
+
+.pixel-border--magenta { border-color: var(--color-magenta); }
+.pixel-border--green { border-color: var(--color-green); }
+.pixel-border--gold { border-color: var(--color-gold); }
+
+/* Custom cursor on interactive elements */
+button:not(:disabled), a, [role="button"], .clickable {
+  cursor: pointer;
+}
+
+/* CRT scanline overlay (very subtle) */
+.crt-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.015) 2px,
+    rgba(0, 0, 0, 0.015) 4px
+  );
+  animation: crtFlicker 30s infinite;
+}
+
+/* Background particles */
+.particles-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: var(--color-cyan);
+  opacity: 0;
+  animation: particleDrift 15s linear infinite;
+}
+
+.particle:nth-child(2n) { background: var(--color-magenta); animation-duration: 18s; }
+.particle:nth-child(3n) { background: var(--color-amber); animation-duration: 22s; }
+.particle:nth-child(4n) { background: var(--color-green); animation-duration: 20s; }

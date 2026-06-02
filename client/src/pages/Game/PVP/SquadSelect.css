@@ -1,0 +1,242 @@
+.squad-select {
+  padding: var(--space-lg);
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.squad-select__title {
+  font-family: var(--font-header);
+  font-size: 16px;
+  color: var(--color-cyan);
+  text-align: center;
+  text-shadow: var(--glow-cyan);
+}
+
+/* Squad Slots */
+.squad-select__slots {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.squad-slot {
+  width: 140px;
+  height: 160px;
+  border: 2px dashed var(--color-border-light);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-surface);
+  position: relative;
+  transition: var(--transition-normal);
+}
+
+.squad-slot--defender {
+  border-color: var(--color-cyan-dim);
+  box-shadow: inset 0 0 20px rgba(0, 217, 255, 0.05);
+}
+
+.squad-slot--attacker {
+  border-color: var(--color-magenta-dim);
+  box-shadow: inset 0 0 20px rgba(255, 46, 99, 0.05);
+}
+
+.squad-slot--filled {
+  border-style: solid;
+}
+
+.squad-slot--defender.squad-slot--filled {
+  border-color: var(--color-cyan);
+  box-shadow: var(--glow-cyan);
+}
+
+.squad-slot--attacker.squad-slot--filled {
+  border-color: var(--color-magenta);
+  box-shadow: var(--glow-magenta);
+}
+
+.squad-slot__label {
+  font-family: var(--font-header);
+  font-size: 8px;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  margin-bottom: var(--space-xs);
+}
+
+.squad-slot__sprite {
+  width: 64px;
+  height: 64px;
+  image-rendering: pixelated;
+  object-fit: contain;
+}
+
+.squad-slot__name {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--color-text);
+  margin-top: var(--space-xs);
+  text-align: center;
+}
+
+.squad-slot__type {
+  font-size: 9px;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+}
+
+.squad-slot__remove {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--color-red);
+  background: var(--color-surface);
+  color: var(--color-red);
+  border-radius: 50%;
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-fast);
+}
+
+.squad-slot__remove:hover {
+  background: var(--color-red);
+  color: var(--color-bg);
+}
+
+.squad-slot__empty-icon {
+  font-size: 24px;
+  opacity: 0.3;
+}
+
+/* Tabs */
+.squad-select__tabs {
+  display: flex;
+  gap: var(--space-sm);
+  justify-content: center;
+}
+
+.squad-tab {
+  font-family: var(--font-header);
+  font-size: 10px;
+  padding: var(--space-sm) var(--space-lg);
+  border: 2px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: var(--transition-fast);
+}
+
+.squad-tab--active.squad-tab--defenders {
+  border-color: var(--color-cyan);
+  color: var(--color-cyan);
+  box-shadow: var(--glow-cyan);
+}
+
+.squad-tab--active.squad-tab--attackers {
+  border-color: var(--color-magenta);
+  color: var(--color-magenta);
+  box-shadow: var(--glow-magenta);
+}
+
+/* Creature Grid */
+.squad-select__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: var(--space-md);
+}
+
+.squad-creature-card {
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.squad-creature-card:hover {
+  border-color: var(--color-cyan);
+  transform: translateY(-2px);
+}
+
+.squad-creature-card--selected {
+  opacity: 0.4;
+  pointer-events: none;
+  border-color: var(--color-border-light);
+}
+
+.squad-creature-card__sprite {
+  width: 56px;
+  height: 56px;
+  image-rendering: pixelated;
+  object-fit: contain;
+}
+
+.squad-creature-card__name {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--color-text);
+  margin-top: var(--space-xs);
+  text-align: center;
+}
+
+.squad-creature-card__role {
+  font-size: 9px;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+}
+
+/* Find Match Button */
+.squad-select__actions {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  padding-top: var(--space-lg);
+}
+
+.squad-select__find-btn {
+  font-family: var(--font-header);
+  font-size: 12px;
+  padding: var(--space-md) var(--space-xl);
+  background: linear-gradient(135deg, var(--color-cyan), var(--color-purple));
+  color: var(--color-bg);
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: var(--transition-normal);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.squad-select__find-btn:hover:not(:disabled) {
+  transform: scale(1.05);
+  box-shadow: var(--glow-cyan);
+}
+
+.squad-select__find-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  background: var(--color-border);
+}
+
+.squad-select__loading {
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-align: center;
+}

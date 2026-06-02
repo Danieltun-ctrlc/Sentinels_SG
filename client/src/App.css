@@ -1,0 +1,45 @@
+/* Root-level overrides only */
+.loading-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  gap: var(--space-md);
+}
+
+.loading-screen__spinner {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  animation: spinnerRotate 1.2s linear infinite;
+}
+
+.loading-screen__spinner::before,
+.loading-screen__spinner::after {
+  content: '';
+  width: 16px;
+  height: 16px;
+}
+
+/* Pixel loading: 4 dots cycling colors */
+@keyframes spinnerRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Fallback single-border spinner */
+.loading-screen__spinner {
+  width: 36px;
+  height: 36px;
+  border: 3px solid var(--color-border);
+  border-top-color: var(--color-cyan);
+  border-right-color: var(--color-magenta);
+  border-bottom-color: var(--color-amber);
+  border-left-color: var(--color-green);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  display: block;
+}

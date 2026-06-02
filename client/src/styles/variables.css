@@ -1,0 +1,57 @@
+:root {
+  /* === COLOURS === */
+  --color-bg: #0A0E1A;
+  --color-surface: #141926;
+  --color-elevated: #1C2333;
+  --color-border: #1F2937;
+  --color-border-light: #374151;
+
+  --color-cyan: #00D9FF;
+  --color-cyan-dim: #0099BB;
+  --color-magenta: #FF2E63;
+  --color-magenta-dim: #BB1F46;
+  --color-gold: #FFD700;
+  --color-green: #10F981;
+  --color-amber: #FFB800;
+  --color-red: #FF3838;
+  --color-purple: #9333EA;
+
+  --color-text: #E7ECEF;
+  --color-text-bright: #FFFFFF;
+  --color-text-muted: #9CA3AF;
+
+  /* Pillar accent colours */
+  --color-game: var(--color-cyan);
+  --color-threats: var(--color-amber);
+  --color-factcheck: var(--color-green);
+
+  /* === FONTS === */
+  --font-header: 'Press Start 2P', monospace;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+  /* === SPACING === */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+
+  /* === BORDERS / RADIUS === */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --border-pixel: 2px solid var(--color-cyan);
+
+  /* === SHADOWS / GLOWS === */
+  --glow-cyan: 0 0 12px rgba(0, 217, 255, 0.5);
+  --glow-magenta: 0 0 12px rgba(255, 46, 99, 0.5);
+  --glow-green: 0 0 12px rgba(16, 249, 129, 0.5);
+
+  /* === TIMING === */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 400ms ease;
+}

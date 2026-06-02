@@ -1,0 +1,184 @@
+.battle-fx {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 40;
+}
+
+.battle-fx--hitstop {
+  animation: hitStop 60ms step-end forwards;
+}
+
+@keyframes hitStop {
+  0%, 100% { filter: none; }
+  50% { filter: brightness(1.2) contrast(1.1); }
+}
+
+/* Screen flash */
+.battle-fx__screen-flash {
+  position: absolute;
+  inset: 0;
+  animation: fxFlash 0.12s ease forwards;
+  z-index: 60;
+}
+
+@keyframes fxFlash {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Charge-up */
+.battle-fx__charge {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+}
+
+.battle-fx__charge-ring {
+  position: absolute;
+  inset: 0;
+  border: 2px solid var(--fx-color, #00D9FF);
+  border-radius: 50%;
+  animation: chargeRingPulse 0.28s ease-in-out;
+  box-shadow: 0 0 16px var(--fx-color, #00D9FF);
+}
+
+@keyframes chargeRingPulse {
+  0% { transform: scale(0.3); opacity: 0; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(0.8); opacity: 0.6; }
+}
+
+.battle-fx__charge-particles {
+  position: absolute;
+  inset: 0;
+}
+
+.battle-fx__charge-dot {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  animation: chargeDotOrbit 0.28s ease-in forwards;
+}
+
+@keyframes chargeDotOrbit {
+  0% {
+    transform: translate(-50%, -50%) rotate(var(--angle, 0deg)) translateX(40px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(var(--angle, 0deg)) translateX(0px);
+    opacity: 0;
+  }
+}
+
+/* Projectile */
+.battle-fx__projectile {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 4px;
+}
+
+.battle-fx__projectile--right {
+  animation: projectileFlyRight 0.2s ease-in forwards;
+}
+
+.battle-fx__projectile--left {
+  animation: projectileFlyLeft 0.2s ease-in forwards;
+}
+
+.battle-fx__projectile-core {
+  position: absolute;
+  width: 16px;
+  height: 8px;
+  background: var(--fx-color, #00D9FF);
+  border-radius: 2px;
+  box-shadow: 0 0 12px var(--fx-color, #00D9FF), 0 0 24px var(--fx-color, #00D9FF);
+  top: -2px;
+}
+
+.battle-fx__projectile-trail {
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, var(--fx-color, #00D9FF));
+  opacity: 0.6;
+  top: 0;
+  left: -40px;
+}
+
+.battle-fx__projectile-trail--2 {
+  width: 60px;
+  left: -60px;
+  opacity: 0.3;
+  height: 2px;
+  top: 1px;
+}
+
+@keyframes projectileFlyRight {
+  0% { transform: translateX(20%) translateY(-50%); opacity: 1; }
+  100% { transform: translateX(70%) translateY(-50%); opacity: 0; }
+}
+
+@keyframes projectileFlyLeft {
+  0% { transform: translateX(80%) translateY(-50%); opacity: 1; }
+  100% { transform: translateX(25%) translateY(-50%); opacity: 0; }
+}
+
+/* Crit text */
+.battle-fx__crit-text {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-header, 'Press Start 2P', monospace);
+  font-size: 18px;
+  color: #FFD700;
+  text-shadow: 0 0 16px rgba(255, 215, 0, 0.8), 0 0 32px rgba(255, 215, 0, 0.4), 0 2px 4px rgba(0,0,0,0.8);
+  animation: critTextBounce 0.8s ease forwards;
+  z-index: 70;
+  letter-spacing: 2px;
+}
+
+@keyframes critTextBounce {
+  0% { transform: translate(-50%, -50%) scale(0.3); opacity: 0; }
+  20% { transform: translate(-50%, -50%) scale(1.3); opacity: 1; }
+  35% { transform: translate(-50%, -50%) scale(0.9); }
+  50% { transform: translate(-50%, -50%) scale(1.05); }
+  70% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  100% { opacity: 0; transform: translate(-50%, -50%) scale(1.1); }
+}
+
+/* Super effective text */
+.battle-fx__super-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-header, 'Press Start 2P', monospace);
+  font-size: 14px;
+  color: #10F981;
+  text-shadow: 0 0 12px rgba(16, 249, 129, 0.7), 0 2px 4px rgba(0,0,0,0.8);
+  animation: critTextBounce 1s ease forwards;
+  z-index: 70;
+  letter-spacing: 1px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .battle-fx__charge-ring,
+  .battle-fx__charge-dot,
+  .battle-fx__projectile--right,
+  .battle-fx__projectile--left {
+    animation-duration: 0.01ms !important;
+  }
+  .battle-fx__crit-text,
+  .battle-fx__super-text {
+    animation: fxFlash 0.2s ease forwards !important;
+  }
+}

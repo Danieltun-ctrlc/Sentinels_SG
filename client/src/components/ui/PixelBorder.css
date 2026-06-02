@@ -1,0 +1,11 @@
+.pixel-box {
+  border: 2px solid var(--color-cyan);
+  padding: var(--space-lg);
+  position: relative;
+}
+
+.pixel-box--cyan { border-color: var(--color-cyan); }
+.pixel-box--magenta { border-color: var(--color-magenta); }
+.pixel-box--green { border-color: var(--color-green); }
+.pixel-box--gold { border-color: var(--color-gold); }
+.pixel-box--amber { border-color: var(--color-amber); }

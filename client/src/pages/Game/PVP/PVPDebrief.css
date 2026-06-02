@@ -1,0 +1,180 @@
+.pvp-debrief {
+  padding: var(--space-xl);
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+/* Banner */
+.pvp-debrief__banner {
+  font-family: var(--font-header);
+  font-size: 28px;
+  text-align: center;
+  padding: var(--space-lg);
+}
+
+.pvp-debrief__banner--win {
+  color: var(--color-green);
+  text-shadow: var(--glow-green);
+  animation: winPulse 1.5s ease-in-out infinite;
+}
+
+.pvp-debrief__banner--loss {
+  color: var(--color-red);
+  text-shadow: 0 0 12px rgba(255, 56, 56, 0.5);
+}
+
+@keyframes winPulse {
+  0%, 100% { text-shadow: var(--glow-green); }
+  50% { text-shadow: 0 0 24px rgba(16, 249, 129, 0.8); }
+}
+
+/* Opponent info */
+.pvp-debrief__opponent {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+.pvp-debrief__opponent-name {
+  color: var(--color-magenta);
+  font-weight: bold;
+}
+
+/* Score */
+.pvp-debrief__score {
+  font-family: var(--font-header);
+  font-size: 20px;
+  color: var(--color-text);
+  display: flex;
+  gap: var(--space-md);
+  align-items: center;
+}
+
+.pvp-debrief__score-player {
+  color: var(--color-cyan);
+}
+
+.pvp-debrief__score-divider {
+  color: var(--color-text-muted);
+}
+
+.pvp-debrief__score-opponent {
+  color: var(--color-magenta);
+}
+
+/* Round Results */
+.pvp-debrief__rounds {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.pvp-debrief__rounds-title {
+  font-family: var(--font-header);
+  font-size: 10px;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  margin-bottom: var(--space-xs);
+}
+
+.pvp-debrief__round-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.pvp-debrief__round-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text);
+}
+
+.pvp-debrief__round-result {
+  font-family: var(--font-header);
+  font-size: 10px;
+}
+
+.pvp-debrief__round-result--win {
+  color: var(--color-green);
+}
+
+.pvp-debrief__round-result--loss {
+  color: var(--color-red);
+}
+
+/* Awareness */
+.pvp-debrief__awareness {
+  background: var(--color-surface);
+  border: 1px solid var(--color-cyan-dim);
+  border-radius: var(--radius-md);
+  padding: var(--space-md) var(--space-lg);
+  text-align: center;
+  width: 100%;
+}
+
+.pvp-debrief__awareness-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+}
+
+.pvp-debrief__awareness-value {
+  font-family: var(--font-header);
+  font-size: 18px;
+  color: var(--color-gold);
+  margin-top: var(--space-xs);
+}
+
+/* Actions */
+.pvp-debrief__actions {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: auto;
+  padding-top: var(--space-lg);
+}
+
+.pvp-debrief__btn {
+  font-family: var(--font-header);
+  font-size: 10px;
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition-fast);
+  text-transform: uppercase;
+}
+
+.pvp-debrief__btn--primary {
+  background: var(--color-cyan);
+  color: var(--color-bg);
+  border: none;
+}
+
+.pvp-debrief__btn--primary:hover {
+  box-shadow: var(--glow-cyan);
+  transform: translateY(-2px);
+}
+
+.pvp-debrief__btn--secondary {
+  background: transparent;
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+}
+
+.pvp-debrief__btn--secondary:hover {
+  border-color: var(--color-text);
+  color: var(--color-text);
+}

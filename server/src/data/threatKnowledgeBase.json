@@ -1,0 +1,3524 @@
+[
+  {
+    "id": "job_scam_task_commission_2023",
+    "name": "Job Scam – Task-Based Commission Fraud",
+    "category": "job_scam",
+    "family": "illusion",
+    "keywords": [
+      "online job",
+      "work from home",
+      "commission",
+      "advance purchase",
+      "liking posts",
+      "hotel review",
+      "crypto boosting",
+      "app rating",
+      "fund transfer",
+      "WhatsApp",
+      "Telegram"
+    ],
+    "sampleTexts": [
+      "Hi! We are hiring part-time workers to complete simple online tasks from home. Earn up to $200/day by liking posts, reviewing hotels, or boosting app ratings. Commission paid daily! Interested? WhatsApp us now.",
+      "Good afternoon! I have a part-time job opportunity for you. You just need to help transfer funds to our business accounts and earn a small commission per transaction. Flexible hours, work from home. Contact me on Telegram to start today!"
+    ],
+    "patternRegex": [
+      "/part.?time|work.?from.?home|earn.?commission|boost.?rating|like.?post|advance.?purchase|transfer.?fund/i",
+      "/(whatsapp|telegram).*(job|earn|commission|task)/i"
+    ],
+    "description": "Scammers offer victims online jobs performable from home, asking them to complete tasks such as liking social media posts, reviewing hotels/restaurants/airlines, completing surveys, boosting cryptocurrency values, boosting product listing ratings, rating mobile apps, or transferring funds to bank accounts for a commission. Victims initially receive commissions to build trust, but scammers eventually request higher fund transfers for purportedly higher earnings. Victims realise they have been scammed when commissions are not received, funds cannot be withdrawn, or scammers become uncontactable. In a variant, scammers befriend victims online, provide e-commerce websites, and ask victims to screenshot products and make advance payments to fake business accounts, beginning with low-cost items before progressing to expensive ones.",
+    "targetDemographic": "Adults aged 30 to 49 (45.4% of victims); also young adults aged 20–29",
+    "redFlags": [
+      "Unsolicited job offer via WhatsApp or Telegram promising easy commissions",
+      "Requests to make advance payments or transfer funds to unknown bank accounts",
+      "Tasks involve liking posts, boosting ratings, or reviewing businesses online",
+      "Initial small commissions paid to build trust before larger requests",
+      "Scammer becomes uncontactable after larger sums are transferred",
+      "No formal employment contract or verifiable company details provided"
+    ],
+    "legitimacyContrast": "Legitimate employers do not ask employees to make personal advance payments or transfer their own funds as part of job duties. Real job offers are made through official channels with verifiable company information, written contracts, and CPF contributions.",
+    "prevalence": "CRITICAL",
+    "firstReported": "2022-01-01",
+    "lastUpdated": "2023-12-31",
+    "confirmedVictims": 9914,
+    "estimatedLoss": "S$135.7 million",
+    "sources": [
+      {
+        "name": "Annual Scams and Cybercrime Brief 2023",
+        "organization": "SPF",
+        "url": "",
+        "date": "2024-01-01"
+      }
+    ],
+    "preventionTips": [
+      "Never pay money upfront or transfer personal funds as part of a job task",
+      "Verify job offers through official company websites and do not rely solely on messaging app contacts",
+      "Be sceptical of jobs offering high commissions for simple online tasks",
+      "Do not provide banking credentials or personal financial information to online employers",
+      "Report suspicious job offers to ScamShield or call the Police hotline at 1800-255-0000"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield App",
+        "action": "Report suspicious job offer messages"
+      },
+      {
+        "method": "Police Hotline",
+        "action": "Call 1800-255-0000"
+      },
+      {
+        "method": "999",
+        "action": "Call if immediate danger or large financial loss"
+      }
+    ]
+  },
+  {
+    "id": "ecommerce_scam_non_delivery_2023",
+    "name": "E-Commerce Scam – Non-Delivery of Goods and Fake Payment",
+    "category": "e_commerce",
+    "family": "illusion",
+    "keywords": [
+      "online marketplace",
+      "Facebook",
+      "Carousell",
+      "Telegram",
+      "fake payment",
+      "non-delivery",
+      "concert tickets",
+      "electronics",
+      "rental",
+      "fake screenshot"
+    ],
+    "sampleTexts": [
+      "Hi! I saw your listing on Carousell. I'm interested in buying your item. I've already made payment via PayNow – here's the screenshot as proof. Please ship the item to my address today, thanks!",
+      "GREAT DEAL: Brand new iPhone 15 Pro at 50% off! Limited stock. DM us on Telegram to reserve yours. Full payment required upfront, delivery within 3 days guaranteed."
+    ],
+    "patternRegex": [
+      "/(carousell|facebook|telegram).*(deal|buy|sell|payment|delivery)/i",
+      "/fake.?screenshot|proof.?of.?payment|advance.?payment|reservation.?fee|goodwill.?deposit/i"
+    ],
+    "description": "E-commerce scams involve the sale of goods and services without physical meet-ups. Victims encounter attractive deals on online marketplaces or social media platforms but fail to receive goods or services after making payment. In some cases, victims are sellers who do not receive payment after delivering goods, with scammers providing fake screenshots as proof of payment. A new 2023 variant involves freecycling, where victims encounter posts offering free giveaways or heavily discounted items on social media, then suffer losses when scammers request goodwill deposits, reservation fees, or delivery payment. Common items include rental of residences, electronic goods, and concert tickets.",
+    "targetDemographic": "Adults aged 30 to 49 (49.3% of victims); youths aged 19 and below also significantly affected",
+    "redFlags": [
+      "Seller or buyer insists on no physical meet-up for transaction",
+      "Buyer provides a screenshot as 'proof of payment' instead of verifiable transfer",
+      "Unusually attractive prices or free giveaways requiring a deposit or delivery fee",
+      "Requests for payment via bank transfer to unknown personal accounts",
+      "Seller or buyer communicates only through Facebook, Carousell, or Telegram DMs",
+      "Listing for high-demand items such as concert tickets or electronics at steep discounts"
+    ],
+    "legitimacyContrast": "Legitimate buyers on platforms like Carousell typically agree to meet in person or use platform-integrated payment systems with buyer protection. Real sellers do not request goodwill deposits for free items. Payment confirmation should be verified directly through your bank app, not via screenshots.",
+    "prevalence": "CRITICAL",
+    "firstReported": "2022-01-01",
+    "lastUpdated": "2023-12-31",
+    "confirmedVictims": 9783,
+    "estimatedLoss": "S$13.9 million",
+    "sources": [
+      {
+        "name": "Annual Scams and Cybercrime Brief 2023",
+        "organization": "SPF",
+        "url": "",
+        "date": "2024-01-01"
+      }
+    ],
+    "preventionTips": [
+      "Always meet sellers or buyers in person and inspect goods before payment",
+      "Verify payment receipt directly in your bank app, never trust screenshots",
+      "Be wary of deals that are significantly below market price",
+      "Do not pay deposits or delivery fees for free giveaway items",
+      "Use platform-integrated payment and escrow services where available",
+      "Report suspicious listings to the platform and to ScamShield"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield App",
+        "action": "Report suspicious e-commerce messages"
+      },
+      {
+        "method": "Carousell In-App Report",
+        "action": "Flag suspicious listings or users"
+      },
+      {
+        "method": "Police Hotline",
+        "action": "Call 1800-255-0000 to report losses"
+      }
+    ]
+  },
+  {
+    "id": "ecommerce_scam_freecycling_variant_2023",
+    "name": "E-Commerce Scam – Freecycling / Free Giveaway Variant",
+    "category": "e_commerce",
+    "family": "illusion",
+    "keywords": [
+      "freecycling",
+      "free giveaway",
+      "discounted items",
+      "goodwill deposit",
+      "reservation fee",
+      "delivery fee",
+      "social media",
+      "Facebook",
+      "Telegram"
+    ],
+    "sampleTexts": [
+      "FREE: Giving away a barely used washing machine! Just pay a small $20 delivery fee and it's yours. DM me on Telegram to arrange. First come first served!",
+      "Selling concert tickets at 70% off – only $30 each! Reserve yours now with a $10 goodwill deposit via PayNow. Limited slots available, don't miss out!"
+    ],
+    "patternRegex": [
+      "/(free|giveaway|freecycle).*(deposit|delivery.?fee|reservation)/i",
+      "/(goodwill.?deposit|reservation.?fee|delivery.?fee).*(free|discount|giveaway)/i"
+    ],
+    "description": "A new variant of e-commerce scams that emerged in 2023 involves freecycling, where victims come across posts on social media platforms offering free giveaways or items at heavily discounted prices. Victims suffer financial losses when scammers request goodwill deposits, reservation fees, or payment for delivery before the item is handed over. The item is never delivered and the scammer becomes uncontactable after receiving payment.",
+    "targetDemographic": "General Public; adults aged 30 to 49 most affected overall in e-commerce scams",
+    "redFlags": [
+      "Free or heavily discounted items requiring upfront deposit or delivery fee",
+      "Seller only contactable via social media DMs with no verifiable identity",
+      "Urgency tactics such as 'first come first served' or 'limited slots'",
+      "Requests for payment via PayNow or bank transfer to personal accounts",
+      "No option for in-person collection or inspection of item"
+    ],
+    "legitimacyContrast": "Genuine freecycling communities (e.g. on Facebook groups) typically arrange in-person collection at no cost. Legitimate sellers do not require deposits for free items. Any request for money before receiving a free item is a strong indicator of a scam.",
+    "prevalence": "MEDIUM",
+    "firstReported": "2023-01-01",
+    "lastUpdated": "2023-12-31",
+    "confirmedVictims": 0,
+    "estimatedLoss": "Unknown",
+    "sources": [
+      {
+        "name": "Annual Scams and Cybercrime Brief 2023",
+        "organization": "SPF",
+        "url": "",
+        "date": "2024-01-01"
+      }
+    ],
+    "preventionTips": [
+      "Never pay any fee to receive a free item; arrange in-person collection instead",
+      "Verify the identity of the person offering free items before any transaction",
+      "Be suspicious of urgency and scarcity tactics in free giveaway posts",
+      "Report suspicious posts to the social media platform and ScamShield"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield App",
+        "action": "Report suspicious giveaway messages"
+      },
+      {
+        "method": "Facebook Report",
+        "action": "Flag suspicious posts or profiles"
+      },
+      {
+        "method": "Police Hotline",
+        "action": "Call 1800-255-0000"
+      }
+    ]
+  },
+  {
+    "id": "fake_friend_call_scam_2023",
+    "name": "Fake Friend Call Scam",
+    "category": "impersonation",
+    "family": "phantom",
+    "keywords": [
+      "lost phone",
+      "changed number",
+      "acquaintance",
+      "loan",
+      "renovation",
+      "PayNow",
+      "WhatsApp call",
+      "phone call",
+      "new number"
+    ],
+    "sampleTexts": [
+      "Hey! It's me, Sarah. I lost my phone and got a new number. Can you save this? By the way, I'm in a bit of trouble – my contractor needs payment for renovation today and I'm short $2,000. Can you PayNow me first? I'll return it tomorrow.",
+      "Hi, this is David. I changed my number recently. I'm opening a new business and need to pay my supplier urgently. Could you lend me $3,500 via PayNow? I'll pay you back by end of week, promise."
+    ],
+    "patternRegex": [
+      "/(lost.?phone|new.?number|changed.?number).*(lend|borrow|transfer|paynow)/i",
+      "/(renovation|contractor|supplier|business).*(urgent|pay|transfer|paynow|loan)/i"
+    ],
+    "description": "Scammers contact victims via phone calls or WhatsApp, pretending to be a known acquaintance. They claim to have lost their mobile phone and changed their phone number. After establishing rapport by referencing the supposed friendship, scammers request money loans for reasons such as paying contractors for renovation fees, costs for opening a new business, or paying vendors/suppliers. Victims transfer money via PayNow to bank accounts belonging to unknown persons. They discover the scam when they contact their actual acquaintance and find that person never changed their number or contacted them.",
+    "targetDemographic": "Young seniors aged 50 to 64 (37.5% of victims); elderly aged 65 and above also significantly affected",
+    "redFlags": [
+      "Unexpected call or WhatsApp message from an unknown number claiming to be a friend",
+      "Caller claims to have lost their phone or changed their number",
+      "Immediate request for a money loan via PayNow after brief conversation",
+      "Reasons for loan involve urgency such as contractor payment or business costs",
+      "Requests transfer to a bank account not associated with the supposed friend",
+      "Reluctance or inability to video call to verify identity"
+    ],
+    "legitimacyContrast": "A genuine friend who has changed their number will not immediately ask for a money loan. Always verify the caller's identity by calling their old number or contacting them through a mutual friend before transferring any money.",
+    "prevalence": "HIGH",
+    "firstReported": "2022-01-01",
+    "lastUpdated": "2023-12-31",
+    "confirmedVictims": 6859,
+    "estimatedLoss": "S$23.1 million",
+    "sources": [
+      {
+        "name": "Annual Scams and Cybercrime Brief 2023",
+        "organization": "SPF",
+        "url": "",
+        "date": "2024-01-01"
+      }
+    ],
+    "preventionTips": [
+      "Always verify the caller's identity by calling their original number or contacting a mutual friend",
+      "Request a video call to visually confirm the person's identity before transferring money",
+      "Never transfer money to an unknown bank account based solely on a phone or WhatsApp request",
+      "Be especially cautious if the caller creates urgency around a financial request",
+      "Add the ScamShield app to filter scam calls and messages"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield App",
+        "action": "Report suspicious calls and messages"
+      },
+      {
+        "method": "Police Hotline",
+        "action": "Call 1800-255-0000"
+      },
+      {
+        "method": "999",
+        "action": "Call if in immediate danger or large sum involved"
+      }
+    ]
+  },
+  {
+    "id": "phishing_scam_marketplace_buyer_2023",
+    "name": "Phishing Scam – Fake Buyer on Marketplace Platforms",
+    "category": "phishing",
+    "family": "phantom",
+    "keywords": [
+      "Carousell",
+      "fake buyer",
+      "malicious link",
+      "QR code",
+      "spoofed bank website",
+      "OTP",
+      "banking credentials",
+      "courier",
+      "delivery"
+    ],
+    "sampleTexts": [
+      "Hi! I'm interested in your item listed on Carousell. I'd like to pay via bank transfer. Please click this link to receive your payment: http://secure-pay-carousell[.]com/receive",
+      "Hello, I want to buy your item. I'll arrange courier delivery. Please scan this QR code to confirm your bank details for payment receipt. It's safe and secure!"
+    ],
+    "patternRegex": [
+      "/(carousell|marketplace).*(link|qr.?code|payment|courier|delivery)/i",
+      "/(click|scan).*(receive.?payment|banking.?credential|otp|verify)/i"
+    ],
+    "description": "Scammers pose as potential buyers on online marketplace platforms such as Carousell. They approach victims who have listed items for sale and express interest in purchasing. Victims receive malicious URL links or QR codes via email or in-app messaging under the pretext of receiving payment for items or paying for courier services to facilitate delivery. Upon clicking the malicious links, victims are led to spoofed bank or delivery company websites where they are prompted to enter banking credentials, debit/credit card details, and One-Time-Passwords (OTPs). Scammers then perform unauthorised transactions on victims' accounts.",
+    "targetDemographic": "Adults aged 30 to 49 (47.8% of phishing victims overall); active online marketplace sellers",
+    "redFlags": [
+      "Buyer sends a link or QR code instead of making a straightforward PayNow transfer",
+      "Link leads to a website asking for banking credentials or OTP",
+      "Buyer insists on courier delivery and asks seller to click a link to arrange it",
+      "URL does not match the official bank or delivery company domain",
+      "Urgency to click the link immediately to receive payment"
+    ],
+    "legitimacyContrast": "Legitimate buyers on Carousell pay via PayNow, PayLah, or cash at meet-up. Banks and delivery companies never ask for your login credentials or OTP via a link sent by a buyer. Always access your bank directly through the official app or website.",
+    "prevalence": "HIGH",
+    "firstReported": "2022-01-01",
+    "lastUpdated": "2023-12-31",
+    "confirmedVictims": 0,
+    "estimatedLoss": "Unknown",
+    "sources": [
+      {
+        "name": "Annual Scams and Cybercrime Brief 2023",
+        "organization": "SPF",
+        "url": "",
+        "date": "2024-01-01"
+      }
+    ],
+    "preventionTips": [
+      "Never click links sent by buyers to receive payment; use PayNow or meet in person",
+      "Do not enter banking credentials or OTPs on websites accessed via links from strangers",
+      "Verify any website URL carefully before entering personal or financial information",
+      "Use Carousell's in-app payment features where available",
+      "Report suspicious buyers to Carousell and ScamShield immediately"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield App",
+        "action": "Report suspicious links received via messaging"
+      },
+      {
+        "method": "Carousell In-App Report",
+        "action": "Report suspicious buyer accounts"
+      },
+      {
+        "method": "Police Hotline",
+        "action": "Call 1800-255-0000 if credentials were compromised"
+      }
+    ]
+  },
+  {
+    "id": "phishing_scam_govt_impersonation_call_2023",
+    "name": "Phishing Scam – Government Official Impersonation via Phone Call",
+    "category": "phishing",
+    "family": "coercion",
+    "keywords": [
+      "SPF",
+      "MOM",
+      "government official",
+      "bank account issue",
+      "verification",
+      "OTP",
+      "banking credentials",
+      "unsolicited call",
+      "impersonation"
+    ],
+    "sampleTexts": [
+      "This is Officer Tan from the Singapore Police Force. We have detected suspicious activity on your bank account. To verify your identity and prevent further unauthorised access, please provide your banking login details and the OTP sent to your phone.",
+      "Hello, I am calling from the Ministry of Manpower. There is an issue with your CPF account linked to your bank. Please verify your details immediately by providing your internet banking username and password."
+    ],
+    "patternRegex": [
+      "/(police|spf|mom|ministry|government).*(bank.?account|verify|otp|credential|suspicious)/i",
+      "/(unsolicited.?call|officer).*(banking|otp|password|credential)/i"
+    ],
+    "description": "Victims receive unsolicited phone or in-app calls allegedly from government officials such as the Singapore Police Force (SPF) or the Ministry of Manpower (MOM). Scammers claim there are issues with victims' bank accounts requiring further verification. Victims are convinced to disclose their banking credentials, debit/credit card details, OTPs, and/or personal details. Scammers then use this information to perform unauthorised transactions on victims' accounts.",
+    "targetDemographic": "General Public; young seniors aged 50–64 and elderly aged 65+ particularly vulnerable to phone-based scams",
+    "redFlags": [
+      "Unsolicited call claiming to be from SPF, MOM, or another government agency",
+      "Caller requests banking credentials, OTP, or personal financial details over the phone",
+      "Claim of suspicious activity on your bank account requiring immediate verification",
+      "Pressure to act immediately or face consequences",
+      "Caller asks you not to hang up or contact anyone else"
+    ],
+    "legitimacyContrast": "The Singapore Police Force and government agencies will never call to ask for your banking credentials, OTPs, or passwords. If you receive such a call, hang up and verify by calling the agency directly using the official number found on their official website.",
+    "prevalence": "HIGH",
+    "firstReported": "2022-01-01",
+    "lastUpdated": "2023-12-31",
+    "confirmedVictims": 0,
+    "estimatedLoss": "Unknown",
+    "sources": [
+      {
+        "name": "Annual Scams and Cybercrime Brief 2023",
+        "organization": "SPF",
+        "url": "",
+        "date": "2024-01-01"
+      }
+    ],
+    "preventionTips": [
+      "Government agencies will never ask for your banking credentials or OTP over the phone",
+      "Hang up immediately on unsolicited calls claiming to be from government officials",
+      "Verify by calling the agency directly using the number on their official website",
+      "Never provide OTPs, passwords, or card details to anyone over the phone",
+      "Use ScamShield to filter known scam numbers"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield App",
+        "action": "Report scam calls"
+      },
+      {
+        "method": "Police Hotline",
+        "action": "Call 1800-255-0000"
+      },
+      {
+        "method": "SPF Website",
+        "action": "Submit a scam report at www.police.gov.sg"
+      }
+    ]
+  },
+  {
+    "id": "phishing_scam_spoofed_sms_bank_2023",
+    "name": "Phishing Scam – Spoofed Bank SMS with Malicious Link",
+    "category": "phishing",
+    "family": "phantom",
+    "keywords": [
+      "spoofed SMS",
+      "bank impersonation",
+      "short code",
+      "malicious link",
+      "unauthorised transaction",
+      "OTP",
+      "banking credentials",
+      "credit card"
+    ],
+    "sampleTexts": [
+      "DBS BANK: Unusual login detected on your account. Verify immediately to prevent suspension: http://dbs-secure-verify[.]com",
+      "OCBC Alert: Unauthorised transaction of $1,200 detected. Click here to stop it now and verify your account: http://ocbc-alert[.]sg/verify"
+    ],
+    "patternRegex": [
+      "/(dbs|ocbc|uob|posb|bank).*(unauthorised|suspicious|verify|suspend|click)/i",
+      "/http[s]?:\\/\\/[a-z0-9\\-]+\\.(com|sg|net)\\/verify/i"
+    ],
+    "description": "Victims receive unsolicited SMSes from overseas or local numbers, or short codes impersonating banks. The spoofed SMSes warn victims of possible unauthorised transactions in their bank or credit card accounts and instruct them to click on embedded links for verification or to stop the transactions. Victims are directed to spoofed banking websites after clicking the links and are misled into providing banking credentials, debit/credit card details, or OTPs, allowing scammers to perform unauthorised transactions.",
+    "targetDemographic": "Adults aged 30 to 49 (47.8% of phishing victims); general public with bank accounts",
+    "redFlags": [
+      "Unsolicited SMS warning of unauthorised transactions with an embedded link",
+      "SMS appears to come from a bank's short code but contains a suspicious URL",
+      "Link leads to a website asking for banking login, card details, or OTP",
+      "Urgency language such as 'act now' or 'account will be suspended'",
+      "URL does not match the bank's official domain"
+    ],
+    "legitimacyContrast": "Banks in Singapore do not send SMSes with clickable links asking for login credentials or OTPs. If you receive such an SMS, do not click the link. Access your bank account directly through the official app or website to check for any issues.",
+    "prevalence": "HIGH",
+    "firstReported": "2022-01-01",
+    "lastUpdated": "2023-12-31",
+    "confirmedVictims": 0,
+    "estimatedLoss": "Unknown",
+    "sources": [
+      {
+        "name": "Annual Scams and Cybercrime Brief 2023",
+        "organization": "SPF",
+        "url": "",
+        "date": "2024-01-01"
+      }
+    ],
+    "preventionTips": [
+      "Do not click links in SMSes purportedly from banks; access your bank directly via the official app",
+      "Banks will never ask for your OTP or password via SMS link",
+      "Check your account directly through the official banking app if you suspect unauthorised activity",
+      "Enable transaction alerts on your bank account to monitor activity",
+      "Report suspicious SMSes to your bank and to ScamShield"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield App",
+        "action": "Report suspicious bank SMSes"
+      },
+      {
+        "method": "Bank Hotline",
+        "action": "Call your bank's official hotline immediately if credentials were entered"
+      },
+      {
+        "method": "Police Hotline",
+        "action": "Call 1800-255-0000"
+      }
+    ]
+  },
+  {
+    "id": "investment_scam_social_media_2023",
+    "name": "Investment Scam – Fake Investment Opportunities via Social Media",
+    "category": "investment_scam",
+    "family": "illusion",
+    "keywords": [
+      "investment opportunity",
+      "cryptocurrency",
+      "fake profits",
+      "investment website",
+      "investment app",
+      "Facebook",
+      "Telegram",
+      "Instagram",
+      "withdrawal fees",
+      "false testimonials"
+    ],
+    "sampleTexts": [
+      "Join our exclusive investment group on Telegram! Members are already earning 30% monthly returns. Our expert traders will guide you. Start with as little as $500 in crypto. DM me for details!",
+      "Hi! I found this amazing investment platform that has given me $8,000 profit in just 2 weeks. The app shows your earnings in real time. Want me to add you to the group? It's totally legit, I've already withdrawn profits!"
+    ],
+    "patternRegex": [
+      "/(investment|crypto|profit|returns).*(telegram|whatsapp|facebook|instagram|group|channel)/i",
+      "/(guaranteed.?return|monthly.?profit|withdraw.?earning|investment.?platform|trading.?group)/i"
+    ],
+    "description": "Victims come across investment opportunities through internet searches or recommendations from online friends. They are enticed by false testimonies and transfer funds to specified bank accounts, cryptocurrency wallets, or make payments via bank cards. Initial small profits are sometimes paid to convince victims the investment is genuine, leading them to invest larger amounts. Scammers use fake investment websites or apps to display fabricated profits. Victims experience difficulties withdrawing earnings and realise they have been scammed. A growing variant involves victims being added to WhatsApp or Telegram chatgroups where multiple members falsely claim to have profited, creating social proof. Victims are then asked to share personal information to set up accounts, transfer funds, and pay various fees before they can withdraw earnings.",
+    "targetDemographic": "Adults aged 30 to 49 (45.1% of victims); general public active on Facebook, Telegram, and Instagram",
+    "redFlags": [
+      "Unsolicited invitation to an investment chatgroup on WhatsApp or Telegram",
+      "Multiple group members claiming high profits to create false social proof",
+      "Requests to transfer funds to cryptocurrency wallets or unknown bank accounts",
+      "Fake investment app or website showing fabricated profits",
+      "Inability to withdraw earnings without paying additional fees",
+      "Promises of guaranteed or unusually high returns"
+    ],
+    "legitimacyContrast": "Legitimate investment platforms are licensed by the Monetary Authority of Singapore (MAS). They do not recruit investors through social media chatgroups or require payment of fees to withdraw your own money. Always verify investment platforms on the MAS Financial Institutions Directory before investing.",
+    "prevalence": "CRITICAL",
+    "firstReported": "2022-01-01",
+    "lastUpdated": "2023-12-31",
+    "confirmedVictims": 4030,
+    "estimatedLoss": "S$204.5 million",
+    "sources": [
+      {
+        "name": "Annual Scams and Cybercrime Brief 2023",
+        "organization": "SPF",
+        "url": "",
+        "date": "2024-01-01"
+      }
+    ],
+    "preventionTips": [
+      "Verify any investment platform or advisor on the MAS Financial Institutions Directory at mas.gov.sg",
+      "Be sceptical of investment opportunities promoted in social media chatgroups with testimonials",
+      "Never pay fees to withdraw your own investment earnings",
+      "Do not transfer funds to cryptocurrency wallets or unknown accounts for investments",
+      "Consult a licensed financial advisor before making any investment decisions",
+      "Report suspicious investment schemes to MAS or SPF"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield App",
+        "action": "Report suspicious investment messages"
+      },
+      {
+        "method": "MAS Consumer Helpline",
+        "action": "Call 1800-626-5585 to verify investment platforms"
+      },
+      {
+        "method": "Police Hotline",
+        "action": "Call 1800-255-0000 to report investment scams"
+      }
+    ]
+  },
+  {
+    "id": "investment_scam_chatgroup_variant_2023",
+    "name": "Investment Scam – Fake Chatgroup with Fabricated Member Profits",
+    "category": "investment_scam",
+    "family": "illusion",
+    "keywords": [
+      "chatgroup",
+      "WhatsApp group",
+      "Telegram channel",
+      "fake profits",
+      "investment fees",
+      "withdrawal blocked",
+      "social proof",
+      "cryptocurrency"
+    ],
+    "sampleTexts": [
+      "Welcome to the VIP Investment Club! Our members have made incredible returns this month. @JohnTan just withdrew $15,000 profit! @MaryLim earned $8,500 last week! Join us – minimum investment $1,000 in USDT. Contact @InvestmentAdvisor to set up your account.",
+      "Congratulations to our members who profited this week! To start earning, send your personal details to set up your account and transfer your initial investment. Note: a 10% processing fee is required before withdrawals can be processed."
+    ],
+    "patternRegex": [
+      "/(chatgroup|group.?chat|channel).*(profit|earn|invest|withdraw|fee)/i",
+      "/(processing.?fee|withdrawal.?fee).*(invest|profit|earn)/i"
+    ],
+    "description": "Victims are added into chatgroups or channels on WhatsApp or Telegram purportedly for investment opportunities. Within these groups, multiple members (who are actually scammer accomplices) post claims of having profited from investments, creating false social proof. Tempted by promised returns, victims contact the scammers, share personal information to set up accounts, and transfer funds for investment. Before victims can receive earnings, scammers instruct them to pay various fees such as processing or withdrawal fees. Victims realise they have been scammed when they are unable to withdraw profits despite paying the fees.",
+    "targetDemographic": "Adults aged 30 to 49; general public active on WhatsApp and Telegram",
+    "redFlags": [
+      "Added to an investment chatgroup by an unknown contact",
+      "Multiple group members posting about large profits to create urgency",
+      "Requests for personal information to set up an investment account",
+      "Requirement to pay fees before withdrawing investment profits",
+      "Inability to withdraw funds despite meeting all stated conditions",
+      "Group admin or advisor only contactable via messaging apps"
+    ],
+    "legitimacyContrast": "Legitimate investment firms do not recruit clients through unsolicited chatgroup additions. They are licensed by MAS and do not charge withdrawal fees from your own investment returns. Profits from legitimate investments are withdrawable without additional payments.",
+    "prevalence": "HIGH",
+    "firstReported": "2023-01-01",
+    "lastUpdated": "2023-12-31",
+    "confirmedVictims": 0,
+    "estimatedLoss": "Unknown",
+    "sources": [
+      {
+        "name": "Annual Scams and Cybercrime Brief 2023",
+        "organization": "SPF",
+        "url": "",
+        "date": "2024-01-01"
+      }
+    ],
+    "preventionTips": [
+      "Leave any chatgroup you were added to without consent that promotes investments",
+      "Do not trust investment testimonials from strangers in chatgroups",
+      "Never pay fees to access or withdraw your own investment funds",
+      "Verify all investment platforms with MAS before committing any funds",
+      "Report the chatgroup to WhatsApp or Telegram and to ScamShield"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield App",
+        "action": "Report suspicious investment chatgroup messages"
+      },
+      {
+        "method": "MAS Consumer Helpline",
+        "action": "Call 1800-626-5585"
+      },
+      {
+        "method": "Police Hotline",
+        "action": "Call 1800-255-0000"
+      }
+    ]
+  },
+  {
+    "id": "malware_enabled_scam_apk_2023",
+    "name": "Malware-Enabled Scam – Fake Service APK Download",
+    "category": "phishing",
+    "family": "toxic",
+    "keywords": [
+      "APK",
+      "Android",
+      "malware",
+      "remote access",
+      "keylogging",
+      "Facebook ad",
+      "Instagram ad",
+      "home cleaning",
+      "food purchase",
+      "pet grooming",
+      "banking credentials",
+      "unauthorised transaction"
+    ],
+    "sampleTexts": [
+      "Hi! We saw your enquiry about our home cleaning service. To confirm your booking and make payment, please download our app using this link: [APK link]. It's our official payment app for Android users.",
+      "Thank you for your order! To complete payment for your food order, please download our delivery app here: [APK link]. Open the file and follow the instructions to pay securely."
+    ],
+    "patternRegex": [
+      "/(apk|android.?package|download.?app).*(payment|booking|service|cleaning|food|grooming)/i",
+      "/(download|install).*(apk|file|app).*(pay|banking|credential)/i"
+    ],
+    "description": "Victims respond to advertisements for services such as home cleaning, food purchase, and pet grooming on social media platforms including Facebook and Instagram. Under the pretext of payment for services, scammers send victims a file or URL link via WhatsApp requiring them to download an Android Package Kit (APK) file. These APK files contain malware targeting victims' Android devices. After downloading, scammers may instruct victims to enter banking credentials and/or card details on spoofed bank login websites. The malware may also grant scammers remote access to victims' devices, enabling credential theft through keylogging or screen monitoring. Victims discover the scam when they find unauthorised transactions on their bank accounts or cards.",
+    "targetDemographic": "Adults aged 30 to 49 (43.7% of victims); Android device users who respond to social media service advertisements",
+    "redFlags": [
+      "Service provider asks you to download an APK file to make payment",
+      "Link to download app comes via WhatsApp rather than official app stores",
+      "App requests extensive permissions such as accessibility or screen recording",
+      "Payment website accessed through the downloaded app looks like a bank login page",
+      "Unexpected unauthorised transactions on bank accounts after downloading the file"
+    ],
+    "legitimacyContrast": "Legitimate service providers accept payment through standard methods such as PayNow, PayLah, or bank transfer. They do not require customers to download APK files outside of official app stores (Google Play Store or Apple App Store). Never download apps from links sent via WhatsApp or other messaging apps.",
+    "prevalence": "HIGH",
+    "firstReported": "2023-01-01",
+    "lastUpdated": "2023-12-31",
+    "confirmedVictims": 1899,
+    "estimatedLoss": "S$34.1 million",
+    "sources": [
+      {
+        "name": "Annual Scams and Cybercrime Brief 2023",
+        "organization": "SPF",
+        "url": "",
+        "date": "2024-01-01"
+      }
+    ],
+    "preventionTips": [
+      "Never download APK files from links sent via WhatsApp, SMS, or social media",
+      "Only install apps from official app stores such as Google Play Store",
+      "Do not grant accessibility or screen recording permissions to unknown apps",
+      "Enable Google Play Protect on your Android device to detect malicious apps",
+      "Contact your bank immediately if you suspect malware has been installed on your device",
+      "Factory reset your device if malware is suspected, after backing up important data"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield App",
+        "action": "Report suspicious links and APK download requests"
+      },
+      {
+        "method": "Bank Hotline",
+        "action": "Call your bank immediately to freeze accounts if malware is suspected"
+      },
+      {
+        "method": "Police Hotline",
+        "action": "Call 1800-255-0000"
+      },
+      {
+        "method": "CSA Cyber Helpline",
+        "action": "Call 1800-323-0000 for cybersecurity assistance"
+      }
+    ]
+  },
+  {
+    "id": "govt_officials_impersonation_scam_2023",
+    "name": "Government Officials Impersonation Scam",
+    "category": "impersonation",
+    "family": "coercion",
+    "keywords": [
+      "government official",
+      "SPF",
+      "MOM",
+      "impersonation",
+      "bank account",
+      "social engineering",
+      "deception",
+      "high losses",
+      "phone call"
+    ],
+    "sampleTexts": [
+      "This is Sergeant Lee from the Singapore Police Force. Your bank account has been flagged for suspicious transactions linked to a money laundering case. You must cooperate with our investigation immediately. Do not inform anyone or you will be arrested.",
+      "I am calling from the Ministry of Manpower. We have found irregularities in your work pass records. To avoid legal action, you must transfer your funds to a safe government account for verification. This is strictly confidential."
+    ],
+    "patternRegex": [
+      "/(police|spf|mom|cpf|iras|government|ministry).*(arrest|investigation|suspicious|legal.?action|transfer|safe.?account)/i",
+      "/(do.?not.?tell|strictly.?confidential|cooperate.?immediately).*(police|government|official)/i"
+    ],
+    "description": "Government officials impersonation scams involve complex social engineering conducted over a period of time. Scammers impersonate officials from agencies such as the Singapore Police Force (SPF) or the Ministry of Manpower (MOM), contacting victims via phone calls. They claim victims' bank accounts are linked to criminal activity or that there are legal issues requiring immediate resolution. Using deception and sustained pressure, they convince victims to transfer large sums of money. These scams recorded the highest average losses at approximately S$103,600 per case among the top ten scam types in 2023.",
+    "targetDemographic": "General Public; elderly aged 65 and above and young seniors aged 50–64 particularly vulnerable to phone-based impersonation",
+    "redFlags": [
+      "Unsolicited call from someone claiming to be a government official",
+      "Claim that your bank account is linked to criminal activity or money laundering",
+      "Instruction to transfer funds to a 'safe government account'",
+      "Demand for secrecy and instruction not to inform family or friends",
+      "Sustained pressure over multiple calls or days to act immediately",
+      "Threats of arrest or legal consequences if you do not comply"
+    ],
+    "legitimacyContrast": "Singapore government agencies including SPF, MOM, and CPF Board will never instruct you to transfer money to a 'safe account' or demand secrecy. They do not conduct investigations via phone calls alone. If you receive such a call, hang up and verify by calling the agency directly using the official number on their website.",
+    "prevalence": "HIGH",
+    "firstReported": "2022-01-01",
+    "lastUpdated": "2023-12-31",
+    "confirmedVictims": 0,
+    "estimatedLoss": "S$92.5 million",
+    "sources": [
+      {
+        "name": "Annual Scams and Cybercrime Brief 2023",
+        "organization": "SPF",
+        "url": "",
+        "date": "2024-01-01"
+      }
+    ],
+    "preventionTips": [
+      "Government agencies will never ask you to transfer money to a 'safe account'",
+      "Hang up immediately on calls threatening arrest or demanding secrecy",
+      "Verify by calling the agency directly using the official number on their website",
+      "Inform a trusted family member or friend if you receive such a call",
+      "Use the ScamShield app to filter known scam numbers",
+      "Call the Police at 999 if you feel threatened"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield App",
+        "action": "Report impersonation calls"
+      },
+      {
+        "method": "Police Hotline",
+        "action": "Call 1800-255-0000"
+      },
+      {
+        "method": "999",
+        "action": "Call if threatened or in immediate danger"
+      }
+    ]
+  },
+  {
+    "id": "job_scam_instagram_whatsapp_product_boost",
+    "name": "Instagram/WhatsApp Product Boosting Job Scam",
+    "category": "job_scam",
+    "family": "illusion",
+    "keywords": [
+      "Instagram",
+      "WhatsApp",
+      "commission",
+      "product boosting",
+      "e-commerce",
+      "PayNow",
+      "side income",
+      "ad-hoc job"
+    ],
+    "sampleTexts": [
+      "Hi! I saw your profile and think you'd be great for a part-time opportunity. You can earn commissions by boosting products on Lazada/Shopee. Just transfer payment for items and we refund you + 5% commission. Interested? Contact our customer service at +65XXXXXXXX on WhatsApp!",
+      "Hello, I'm Evelyn. I have an easy work-from-home job for you. Help us boost product ratings on e-commerce platforms and earn up to $500/day. First task is simple — transfer $109 via PayNow and get back $114.45 immediately!"
+    ],
+    "patternRegex": [
+      "/boost.*product/i",
+      "/commission.*transfer/i",
+      "/PayNow.*refund/i",
+      "/ad.?hoc.*job.*instagram/i",
+      "/customer.?service.*whatsapp/i"
+    ],
+    "description": "Scammers befriend victims on Instagram and migrate conversations to WhatsApp, offering ad-hoc jobs involving 'boosting' products on legitimate e-commerce platforms. Victims are instructed to transfer money via PayNow to a 'customer service' number and are initially reimbursed with a small commission to build trust. Subsequent tasks involve progressively larger transfers totalling thousands of dollars, after which reimbursements stop and scammers become uncontactable or demand further payments to release funds.",
+    "targetDemographic": "Working adults and young people seeking supplemental income",
+    "redFlags": [
+      "Job offer received via Instagram DM from an unknown contact",
+      "Conversation moved to WhatsApp with a separate 'customer service' number",
+      "Required to make personal bank transfers as part of 'work'",
+      "Initial small payout used to establish trust before escalating transfer amounts",
+      "Promised reimbursements and commissions withheld pending 'completion' of more tasks",
+      "Pressure to continue transferring money to unlock previous payments"
+    ],
+    "legitimacyContrast": "Legitimate employers never require employees to use personal funds for work tasks, nor do they route job instructions through informal messaging apps like Instagram or WhatsApp with separate 'customer service' numbers. Real e-commerce platforms do not pay commissions via PayNow transfers from individual workers.",
+    "prevalence": "CRITICAL",
+    "firstReported": "2022-01-01",
+    "lastUpdated": "2024-02-18",
+    "confirmedVictims": 9914,
+    "estimatedLoss": "S$135.7 million (2023, all job scams)",
+    "sources": [
+      {
+        "name": "Annual Scams and Cybercrime Brief 2023",
+        "organization": "SPF",
+        "url": "",
+        "date": "2024-02-18"
+      }
+    ],
+    "preventionTips": [
+      "Never transfer personal funds as part of any job task",
+      "Be wary of job offers received via social media from strangers",
+      "Verify job legitimacy through official company websites and contact numbers",
+      "Use the ScamShield app to check and report suspicious messages",
+      "Call the Anti-Scam Helpline at 1800-722-6688 if unsure"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield App",
+        "action": "Report suspicious WhatsApp/SMS messages via app"
+      },
+      {
+        "method": "Police Hotline",
+        "action": "Call 999 or lodge a report at www.police.gov.sg/iwitness"
+      },
+      {
+        "method": "Anti-Scam Helpline",
+        "action": "Call 1800-722-6688 for scam-related advice"
+      }
+    ]
+  },
+  {
+    "id": "ecommerce_scam_facebook_freecycling",
+    "name": "Facebook Freecycling / Discounted Goods E-Commerce Scam",
+    "category": "e_commerce",
+    "family": "illusion",
+    "keywords": [
+      "Facebook",
+      "Facebook Marketplace",
+      "free giveaway",
+      "discounted items",
+      "reservation fee",
+      "goodwill deposit",
+      "delivery fee",
+      "PayNow",
+      "second-hand"
+    ],
+    "sampleTexts": [
+      "FREE GIVEAWAY! Clearing out household items — sofa, TV, microwave. First come first served. Just pay $20 delivery fee via PayNow to secure your slot. Message me on Facebook!",
+      "Selling electronic appliances at 50% off! Limited stock. Pay $300 deposit via PayNow to reserve your items and I'll deliver by 7pm today. Grab this deal now!"
+    ],
+    "patternRegex": [
+      "/free.*giveaway.*deposit/i",
+      "/reservation.*fee.*facebook/i",
+      "/delivery.*PayNow.*facebook/i",
+      "/discounted.*items.*messenger/i",
+      "/second.?hand.*transfer.*secure/i"
+    ],
+    "description": "Scammers post listings on Facebook Marketplace or Facebook groups offering free items or heavily discounted goods. For free giveaways, victims are asked to pay a 'goodwill deposit' or delivery fee via PayNow. For discounted sales, a reservation fee is requested. After payment is made, the scammer becomes uncontactable and the Facebook account disappears. Facebook Marketplace was rated the worst (one tick) in Singapore's E-commerce Marketplace Transaction Safety Ratings in 2023, accounting for 1,138 cases (23.9% of total e-commerce scams in 2022).",
+    "targetDemographic": "Bargain hunters, budget-conscious consumers, General Public",
+    "redFlags": [
+      "Listings on Facebook Marketplace offering items at unusually low or free prices",
+      "Seller requests upfront deposit or delivery fee via PayNow before delivery",
+      "Seller communicates only via Facebook Messenger",
+      "Seller becomes uncontactable or account disappears after payment",
+      "Delivery repeatedly delayed with vague excuses",
+      "No verifiable seller identity or business registration"
+    ],
+    "legitimacyContrast": "Legitimate sellers on reputable platforms (Amazon, Lazada, Qoo10) have verified identities and structured payment systems with buyer protections. They do not request PayNow transfers to personal numbers before delivery. Platforms with full TSR ratings implement user verification against government-issued records.",
+    "prevalence": "CRITICAL",
+    "firstReported": "2021-01-01",
+    "lastUpdated": "2024-02-18",
+    "confirmedVictims": 9783,
+    "estimatedLoss": "S$13.9 million (2023, all e-commerce scams)",
+    "sources": [
+      {
+        "name": "Annual Scams and Cybercrime Brief 2023",
+        "organization": "SPF",
+        "url": "",
+        "date": "2024-02-18"
+      }
+    ],
+    "preventionTips": [
+      "Transact only on e-commerce platforms with high Transaction Safety Ratings (Amazon, Lazada, Qoo10)",
+      "Avoid Facebook Marketplace for high-value transactions due to its low TSR rating",
+      "Never pay deposits or delivery fees via PayNow to unknown individuals before receiving goods",
+      "Meet sellers in person at safe locations (e.g., police posts) for second-hand transactions",
+      "Verify seller identity before making any payment"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield App",
+        "action": "Report suspicious seller profiles and messages"
+      },
+      {
+        "method": "Police Hotline",
+        "action": "Lodge a report at www.police.gov.sg/iwitness"
+      },
+      {
+        "method": "Anti-Scam Helpline",
+        "action": "Call 1800-722-6688 for advice"
+      }
+    ]
+  },
+  {
+    "id": "fake_friend_call_scam_whatsapp",
+    "name": "Fake Friend Call Scam via WhatsApp",
+    "category": "impersonation",
+    "family": "phantom",
+    "keywords": [
+      "fake friend",
+      "WhatsApp",
+      "guess who",
+      "lost phone",
+      "loan request",
+      "PayNow",
+      "invoice",
+      "new number"
+    ],
+    "sampleTexts": [
+      "Hey, guess who this is? I lost my phone and this is my new number. It's me, [friend's name]! Can you help me out? I need to pay my supplier urgently — can you lend me $3,800 via PayNow? I'll pay you back tomorrow.",
+      "Hi, it's [friend's name]. I lost my IC and phone. Please save this new number. I'm in a bit of trouble and need a loan of $5,000 urgently. I'll send you the invoice for verification."
+    ],
+    "patternRegex": [
+      "/guess.*who/i",
+      "/lost.*phone.*new.*number/i",
+      "/lend.*money.*PayNow.*friend/i",
+      "/supplier.*payment.*loan.*whatsapp/i",
+      "/invoice.*transfer.*whatsapp/i"
+    ],
+    "description": "Scammers call or message victims on WhatsApp from an unknown number, prompting the victim to 'guess' their identity. When the victim names a friend, the scammer assumes that identity, claiming to have lost their phone and ID. The scammer then requests an urgent loan, typically to pay a supplier, and provides bank details via WhatsApp for a PayNow transfer. To appear legitimate, scammers may send fabricated invoices. After the initial transfer, scammers request additional funds. Victims only discover the fraud when they contact the real friend through the original number.",
+    "targetDemographic": "General Public, particularly those with wide social networks",
+    "redFlags": [
+      "Caller asks you to 'guess who' they are before revealing identity",
+      "Claims to have lost phone and is using a new number",
+      "Urgently requests a loan via PayNow shortly after re-establishing contact",
+      "Provides bank transfer details via WhatsApp message from a different number",
+      "Sends invoices or documents via WhatsApp to appear legitimate",
+      "Requests additional money after initial transfer"
+    ],
+    "legitimacyContrast": "Genuine friends in financial need would not ask you to guess their identity or request urgent PayNow transfers through an unverified new number. Always verify by calling the friend's known original number before transferring any money.",
+    "prevalence": "HIGH",
+    "firstReported": "2022-01-01",
+    "lastUpdated": "2024-02-18",
+    "confirmedVictims": 6859,
+    "estimatedLoss": "S$23.1 million (2023, all fake friend call scams)",
+    "sources": [
+      {
+        "name": "Annual Scams and Cybercrime Brief 2023",
+        "organization": "SPF",
+        "url": "",
+        "date": "2024-02-18"
+      }
+    ],
+    "preventionTips": [
+      "Always call back the friend's original known number to verify their identity before sending money",
+      "Never transfer money based solely on a WhatsApp request from an unverified number",
+      "Be suspicious of anyone who asks you to 'guess who' they are",
+      "Do not accept invoices or documents via WhatsApp as proof of legitimacy",
+      "Enable ScamShield to filter suspicious calls and messages"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield App",
+        "action": "Report suspicious WhatsApp messages via app"
+      },
+      {
+        "method": "Police Hotline",
+        "action": "Call 999 or lodge a report at www.police.gov.sg/iwitness"
+      },
+      {
+        "method": "Anti-Scam Helpline",
+        "action": "Call 1800-722-6688"
+      }
+    ]
+  },
+  {
+    "id": "phishing_scam_facebook_ad_spoofed_bank",
+    "name": "Facebook Advertisement Phishing Scam (Spoofed Bank Login)",
+    "category": "phishing",
+    "family": "illusion",
+    "keywords": [
+      "Facebook ad",
+      "phishing",
+      "spoofed website",
+      "bank login",
+      "OTP",
+      "PayNow",
+      "iPhone",
+      "promotional advertisement",
+      "fake bank page"
+    ],
+    "sampleTexts": [
+      "🔥 FLASH SALE: iPhone 14 Pro Max at 60% off! Limited units only. Click here to buy now: [malicious link]",
+      "Exclusive deal on electronics — only today! Click the link to log in and claim your discount before it expires: [spoofed bank URL]"
+    ],
+    "patternRegex": [
+      "/facebook.*ad.*iphone.*login/i",
+      "/promotional.*advertisement.*bank.*login/i",
+      "/OTP.*deducted.*PayNow/i",
+      "/spoofed.*bank.*facebook/i",
+      "/click.*link.*bank.*credentials/i"
+    ],
+    "description": "Scammers place fraudulent promotional advertisements on Facebook, often advertising popular electronics at steep discounts. When victims click the advertisement, they are redirected to a spoofed bank login page. After entering their banking credentials and OTP, scammers gain access to the victim's account, apply for loans, and transfer funds out via PayNow. Victims only realise the fraud when they receive bank notifications of unauthorised transactions.",
+    "targetDemographic": "Online shoppers, bargain hunters, General Public",
+    "redFlags": [
+      "Facebook advertisement offering popular electronics at unusually steep discounts",
+      "Clicking an ad redirects to a bank login page instead of a shopping site",
+      "Prompted to enter banking credentials and OTP on an unfamiliar website",
+      "Receiving unexpected bank credit followed immediately by a debit",
+      "SMS notification of a PayNow transfer you did not initiate",
+      "URL of login page does not match the official bank domain"
+    ],
+    "legitimacyContrast": "Legitimate retailers never redirect customers to bank login pages via advertisements. Banks will never ask customers to log in through third-party links. Official bank websites use verified URLs and never require OTP entry on pages reached via social media ads.",
+    "prevalence": "HIGH",
+    "firstReported": "2022-01-01",
+    "lastUpdated": "2024-02-18",
+    "confirmedVictims": 5938,
+    "estimatedLoss": "S$14.2 million (2023, all phishing scams)",
+    "sources": [
+      {
+        "name": "Annual Scams and Cybercrime Brief 2023",
+        "organization": "SPF",
+        "url": "",
+        "date": "2024-02-18"
+      }
+    ],
+    "preventionTips": [
+      "Never click on advertisements on social media that redirect to bank login pages",
+      "Always navigate directly to your bank's official website by typing the URL manually",
+      "Do not enter your OTP on any page you reached via a social media link",
+      "Enable transaction alerts on your banking app to detect unauthorised activity immediately",
+      "Use ScamShield to detect and block phishing links",
+      "Check the URL carefully before entering any credentials"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield App",
+        "action": "Report phishing links via the app"
+      },
+      {
+        "method": "Bank Hotline",
+        "action": "Call your bank immediately if credentials were entered on a suspicious page"
+      },
+      {
+        "method": "Police Hotline",
+        "action": "Lodge a report at www.police.gov.sg/iwitness"
+      },
+      {
+        "method": "Anti-Scam Helpline",
+        "action": "Call 1800-722-6688"
+      }
+    ]
+  },
+  {
+    "id": "investment_scam_crypto_facebook_whatsapp",
+    "name": "Cryptocurrency Mining Investment Scam via Facebook and WhatsApp",
+    "category": "investment_scam",
+    "family": "toxic",
+    "keywords": [
+      "cryptocurrency",
+      "crypto mining",
+      "MetaMask",
+      "fraudulent website",
+      "USDT",
+      "trading account",
+      "frozen account",
+      "Facebook",
+      "WhatsApp",
+      "insider information",
+      "Pete"
+    ],
+    "sampleTexts": [
+      "Hey, I've been making great returns from crypto mining — over 30% profit last month! I can guide you through it. Just set up a MetaMask wallet and I'll show you which platform to use. Start with $5,000 and watch it grow daily!",
+      "My friend in the US has insider info on a crypto investment that guarantees high returns. I can add you to our trading group. You'll see 1% daily returns. Just transfer your funds to the trading account to get started."
+    ],
+    "patternRegex": [
+      "/crypto.*mining.*metamask/i",
+      "/trading.*account.*frozen/i",
+      "/USDT.*withdraw.*fees/i",
+      "/insider.*information.*investment.*whatsapp/i",
+      "/cryptocurrency.*wallet.*fraudulent.*website/i"
+    ],
+    "description": "Scammers befriend victims on Facebook (often through unrelated interactions such as rental listings) and migrate to WhatsApp. They introduce 'cryptocurrency mining' opportunities, guiding victims to set up MetaMask wallets linked to fraudulent websites. Victims are directed to purchase cryptocurrency from a 'trader' in cash. Initial small withdrawals are permitted to build trust. Victims are then pressured to transfer all funds into a 'trading account' on the fraudulent platform. Fabricated profits are displayed to encourage further top-ups. Eventually, the account is declared 'frozen' due to alleged 'illegal profits', and victims are demanded to pay a fee to unfreeze it. The scammer also claims access to 'insider information' from overseas contacts to add credibility.",
+    "targetDemographic": "Adults seeking investment opportunities, property seekers, General Public",
+    "redFlags": [
+      "Stranger on Facebook introduces cryptocurrency investment after unrelated initial contact",
+      "Directed to set up a MetaMask wallet linked to an obscure, unverifiable website",
+      "Required to purchase cryptocurrency in cash from a 'trader'",
+      "Small initial withdrawals permitted to establish trust",
+      "Pressured to consolidate all funds into a 'trading account'",
+      "Account suddenly 'frozen' with demand for payment to unfreeze",
+      "Scammer becomes hostile or dismissive when victim raises doubts",
+      "Claims of 'insider information' from overseas contacts",
+      "Platform cannot be found or verified through independent online research"
+    ],
+    "legitimacyContrast": "Legitimate investment platforms are regulated by MAS, have verifiable track records, and never require cash handovers to anonymous 'traders'. Genuine platforms do not freeze accounts and demand fees to release funds. MAS-regulated advisors do not solicit clients through social media with promises of guaranteed daily returns.",
+    "prevalence": "HIGH",
+    "firstReported": "2022-01-01",
+    "lastUpdated": "2024-02-18",
+    "confirmedVictims": 4030,
+    "estimatedLoss": "S$204.5 million (2023, all investment scams)",
+    "sources": [
+      {
+        "name": "Annual Scams and Cybercrime Brief 2023",
+        "organization": "SPF",
+        "url": "",
+        "date": "2024-02-18"
+      }
+    ],
+    "preventionTips": [
+      "Never invest based on advice from strangers met on social media",
+      "Verify all investment platforms on the MAS Investor Alert List at mas.gov.sg",
+      "Do not hand over cash to unknown 'traders' for cryptocurrency purchases",
+      "Be extremely wary of platforms that show profits but restrict withdrawals",
+      "If an account is 'frozen' and payment is demanded, stop all transfers immediately and report to police",
+      "Check ScamAlert website (scamalert.sg) for known fraudulent investment platforms"
+    ],
+    "reportingChannels": [
+      {
+        "method": "Police Hotline",
+        "action": "Call 999 or lodge a report at www.police.gov.sg/iwitness"
+      },
+      {
+        "method": "Anti-Scam Helpline",
+        "action": "Call 1800-722-6688"
+      },
+      {
+        "method": "MAS Financial Institution Directory",
+        "action": "Verify investment platforms at mas.gov.sg before investing"
+      },
+      {
+        "method": "ScamShield App",
+        "action": "Report suspicious messages and links"
+      }
+    ]
+  },
+  {
+    "id": "malware_enabled_banking_scam_android",
+    "name": "Malware-Enabled Banking Scam (Android Sideloaded Apps)",
+    "category": "phishing",
+    "family": "coercion",
+    "keywords": [
+      "malware",
+      "Android",
+      "sideloaded apps",
+      "accessibility permissions",
+      "banking app",
+      "CPF",
+      "unauthorised withdrawal",
+      "mobile banking"
+    ],
+    "sampleTexts": [
+      "Download our exclusive app to claim your grocery voucher: [malicious APK link]. Enable accessibility permissions to proceed.",
+      "Your parcel is held at customs. Download the tracking app here [APK link] and grant all permissions to track your delivery."
+    ],
+    "patternRegex": [
+      "/sideload.*apk.*accessibility/i",
+      "/download.*app.*permissions.*banking/i",
+      "/malware.*android.*banking/i",
+      "/unauthorised.*withdrawal.*CPF/i",
+      "/accessibility.*permission.*banking.*app/i"
+    ],
+    "description": "Scammers trick victims into sideloading malicious Android APK files (outside official app stores) that request accessibility permissions. Once granted, the malware takes control of the device and gains access to mobile banking apps, enabling unauthorised fund transfers including CPF withdrawals. MAS and SPF worked with banks to implement anti-malware measures in banking apps that restrict access when sideloaded apps with accessibility permissions are detected. GovTech and CPF Board introduced facial verification in June 2023 and a default S$2,000 daily CPF withdrawal limit for members aged 55 and above in response to this threat. Malware-enabled scam cases declined drastically towards end-2023 as banking app upgrades were rolled out.",
+    "targetDemographic": "Android smartphone users, CPF members aged 55 and above, General Public",
+    "redFlags": [
+      "Prompted to download an APK file from outside the Google Play Store",
+      "App requests accessibility permissions upon installation",
+      "Unexplained banking transactions or CPF withdrawals",
+      "Banking app suddenly restricts access after installing a third-party app",
+      "Unsolicited links to download apps via SMS, WhatsApp, or social media"
+    ],
+    "legitimacyContrast": "Legitimate apps from banks and government agencies are available only through official app stores (Google Play Store, Apple App Store). Banks and government agencies never ask users to sideload APK files or grant accessibility permissions to third-party apps. CPF Board and GovTech have introduced facial verification and withdrawal limits as protective measures.",
+    "prevalence": "HIGH",
+    "firstReported": "2023-01-01",
+    "lastUpdated": "2024-02-18",
+    "confirmedVictims": 1899,
+    "estimatedLoss": "S$34.1 million (2023)",
+    "sources": [
+      {
+        "name": "Annual Scams and Cybercrime Brief 2023",
+        "organization": "SPF",
+        "url": "",
+        "date": "2024-02-18"
+      }
+    ],
+    "preventionTips": [
+      "Never download APK files from links sent via SMS, WhatsApp, email, or social media",
+      "Only install apps from official app stores (Google Play Store or Apple App Store)",
+      "Never grant accessibility permissions to apps from unknown sources",
+      "Keep your banking app updated to benefit from the latest anti-malware protections",
+      "Activate CPF Withdrawal Lock to set your online CPF withdrawal limit to $0",
+      "Enable Money Lock on your bank account to protect funds from digital transfer",
+      "In February 2024, Google partnered with CSA to block sideloading of high-risk apps — ensure your Android device is updated"
+    ],
+    "reportingChannels": [
+      {
+        "method": "Police Hotline",
+        "action": "Call 999 or lodge a report at www.police.gov.sg/iwitness"
+      },
+      {
+        "method": "Bank Hotline",
+        "action": "Contact your bank immediately if unauthorised transactions are detected"
+      },
+      {
+        "method": "Singpass Helpdesk",
+        "action": "Call 6335-3533 and press 9 for 24-hour support if Singpass is compromised"
+      },
+      {
+        "method": "CPF Board",
+        "action": "Contact CPF Board to activate CPF Withdrawal Lock"
+      },
+      {
+        "method": "ScamShield App",
+        "action": "Report suspicious APK links via the app"
+      }
+    ]
+  },
+  {
+    "id": "social_media_impersonation_scam",
+    "name": "Social Media Impersonation Scam",
+    "category": "impersonation",
+    "family": "phantom",
+    "keywords": [
+      "social media",
+      "impersonation",
+      "fake account",
+      "Facebook",
+      "Instagram",
+      "identity theft",
+      "money request"
+    ],
+    "sampleTexts": [
+      "Hi, this is [friend's name]. My account was hacked and I created a new one. Can you help me out? I'm in a bind and need $500 urgently. I'll pay you back.",
+      "Hey! It's [celebrity/influencer name]. I'm running a special giveaway for my followers. Send $200 to participate and win $2,000!"
+    ],
+    "patternRegex": [
+      "/impersonat.*social.*media/i",
+      "/fake.*account.*facebook.*instagram/i",
+      "/hacked.*account.*new.*profile/i",
+      "/celebrity.*giveaway.*send.*money/i"
+    ],
+    "description": "Scammers create fake social media accounts impersonating friends, family members, celebrities, or public figures on platforms such as Facebook and Instagram. They contact victims claiming their original account was hacked or compromised, then request urgent money transfers or personal information. In 2023, social media impersonation scams resulted in 1,570 reported cases with losses of S$9.7 million, with the average loss per case rising significantly from S$2,231 in 2022 to S$6,184 in 2023.",
+    "targetDemographic": "Social media users, followers of public figures, General Public",
+    "redFlags": [
+      "Friend or public figure contacts you from a new or duplicate social media account",
+      "Claims original account was hacked and requests urgent financial help",
+      "Requests money transfers via PayNow or bank transfer",
+      "Offers unrealistic giveaways requiring upfront payment",
+      "Profile has few posts, followers, or recent activity",
+      "Urgency and pressure to act quickly without verification"
+    ],
+    "legitimacyContrast": "Genuine friends will have verifiable contact history and can be reached through previously known phone numbers. Legitimate public figures and celebrities do not request money from followers or run giveaways requiring upfront payment through direct messages.",
+    "prevalence": "MEDIUM",
+    "firstReported": "2022-01-01",
+    "lastUpdated": "2024-02-18",
+    "confirmedVictims": 1570,
+    "estimatedLoss": "S$9.7 million (2023)",
+    "sources": [
+      {
+        "name": "Annual Scams and Cybercrime Brief 2023",
+        "organization": "SPF",
+        "url": "",
+        "date": "2024-02-18"
+      }
+    ],
+    "preventionTips": [
+      "Verify any new social media account claiming to belong to a friend by calling their known phone number",
+      "Never send money based on requests received via social media direct messages",
+      "Report fake accounts to the social media platform immediately",
+      "Enable two-factor authentication on your own social media accounts to prevent impersonation",
+      "Use ScamShield to report suspicious messages"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield App",
+        "action": "Report suspicious social media messages via app"
+      },
+      {
+        "method": "Police Hotline",
+        "action": "Lodge a report at www.police.gov.sg/iwitness"
+      },
+      {
+        "method": "Anti-Scam Helpline",
+        "action": "Call 1800-722-6688"
+      }
+    ]
+  },
+  {
+    "id": "government_officials_impersonation_scam",
+    "name": "Government Officials Impersonation Scam",
+    "category": "impersonation",
+    "family": "coercion",
+    "keywords": [
+      "government official",
+      "police",
+      "MOM",
+      "MAS",
+      "CPF",
+      "court order",
+      "arrest warrant",
+      "bank account",
+      "money transfer",
+      "official impersonation"
+    ],
+    "sampleTexts": [
+      "This is Officer Tan from the Singapore Police Force. Your bank account has been linked to a money laundering case. To avoid arrest, you must transfer your funds to a safe government account immediately.",
+      "I am calling from the Ministry of Manpower. Your work pass has been flagged for illegal activities. You must cooperate with our investigation and transfer $10,000 to a designated account to prove your innocence."
+    ],
+    "patternRegex": [
+      "/police.*arrest.*transfer.*funds/i",
+      "/government.*official.*bank.*account.*investigation/i",
+      "/CPF.*MAS.*court.*order.*transfer/i",
+      "/ministry.*illegal.*activities.*cooperate/i",
+      "/safe.*government.*account.*scam/i"
+    ],
+    "description": "Scammers impersonate Singapore government officials (e.g., SPF officers, MOM, MAS, CPF Board) and contact victims claiming their accounts or identities are linked to criminal investigations. Victims are coerced into transferring funds to 'safe accounts' or providing personal and banking information under threat of arrest. This scam type recorded the highest average loss per case in 2023 at S$103,657, with total losses of S$92.5 million across 893 cases.",
+    "targetDemographic": "Elderly individuals, migrant workers, General Public",
+    "redFlags": [
+      "Unsolicited call from someone claiming to be a government official or police officer",
+      "Threatened with arrest, legal action, or account freezing",
+      "Instructed to transfer funds to a 'safe government account'",
+      "Asked to keep the call confidential and not tell family members",
+      "Caller provides a fake badge number or case reference",
+      "Pressure to act immediately without time to verify"
+    ],
+    "legitimacyContrast": "Singapore government agencies and the Police will never call to demand fund transfers to 'safe accounts', threaten arrest over the phone, or ask victims to keep investigations secret. Official investigations involve formal written notices and in-person interviews at official premises. Verify by calling the agency's official hotline directly.",
+    "prevalence": "MEDIUM",
+    "firstReported": "2021-01-01",
+    "lastUpdated": "2024-02-18",
+    "confirmedVictims": 893,
+    "estimatedLoss": "S$92.5 million (2023)",
+    "sources": [
+      {
+        "name": "Annual Scams and Cybercrime Brief 2023",
+        "organization": "SPF",
+        "url": "",
+        "date": "2024-02-18"
+      }
+    ],
+    "preventionTips": [
+      "Hang up immediately on any caller claiming to be a government official demanding fund transfers",
+      "Call the official hotline of the agency directly to verify any claims",
+      "Never transfer money to 'safe accounts' — no government agency will ever ask you to do this",
+      "Inform family members if you receive such calls",
+      "Use ScamShield to block known scam numbers",
+      "Activate Money Lock on your bank account to prevent unauthorised transfers"
+    ],
+    "reportingChannels": [
+      {
+        "method": "Police Hotline",
+        "action": "Call 999 or lodge a report at www.police.gov.sg/iwitness"
+      },
+      {
+        "method": "Anti-Scam Helpline",
+        "action": "Call 1800-722-6688"
+      },
+      {
+        "method": "ScamShield App",
+        "action": "Report suspicious calls and messages"
+      },
+      {
+        "method": "ScamAlert Website",
+        "action": "Visit scamalert.sg to verify scam types"
+      }
+    ]
+  },
+  {
+    "id": "fake_friend_call_scam_sg_2026",
+    "name": "Fake Friend Call Scam ('Hello, Remember Me?')",
+    "category": "impersonation",
+    "family": "phantom",
+    "keywords": [
+      "fake friend",
+      "hello remember me",
+      "guess who",
+      "urgent transfer",
+      "WhatsApp call",
+      "safety account",
+      "government official",
+      "police impersonation",
+      "fund transfer",
+      "unsolicited call"
+    ],
+    "sampleTexts": [
+      "Hello! It's me, remember? We met a while back. Guess who I am! I'm in a bit of trouble and need you to transfer me S$500 urgently, I'll explain later.",
+      "Hi, this is Officer Tan from the Singapore Police Force. We have detected that a recent transfer you made is linked to criminal activities. You must transfer your funds to a safety account immediately to assist our investigation.",
+      "Hey, it's your old friend! Can you guess who this is? I really need your help urgently, please transfer money to this account first and I'll call you back to explain."
+    ],
+    "patternRegex": [
+      "/remember me\\??/i",
+      "/guess who/i",
+      "/safety account/i",
+      "/urgent.*transfer/i",
+      "/linked to criminal/i",
+      "/transfer.*investigation/i",
+      "/hello.*remember/i"
+    ],
+    "description": "Scammers initiate unsolicited phone calls or WhatsApp calls/messages to victims, posing as an unidentified friend and asking the victim to guess their identity. Once the victim names someone they know, the scammer adopts that person's identity and requests an urgent fund transfer. In a two-stage variant, a second scammer then calls the victim posing as a government official (e.g., a police officer), claiming the earlier transfer is linked to criminal activities and instructing the victim to transfer money to so-called 'safety accounts' to support an ongoing investigation.",
+    "targetDemographic": "General Public, particularly individuals who may be socially trusting or elderly persons less familiar with impersonation tactics",
+    "redFlags": [
+      "Caller asks victim to guess their identity rather than identifying themselves",
+      "Caller claims to be a friend but cannot be independently verified",
+      "Urgent request for fund transfer from an unverified contact",
+      "Follow-up call from someone claiming to be a police officer or government official",
+      "Caller alleges a previous transfer is linked to criminal activity",
+      "Instruction to transfer money to a 'safety account' to assist investigations",
+      "Call originates from an unknown or unexpected number",
+      "Contact made via WhatsApp from an unrecognised number"
+    ],
+    "legitimacyContrast": "Legitimate government officials, including Singapore Police Force officers, will never ask members of the public to transfer money over a phone call, nor will they instruct individuals to move funds into 'safety accounts'. Real police investigations do not require civilians to transfer personal funds as part of any investigative process. Genuine friends will identify themselves without prompting.",
+    "prevalence": "HIGH",
+    "firstReported": "2026-01-01",
+    "lastUpdated": "2026-05-15",
+    "confirmedVictims": 3100,
+    "estimatedLoss": "S$64,000,000",
+    "sources": [
+      {
+        "name": "Monthly Scams Bulletin 2026 Issue 5 (May)",
+        "organization": "SPF",
+        "url": "",
+        "date": "2026-05-15"
+      }
+    ],
+    "preventionTips": [
+      "Do not transfer money to anyone whose identity has not been independently verified",
+      "Always make further checks to verify the identity of the person requesting money, such as calling them back on a known number",
+      "Exercise caution when a caller requests urgent financial assistance",
+      "Be wary of calls or messages from unknown numbers, including on WhatsApp",
+      "Remember that government officials will never ask you to transfer money over a phone call",
+      "If in doubt, hang up and call the ScamShield Helpline at 1799 to verify"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield Helpline",
+        "action": "Call 1799 (24/7) to verify if a call or message is a scam"
+      },
+      {
+        "method": "ScamShield App",
+        "action": "Report scam calls and messages via the ScamShield mobile application"
+      },
+      {
+        "method": "Singapore Police Force",
+        "action": "Lodge a Police report online at www.police.gov.sg or at the nearest Neighbourhood Police Centre"
+      }
+    ]
+  },
+  {
+    "id": "gov_bank_phishing_sms_email",
+    "name": "Government Agency and Bank Phishing via SMS/Email",
+    "category": "phishing",
+    "family": "phantom",
+    "keywords": [
+      "phishing",
+      "PayNow",
+      "bank",
+      "government",
+      "OTP",
+      "fake webpage",
+      "sender ID",
+      "gov.sg",
+      "urgent payment",
+      "account renewal",
+      "link",
+      "SMS",
+      "email"
+    ],
+    "sampleTexts": [
+      "Dear customer, your PayNow account requires urgent renewal. Click here to verify your details: http://paynow-secure-update.com",
+      "ALERT: Your bank account has been suspended due to suspicious activity. Please verify immediately: http://dbs-secure-login.com",
+      "Important notice from CPF Board: An urgent payment is pending. Log in now to confirm: http://cpf-gov-sg.net/login",
+      "Your account will be deactivated. Provide your OTP and banking details at: http://myinfo-gov.sg.verify-now.com"
+    ],
+    "patternRegex": [
+      "/urgent.{0,30}(payment|renewal|account)/i",
+      "/click.{0,20}(link|here|verify)/i",
+      "/(paynow|cpf|iras|mom|dbs|ocbc|uob).{0,20}(secure|verify|update|login)/i",
+      "/gov\\.sg[^\\s]*\\.(net|com|org|info)/i",
+      "/(OTP|one.time.password).{0,30}(share|provide|enter)/i"
+    ],
+    "description": "Scammers send unsolicited SMSes or emails impersonating Singapore government agencies (e.g., CPF, IRAS, MOM) or banks, alerting victims to urgent payments or account renewals. The messages contain hyperlinks directing victims to fake webpages that mimic PayNow, bank websites, or government portals. These fraudulent pages are designed to harvest victims' personal information, banking credentials, and One-Time Passwords (OTPs). Scammers also spoof or closely mimic official sender IDs, substituting or adding letters to deceive recipients into believing the message is legitimate. Messages may appear as separate conversations rather than within the authentic gov.sg message thread.",
+    "targetDemographic": "General Public",
+    "redFlags": [
+      "Unsolicited SMS or email claiming urgent payment or account renewal is required",
+      "Message contains a clickable hyperlink purportedly from a bank or government agency",
+      "Sender ID resembles but does not exactly match official IDs (e.g., 'gov.sg' spoofed as 'gov-sg' or 'govsq')",
+      "Message appears as a separate conversation rather than within the established gov.sg thread",
+      "Request for OTP, personal details, or banking credentials",
+      "URL contains misspellings or extra characters mimicking official government or bank domains",
+      "Mass unsolicited emails with attachments or links from unknown senders"
+    ],
+    "legitimacyContrast": "Legitimate bank text messages will always arrive with the bank's official sender ID and will never contain clickable links. Legitimate government agency messages will be sent from the 'gov.sg' sender ID and will appear within a single, existing gov.sg conversation thread — not as a new or separate conversation. Real agencies and banks will never solicit OTPs, personal details, or banking credentials via SMS or email links.",
+    "prevalence": "HIGH",
+    "firstReported": "2025-01-10",
+    "lastUpdated": "2025-01-10",
+    "confirmedVictims": 0,
+    "estimatedLoss": "Unknown",
+    "sources": [
+      {
+        "name": "Monthly Scams Bulletin Issue 01/25",
+        "organization": "SPF",
+        "url": "",
+        "date": "2025-01-10"
+      }
+    ],
+    "preventionTips": [
+      "Never click on links contained in unsolicited SMSes or emails, even if they appear to come from a bank or government agency",
+      "Do not share your OTP, personal details, or banking credentials with anyone",
+      "Verify that SMS messages from banks arrive with the bank's official sender ID and contain no clickable links",
+      "Verify that government agency messages arrive from the 'gov.sg' sender ID and appear within the existing gov.sg message thread",
+      "Check for discrepancies in sender IDs, email addresses, and URLs — look for substituted or additional letters",
+      "Delete unsolicited mass emails immediately without clicking any links or attachments",
+      "Use the ScamShield app to check suspicious numbers, messages, and links",
+      "If in doubt, contact the agency directly or call the ScamShield Helpline at 1799"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield App",
+        "action": "Use the ScamShield app to report and verify suspicious numbers, messages, and links"
+      },
+      {
+        "method": "ScamShield Helpline",
+        "action": "Call 1799 (24/7) to verify suspicious messages or report scams"
+      },
+      {
+        "method": "Direct Agency Contact",
+        "action": "Contact the impersonated government agency directly using official contact details from their official website"
+      }
+    ]
+  },
+  {
+    "id": "spf_ica_impersonation_scam_2025",
+    "name": "Singapore Government Official Impersonation Scam (SPF/ICA/Bank Officer)",
+    "category": "impersonation",
+    "family": "coercion",
+    "keywords": [
+      "ICA",
+      "SPF",
+      "police impersonation",
+      "criminal investigation",
+      "bail",
+      "transfer money",
+      "foreign official",
+      "SingPass",
+      "CPF",
+      "bank account",
+      "fake abduction",
+      "ransom"
+    ],
+    "sampleTexts": [
+      "This is Officer Tan from the Singapore Police Force. Your bank account has been flagged for suspicious criminal activity. Please stay on the line as we transfer you to the foreign investigation unit.",
+      "Hello, I am calling from ICA. Your NRIC number S1234567A has been linked to a money laundering case. You must transfer S$5,000 to a secure government account immediately to avoid arrest.",
+      "Your account is under investigation. A foreign officer will meet you in person to collect cash for bail purposes. Do not tell anyone or you will be arrested.",
+      "We are from the Singapore Police Force. To clear your name, please install this app and provide your SingPass login details for verification."
+    ],
+    "patternRegex": [
+      "/police|SPF|ICA|immigration/i",
+      "/criminal.{0,30}activit/i",
+      "/transfer.{0,30}money|hand.{0,30}cash/i",
+      "/bail|investigation.{0,30}purpose/i",
+      "/SingPass|CPF|NRIC/i",
+      "/foreign.{0,30}officer|foreign.{0,30}official/i",
+      "/install.{0,30}app|click.{0,30}link/i",
+      "/abduction|ransom|kidnap/i"
+    ],
+    "description": "Victims receive unsolicited phone calls from scammers posing as Singapore government officials (SPF or ICA) or bank officers. The caller claims the victim's accounts are linked to criminal activities. When the victim denies involvement, the call is transferred to a second scammer impersonating a foreign official, who instructs the victim to transfer money to specific accounts or meet in person to hand over cash, allegedly for bail or investigation purposes. In some cases, victims are coerced into staging fake abductions to extort ransom from their families. Scammers may cite the victim's personal information such as name or NRIC number to appear legitimate.",
+    "targetDemographic": "General Public, particularly individuals unfamiliar with the legal limits of foreign government authority in Singapore",
+    "redFlags": [
+      "Caller claims your bank account is linked to criminal activities",
+      "Call is transferred to a second 'foreign official' mid-conversation",
+      "Request to transfer money to police, bank accounts, or mobile numbers linked to bank accounts",
+      "Request for SingPass, banking credentials, or CPF-related information",
+      "Instruction to click links leading to bank websites",
+      "Instruction to install apps from outside official app stores",
+      "Request to meet in person to hand over cash for bail or investigation",
+      "Caller cites your personal information (name, NRIC) to appear legitimate",
+      "Pressure to stage a fake abduction for ransom extraction from family"
+    ],
+    "legitimacyContrast": "Real Singapore Police Force officers will never ask you over the phone or via text to transfer money to police or bank accounts, request banking or SingPass details, ask you to click links to bank websites, or instruct you to install apps outside official app stores. Foreign governments have no legal powers to conduct investigations in Singapore or direct anyone in Singapore to assist in their investigations. Legitimate law enforcement will not demand cash handovers or bail payments in person from members of the public.",
+    "prevalence": "HIGH",
+    "firstReported": "2025-02-07",
+    "lastUpdated": "2025-02-07",
+    "confirmedVictims": 0,
+    "estimatedLoss": "Unknown",
+    "sources": [
+      {
+        "name": "Monthly Scams Bulletin Issue 02/25",
+        "organization": "SPF",
+        "url": "",
+        "date": "2025-02-07"
+      }
+    ],
+    "preventionTips": [
+      "Do not automatically trust a caller just because they know your personal information such as your name or NRIC number",
+      "Remember that police officers will never ask you to transfer money, provide SingPass or banking credentials, click bank links, or install unofficial apps over the phone or via text",
+      "Foreign governments have no legal authority to conduct investigations in Singapore; hang up immediately if a 'foreign official' makes such demands",
+      "Call the Police immediately if an alleged foreign police officer requests to meet you in person in Singapore to pay money or sign documents for bail or investigation",
+      "If unsure, stay calm and call the 24/7 ScamShield Helpline at 1799 to verify",
+      "Never hand over cash in person to anyone claiming to be a government official without independent verification",
+      "Do not stage or participate in any fake abduction scenario regardless of threats made"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield Helpline",
+        "action": "Call 1799 (24/7) to verify suspicious calls or report scams"
+      },
+      {
+        "method": "Singapore Police Force",
+        "action": "Call 999 or visit the nearest police post to report immediately if a foreign police officer requests an in-person meeting for payment or document signing"
+      },
+      {
+        "method": "ScamShield App",
+        "action": "Report scam calls and messages via the ScamShield app"
+      }
+    ]
+  },
+  {
+    "id": "gov_agency_phishing_elections_cdc_gst",
+    "name": "Government Agency Impersonation Phishing (Elections, CDC & GST Vouchers)",
+    "category": "phishing",
+    "family": "phantom",
+    "keywords": [
+      "Elections Department",
+      "CDC voucher",
+      "GST voucher",
+      "voting status",
+      "Singpass",
+      "OTP",
+      "gov.sg",
+      "government agency",
+      "phishing link",
+      "fake government website",
+      "One-Time PIN",
+      "bank credentials",
+      "account takeover"
+    ],
+    "sampleTexts": [
+      "Dear resident, the Elections Department requires you to verify your voting status. Please click the link to confirm: http://elections-verify-sg.com/status",
+      "Your CDC voucher redemption is pending. Log in to confirm your details at: http://cdcvouchers-gov-sg.net/redeem",
+      "Important: Your GST Voucher disbursement requires verification. Please update your Singpass details here: http://gst-voucher-sg.info/verify",
+      "Action required: Verify your voting eligibility with the Elections Department. Failure to do so may affect your voter registration. Click: http://spf-elections-sg.com/verify"
+    ],
+    "patternRegex": [
+      "/elections.{0,30}(verify|confirm|voting|status)/i",
+      "/CDC.{0,30}(voucher|redeem|redemption)/i",
+      "/GST.{0,30}(voucher|redeem|disbursement)/i",
+      "/(singpass|one.?time.?pin|OTP).{0,50}(click|link|verify|log.?in)/i",
+      "/http[s]?:\\/\\/(?!.*\\.gov\\.sg).{0,60}(gov|sg|voucher|elections|cdc|gst)/i"
+    ],
+    "description": "Scammers send unsolicited fake text messages or emails via SMS, WhatsApp, Telegram, or email impersonating Singapore government agencies such as the Elections Department. Messages lure victims with prompts to verify their voting status or claim CDC and GST vouchers. Embedded phishing links redirect victims to convincing fake government websites where personal and banking credentials — including bank login details, credit card information, Singpass credentials, and One-Time PINs — are harvested. Stolen credentials are then used to conduct unauthorised bank transactions and/or take over victims' messaging accounts. Scammers may also cite victims' personal information such as name or NRIC number to appear legitimate.",
+    "targetDemographic": "General Public, particularly Singapore residents eligible for CDC/GST vouchers and registered voters",
+    "redFlags": [
+      "Unsolicited SMS, WhatsApp, Telegram message or email from a supposed government agency",
+      "Message contains a clickable link directing to a website not ending in .gov.sg",
+      "Request to verify voting status or claim vouchers via a link",
+      "Request for Singpass login credentials, bank details, credit card information, or OTPs",
+      "Scammer cites your personal information (name, NRIC) to appear legitimate",
+      "Urgency or threat of consequences if action is not taken immediately",
+      "SMS Sender ID does not show gov.sg"
+    ],
+    "legitimacyContrast": "All legitimate Singapore government SMSes are sent from the gov.sg SMS Sender ID. All genuine government websites and email addresses contain '.gov.sg' in the URL or email address. Government officials will NEVER ask victims to transfer money or disclose personal or banking details over a phone call or via unsolicited messages. Legitimate government agencies do not send unsolicited links requesting credential verification.",
+    "prevalence": "HIGH",
+    "firstReported": "2025-01-01",
+    "lastUpdated": "2025-03-07",
+    "confirmedVictims": 0,
+    "estimatedLoss": "Unknown",
+    "sources": [
+      {
+        "name": "Monthly Scams Bulletin Issue 03/25",
+        "organization": "SPF",
+        "url": "",
+        "date": "2025-03-07"
+      }
+    ],
+    "preventionTips": [
+      "Never click on links from unsolicited text messages or emails, regardless of the apparent sender",
+      "Verify that any government SMS originates from the gov.sg Sender ID",
+      "Confirm that government websites and email addresses contain '.gov.sg' in the URL or address",
+      "Check suspicious text messages, phone numbers, and website links using the ScamShield app",
+      "Do not trust someone solely because they possess your personal information such as your name or NRIC number",
+      "Remember that government officials will never ask you to transfer money or disclose personal or banking details over a phone call",
+      "Call the 24/7 ScamShield Helpline at 1799 if you are unsure whether a message is a scam"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield Helpline",
+        "action": "Call 1799 (24/7) to verify suspicious messages or report scams"
+      },
+      {
+        "method": "ScamShield App",
+        "action": "Check suspicious phone numbers, text messages, and website links via the ScamShield app"
+      },
+      {
+        "method": "Singapore Police Force",
+        "action": "Lodge a police report at the nearest Neighbourhood Police Centre or online at www.police.gov.sg"
+      }
+    ]
+  },
+  {
+    "id": "concert_ticket_scam_lady_gaga_2025",
+    "name": "Concert Ticket Resale Scam (Lady Gaga / High-Demand Events)",
+    "category": "e_commerce",
+    "family": "illusion",
+    "keywords": [
+      "Lady Gaga tickets",
+      "concert ticket resale",
+      "Ticketmaster transfer",
+      "fake receipt",
+      "Telegram ticket sale",
+      "Xiaohongshu ticket",
+      "X ticket scam",
+      "resale ticket",
+      "fake NRIC",
+      "ticket transfer"
+    ],
+    "sampleTexts": [
+      "Hi! I have 2 extra Lady Gaga concert tickets (Cat 1) that I can't use. Selling at face value. Can transfer to your Ticketmaster account once payment is made. Have receipt as proof. DM me on Telegram!",
+      "Selling Lady Gaga Singapore tickets! Bought 4 but only need 2. Will send you screenshot of purchase confirmation. Payment via PayNow, transfer to your Ticketmaster account guaranteed. Contact me on Xiaohongshu.",
+      "LF: Lady Gaga tix? I have spares! Legit seller, can show NRIC and receipt. Ticketmaster transfer done after payment. Grab fast before they're gone! DM on X (Twitter)."
+    ],
+    "patternRegex": [
+      "/lady\\s*gaga.*ticket/i",
+      "/ticketmaster.*transfer/i",
+      "/concert.*ticket.*(resale|sell|spare|extra)/i",
+      "/transfer.*ticket.*payment/i",
+      "/(telegram|xiaohongshu|小红书|x\\.com).*ticket/i",
+      "/receipt.*proof.*ticket/i"
+    ],
+    "description": "Scammers exploit high demand for sold-out or popular concerts (e.g. Lady Gaga) by advertising resale tickets on messaging and social media platforms such as Telegram, X (Twitter), and Xiaohongshu. To appear legitimate, they provide fabricated screenshots of purchase confirmations or receipts, and may present stolen NRIC images as identity proof. They promise to transfer tickets to the victim's Ticketmaster account upon payment. Victims only discover the fraud after transferring money or when they are denied entry at the concert venue. Notably, Ticketmaster had disabled the ticket transfer function for the Lady Gaga concert, making any such promise a false claim.",
+    "targetDemographic": "Concert fans, particularly those who failed to secure tickets through official channels due to high demand; general public seeking deals during seasonal sales or major events",
+    "redFlags": [
+      "Seller claims to transfer tickets directly to your Ticketmaster account (transfer function was disabled for Lady Gaga concert)",
+      "Transaction conducted via informal messaging or social media platforms (Telegram, X, Xiaohongshu) rather than authorised platforms",
+      "Seller provides screenshots of receipts or purchases as proof of legitimacy",
+      "Seller shares NRIC or identity documents as trust-building measure (these are often stolen)",
+      "Urgency tactics used to pressure quick payment",
+      "Tickets offered at face value or below market price to attract buyers",
+      "No official platform listing or verifiable seller account"
+    ],
+    "legitimacyContrast": "Authorised ticket platforms (Ticketmaster, Klook, KrisFlyer) sell tickets directly through their official websites and apps. Ticketmaster explicitly disabled the ticket transfer function for the Lady Gaga concert. Legitimate platforms do not conduct sales via Telegram, X, or Xiaohongshu DMs, and will never ask buyers to pay individuals directly via PayNow or bank transfer for ticket transfers.",
+    "prevalence": "CRITICAL",
+    "firstReported": "2024-01-01",
+    "lastUpdated": "2025-04-04",
+    "confirmedVictims": 0,
+    "estimatedLoss": "S$17,500,000 (total e-commerce scam losses in 2024, of which concert tickets were the top item)",
+    "sources": [
+      {
+        "name": "Monthly Scams Bulletin Issue 04/25",
+        "organization": "SPF",
+        "url": "",
+        "date": "2025-04-04"
+      }
+    ],
+    "preventionTips": [
+      "Purchase concert tickets only from authorised platforms: Ticketmaster, Klook, and KrisFlyer",
+      "Be aware that Ticketmaster disabled the ticket transfer function for the Lady Gaga concert — any seller claiming to transfer tickets to your account is lying",
+      "Do not buy resale tickets from individuals on Telegram, X, or Xiaohongshu",
+      "Do not accept screenshots of receipts or NRIC images as proof of legitimacy — these can be fabricated or stolen",
+      "Understand that individuals with resale tickets will be denied entry at the venue with no refund",
+      "If unsure, call the 24/7 ScamShield Helpline at 1799 before making any payment",
+      "Verify any ticket-related claims directly with the official platform's customer service"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield Helpline",
+        "action": "Call 1799 (24/7) to verify or report suspected scams"
+      },
+      {
+        "method": "ScamShield App",
+        "action": "Report scam messages or profiles via the ScamShield mobile app"
+      },
+      {
+        "method": "Singapore Police Force",
+        "action": "Lodge a police report at www.police.gov.sg/iwitness or at the nearest Neighbourhood Police Centre"
+      }
+    ]
+  },
+  {
+    "id": "fake_investment_scheme_sg_2025",
+    "name": "Fake Investment Scheme (Multi-Channel Recruitment)",
+    "category": "investment_scam",
+    "family": "illusion",
+    "keywords": [
+      "investment",
+      "profits",
+      "cryptocurrency",
+      "chatgroup",
+      "fake website",
+      "fake app",
+      "endorsement",
+      "testimonials",
+      "withdraw",
+      "MAS",
+      "unregulated",
+      "public figures"
+    ],
+    "sampleTexts": [
+      "Hi! I recently made S$8,000 in just 2 weeks using this investment platform. My friend introduced me to it and I've already withdrawn my first profits. Want me to add you to our investment group?",
+      "🚨 EXCLUSIVE INVESTMENT OPPORTUNITY 🚨 Join our private trading group and earn guaranteed returns! See what others are saying: [fake testimonials]. Limited slots available. DM us now!",
+      "Congratulations! Your initial investment of S$500 has grown to S$1,200. Reinvest now to maximise your returns! Click here to view your portfolio: [fake investment app link]",
+      "I saw [celebrity name] endorsing this investment platform and decided to try it. I've already made S$3,000 profit this month. Let me add you to the group chat!"
+    ],
+    "patternRegex": [
+      "/invest(ment)?\\s*(opportunity|scheme|platform|group)/i",
+      "/(guaranteed|high|huge)\\s*(returns?|profits?)/i",
+      "/(withdraw|withdrawal)\\s*(difficulties|problem|issue|unable)/i",
+      "/(fake|false)\\s*(testimonial|endorsement|advertisement)/i",
+      "/(crypto(currency)?|bitcoin|USDT)\\s*invest/i",
+      "/never\\s*met\\s*(in person|personally)/i",
+      "/(chatgroup|chat group|group chat)\\s*(added|join)/i"
+    ],
+    "description": "Scammers recruit victims through recommendations from online-only acquaintances never met in person, random investment chat groups, or fake online advertisements. They entice victims to invest increasing sums by: (1) creating fake investment websites or apps displaying fabricated profits, (2) misappropriating images of public figures to create false endorsements, (3) presenting fake testimonials of others making profits, and (4) sending victims small initial 'profits' to convince them the scheme is genuine. After victims invest larger amounts of money or cryptocurrencies, they experience difficulties withdrawing their earnings, at which point the scammers may demand additional fees or simply disappear. Over S$24.5 million was lost to such investment scams since March 2025.",
+    "targetDemographic": "General Public, particularly individuals active on social media and messaging platforms who may be susceptible to online relationship-building and investment promises",
+    "redFlags": [
+      "Investment opportunity recommended by someone you have never met in person",
+      "Added to a random investment chat group by an unknown number",
+      "Fake advertisements encountered online promoting investment schemes",
+      "Fake investment websites or apps showing inflated or fabricated profits",
+      "Use of public figures' images for false endorsements",
+      "Fake testimonials claiming others have made large profits",
+      "Small initial 'profits' sent to build trust before requesting larger investments",
+      "Difficulties or inability to withdraw earnings after investing larger amounts",
+      "Investment entity or person not regulated by MAS",
+      "Social media posts by companies not listed on MAS register"
+    ],
+    "legitimacyContrast": "Legitimate investment entities in Singapore are regulated by the Monetary Authority of Singapore (MAS) and are listed on the MAS website. Real licensed financial entities do not recruit clients through unsolicited chat groups, online-only relationships, or unverified social media advertisements. They do not use celebrity images without authorisation, and clients can withdraw funds without artificial barriers. MAS provides a public register of licensed financial entities and the MoneySense website for investment-related resources. MAS explicitly states it cannot help victims recover assets lost to unregulated entities.",
+    "prevalence": "CRITICAL",
+    "firstReported": "2025-03-01",
+    "lastUpdated": "2025-05-02",
+    "confirmedVictims": 0,
+    "estimatedLoss": "S$24,500,000+",
+    "sources": [
+      {
+        "name": "Monthly Scams Bulletin Issue 05/25",
+        "organization": "SPF",
+        "url": "",
+        "date": "2025-05-02"
+      }
+    ],
+    "preventionTips": [
+      "Deal only with investment entities or persons regulated by the Monetary Authority of Singapore (MAS)",
+      "Check the MAS website for the list of licensed financial entities before investing",
+      "Visit the MoneySense website for investment-related resources and guidance",
+      "Block and report any account or phone number that recommends investments from someone you have never met in person",
+      "Report and leave any chat group you were added to by an unknown number",
+      "Be sceptical of investment opportunities promoted via social media by unregulated companies",
+      "Do not be convinced by small initial 'profits' — these are a common tactic to build false trust",
+      "Verify celebrity endorsements directly through official channels before trusting investment claims",
+      "If unsure whether something is a scam, call the 24/7 ScamShield Helpline at 1799"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield Helpline",
+        "action": "Call 1799 (24/7) to verify or report suspected scams"
+      },
+      {
+        "method": "ScamShield App",
+        "action": "Block and report scam accounts or phone numbers via the ScamShield app"
+      },
+      {
+        "method": "MAS Website",
+        "action": "Check https://www.mas.gov.sg for the list of licensed financial entities"
+      },
+      {
+        "method": "MoneySense Website",
+        "action": "Visit https://www.moneysense.gov.sg for investment-related resources"
+      },
+      {
+        "method": "Chat Group Reporting",
+        "action": "Report and leave any suspicious investment chat group you were added to by an unknown number"
+      }
+    ]
+  },
+  {
+    "id": "fake_posb_email_expired_token",
+    "name": "Fake POSB Email – Expired Mobile Banking Digital Token",
+    "category": "phishing",
+    "family": "phantom",
+    "keywords": [
+      "POSB",
+      "digital token",
+      "expired",
+      "mobile banking",
+      "email phishing",
+      "URL link",
+      "immediate action"
+    ],
+    "sampleTexts": [
+      "Dear POSB Customer, your mobile banking digital token has expired. Please click the link below to reactivate your account immediately or your access will be suspended: http://posb-secure-token-renew.com/verify",
+      "POSB Alert: Your iBanking digital token has expired. Immediate action required. Click here to update: http://posb-token-update.net/login"
+    ],
+    "patternRegex": [
+      "/posb/i",
+      "/digital.?token/i",
+      "/expired/i",
+      "/immediate.?action/i",
+      "/click.{0,30}link/i"
+    ],
+    "description": "Scammers send fake emails impersonating POSB bank, claiming the recipient's mobile banking digital token has expired. The email contains embedded URL links urging the victim to take immediate action, leading them to phishing sites designed to harvest banking credentials.",
+    "targetDemographic": "POSB bank customers, General Public",
+    "redFlags": [
+      "Email urges immediate action regarding an expired digital token",
+      "Contains embedded URL links redirecting to non-official websites",
+      "Sender email address may be spoofed to appear legitimate",
+      "Creates urgency to pressure victim into clicking without verifying",
+      "Email sender ID does not match official POSB domain"
+    ],
+    "legitimacyContrast": "Legitimate banks like POSB will never ask customers to click unsolicited email links to reactivate tokens. Customers should call the bank directly using the number on the official website to verify any such claims. Official POSB communications come from verified domains.",
+    "prevalence": "HIGH",
+    "firstReported": "2025-06-06",
+    "lastUpdated": "2025-06-06",
+    "confirmedVictims": 0,
+    "estimatedLoss": "Unknown",
+    "sources": [
+      {
+        "name": "Monthly Scams Bulletin Issue 06/25",
+        "organization": "SPF",
+        "url": "",
+        "date": "2025-06-06"
+      }
+    ],
+    "preventionTips": [
+      "Always check the sender's email address carefully before clicking any links",
+      "Do not click on links embedded in unsolicited emails about expired tokens",
+      "Call POSB directly using the phone number on their official website to verify",
+      "Activate the Money Lock feature on your bank account to prevent unauthorised transfers",
+      "Set lower transaction notification thresholds to detect unauthorised activity early"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield Helpline",
+        "action": "Call 1799 (24/7) to report or verify"
+      },
+      {
+        "method": "ScamShield App",
+        "action": "Report the phishing email via the ScamShield app"
+      },
+      {
+        "method": "Bank",
+        "action": "Alert POSB immediately of any suspicious account activity"
+      }
+    ]
+  },
+  {
+    "id": "fake_axs_website_search_engine",
+    "name": "Fake AXS Website via Search Engine Results",
+    "category": "phishing",
+    "family": "phantom",
+    "keywords": [
+      "AXS",
+      "fake website",
+      "search engine",
+      "Google",
+      "bill payment",
+      "spoofed site",
+      "top search result"
+    ],
+    "sampleTexts": [
+      "User searches 'AXS bill payment Singapore' on Google and clicks the top sponsored or organic result, which leads to a convincing fake AXS website that harvests payment card details.",
+      "Victim visits what appears to be the AXS e-Station website after a Google search, enters credit card information to pay utilities, and later discovers the site was fraudulent."
+    ],
+    "patternRegex": [
+      "/axs/i",
+      "/bill.?pay/i",
+      "/search.{0,20}engine/i",
+      "/top.{0,20}result/i"
+    ],
+    "description": "Victims searching for the AXS website on search engines such as Google to pay bills are redirected to fraudulent websites that closely mimic the legitimate AXS platform. These fake sites appear as top search results, deceiving users into entering sensitive payment or banking information.",
+    "targetDemographic": "General Public, bill-paying consumers using AXS services",
+    "redFlags": [
+      "Website appears as a top search result but URL does not match the official AXS domain (axs.com.sg)",
+      "Site mimics the look and feel of the legitimate AXS platform",
+      "Requests payment card or banking credentials",
+      "No secure or verified domain indicators",
+      "Accessed via search engine rather than a bookmarked or directly typed URL"
+    ],
+    "legitimacyContrast": "The legitimate AXS website is axs.com.sg. Users should bookmark the official site and navigate directly rather than relying on search engine results. Legitimate AXS does not solicit credentials through search-engine-advertised lookalike pages.",
+    "prevalence": "HIGH",
+    "firstReported": "2025-06-06",
+    "lastUpdated": "2025-06-06",
+    "confirmedVictims": 0,
+    "estimatedLoss": "Unknown",
+    "sources": [
+      {
+        "name": "Monthly Scams Bulletin Issue 06/25",
+        "organization": "SPF",
+        "url": "",
+        "date": "2025-06-06"
+      }
+    ],
+    "preventionTips": [
+      "Bookmark the official AXS website (axs.com.sg) and access it directly instead of searching on Google",
+      "Verify the URL carefully before entering any payment or personal information",
+      "Do not trust search engine results as a guarantee of website legitimacy",
+      "Look for the official domain and HTTPS security indicators before transacting",
+      "If in doubt, call ScamShield helpline at 1799 to verify"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield Helpline",
+        "action": "Call 1799 (24/7) to report or verify suspicious websites"
+      },
+      {
+        "method": "ScamShield App",
+        "action": "Report the fake website URL via the ScamShield app"
+      },
+      {
+        "method": "Bank",
+        "action": "Alert your bank immediately if payment details were entered on a suspicious site"
+      }
+    ]
+  },
+  {
+    "id": "fake_social_media_ads_local_companies",
+    "name": "Fake Social Media Advertisements Impersonating Local Companies",
+    "category": "phishing",
+    "family": "illusion",
+    "keywords": [
+      "social media",
+      "fake advertisement",
+      "impersonation",
+      "local company",
+      "promotion",
+      "enticing offer",
+      "Facebook",
+      "Instagram"
+    ],
+    "sampleTexts": [
+      "🎉 [Brand Name] MEGA SALE! Get 80% off all products this weekend only! Click here to claim your exclusive deal before it expires: http://brandname-promo-sg.com/claim",
+      "Limited time offer from [Local Company]! Free gift with every purchase above $50. Click the link in our bio to shop now and enjoy exclusive member discounts!"
+    ],
+    "patternRegex": [
+      "/promo/i",
+      "/limited.?time/i",
+      "/exclusive.{0,20}deal/i",
+      "/click.{0,20}claim/i",
+      "/\\d{2,3}%.{0,10}off/i"
+    ],
+    "description": "Scammers create fake advertisements on social media platforms impersonating legitimate local companies and offering enticing promotions. Victims who click on these ads are directed to phishing sites or fraudulent storefronts designed to steal payment information or personal data.",
+    "targetDemographic": "Social media users, online shoppers, General Public",
+    "redFlags": [
+      "Advertisement offers unusually large discounts or promotions",
+      "Ad account does not match the verified official page of the company",
+      "Link in advertisement leads to a non-official or suspicious URL",
+      "Promotion not verifiable on the company's official website or channels",
+      "Urgency tactics such as 'limited time only' or 'while stocks last'"
+    ],
+    "legitimacyContrast": "Legitimate local companies run promotions that can be verified directly on their official websites or by calling their customer service. They do not pressure customers through unverified social media ads with suspicious links. Always check with the company directly before engaging with any advertised promotion.",
+    "prevalence": "HIGH",
+    "firstReported": "2025-06-06",
+    "lastUpdated": "2025-06-06",
+    "confirmedVictims": 0,
+    "estimatedLoss": "Unknown",
+    "sources": [
+      {
+        "name": "Monthly Scams Bulletin Issue 06/25",
+        "organization": "SPF",
+        "url": "",
+        "date": "2025-06-06"
+      }
+    ],
+    "preventionTips": [
+      "Always verify promotions directly with the company through their official website or customer service hotline",
+      "Check that the social media page running the ad is the verified official account of the company",
+      "Do not click on links in social media advertisements without verifying their legitimacy",
+      "Be sceptical of promotions offering unusually high discounts or free gifts",
+      "Call ScamShield helpline at 1799 if you are unsure whether an advertisement is legitimate"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield Helpline",
+        "action": "Call 1799 (24/7) to verify suspicious advertisements"
+      },
+      {
+        "method": "ScamShield App",
+        "action": "Report fake social media advertisements via the ScamShield app"
+      },
+      {
+        "method": "Social Media Platform",
+        "action": "Use the platform's built-in reporting tool to flag the fraudulent advertisement"
+      }
+    ]
+  },
+  {
+    "id": "government_officials_impersonation_scam_sg_2025",
+    "name": "Government Officials Impersonation Scam (GOIS)",
+    "category": "impersonation",
+    "family": "phantom",
+    "keywords": [
+      "government official",
+      "SPF",
+      "MAS",
+      "MOM",
+      "criminal investigation",
+      "safety account",
+      "gold bars",
+      "jewellery",
+      "transfer money",
+      "bank login",
+      "third-party app",
+      "NRIC",
+      "prove innocence",
+      "investigation purposes",
+      "police transfer"
+    ],
+    "sampleTexts": [
+      "This is Officer Tan from the Singapore Police Force. We have detected suspicious transactions linked to your NRIC. You are required to transfer your funds to a designated safety account immediately to assist with our investigation. Failure to comply may result in arrest.",
+      "Hello, I am calling from the Monetary Authority of Singapore. Your bank account has been flagged for money laundering activities. To prove your innocence, you must exchange your savings for gold bars and hand them over to our officer. Do not inform anyone or you will be charged.",
+      "This is the Ministry of Manpower. We have evidence that your identity has been used in criminal activities. Please download this app [link] to cooperate with our investigation and provide your bank login details for verification."
+    ],
+    "patternRegex": [
+      "/singapore police force|monetary authority|ministry of manpower|SPF|MAS|MOM/i",
+      "/safety (bank )?account|transfer.*money|gold bar|jewellery|prove.*innocence|investigation purpose/i",
+      "/criminal activit|accused|involved in.*crime|bank log.?in details/i",
+      "/third.party (website|app)|download.*app/i"
+    ],
+    "description": "Scammers impersonate government officials from the Singapore Police Force (SPF), Monetary Authority of Singapore (MAS), or Ministry of Manpower (MOM). They call victims and falsely accuse them of involvement in criminal activities. Victims are then pressured to transfer money to so-called 'safety' bank accounts, hand over jewellery, or exchange money for gold bars under the pretexts of 'proving their innocence' or cooperating with an 'investigation'. Scammers may also instruct victims to download apps from third-party websites or provide bank login credentials. To appear credible, scammers cite victims' personal information such as full name or NRIC number. Calls may be spoofed to appear as if they originate from official government agencies, and scammers may claim to transfer the call to the police.",
+    "targetDemographic": "General Public, particularly individuals unfamiliar with government procedures or those who may be intimidated by authority figures",
+    "redFlags": [
+      "Caller claims to be a government official from SPF, MAS, or MOM",
+      "Accusation of involvement in criminal activities over the phone",
+      "Request to transfer money to a 'safety' bank account",
+      "Request to hand over jewellery or exchange money for gold bars",
+      "Request to download an app from a third-party (non-official) website",
+      "Request to provide bank login credentials over the phone",
+      "Caller claims to transfer you to the police",
+      "Caller cites your personal information (name, NRIC) to appear legitimate",
+      "Urgency and threats of arrest or legal consequences if you do not comply",
+      "SMS received from a sender ID that is not gov.sg"
+    ],
+    "legitimacyContrast": "Real Singapore government officials will never call to demand money transfers, request bank login details over the phone, ask victims to exchange money for gold bars or surrender jewellery, or instruct individuals to download apps from third-party websites. Legitimate government SMS communications are sent exclusively from the official gov.sg SMS Sender ID. The ScamShield Helpline (1799) is available 24/7 for the public to verify suspicious calls or messages.",
+    "prevalence": "CRITICAL",
+    "firstReported": "2025-05-01",
+    "lastUpdated": "2025-07-04",
+    "confirmedVictims": 0,
+    "estimatedLoss": "S$16,900,000",
+    "sources": [
+      {
+        "name": "Monthly Scams Bulletin Issue 07/25",
+        "organization": "SPF",
+        "url": "",
+        "date": "2025-07-04"
+      }
+    ],
+    "preventionTips": [
+      "Government officials will never ask you to transfer money or disclose bank login details over a phone call — hang up immediately.",
+      "Do not trust a caller solely because they know your personal information such as your name or NRIC number.",
+      "Never download apps from third-party websites at the request of an unsolicited caller.",
+      "Never hand over jewellery or exchange money for gold bars at the request of someone claiming to be a government official.",
+      "Verify any SMS claiming to be from the government by checking that it is sent from the official gov.sg SMS Sender ID.",
+      "If in doubt, call the 24/7 ScamShield Helpline at 1799 to verify the legitimacy of any call or message.",
+      "Do not transfer money to any 'safety' or 'investigation' bank account requested by an unsolicited caller.",
+      "Report suspicious calls or messages to the police via the ScamShield app or by calling 999."
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield Helpline",
+        "action": "Call 1799 (24/7) to verify or report a suspected scam"
+      },
+      {
+        "method": "ScamShield App",
+        "action": "Report scam calls and SMS via the ScamShield mobile application"
+      },
+      {
+        "method": "Singapore Police Force",
+        "action": "Call 999 or lodge a report at the nearest police post"
+      }
+    ]
+  },
+  {
+    "id": "sg60_voucher_phishing",
+    "name": "SG60 Voucher Phishing Scam",
+    "category": "phishing",
+    "family": "phantom",
+    "keywords": [
+      "SG60",
+      "voucher",
+      "redeem",
+      "government initiative",
+      "fake website",
+      "personal details",
+      "banking details"
+    ],
+    "sampleTexts": [
+      "Dear resident, your SG60 Voucher is ready for redemption. Click here to claim: http://sg60-vouchers-redeem.com",
+      "Congratulations! You are eligible for your SG60 Neighbourhood Voucher. Verify your details at: http://sg60voucher-gov.sg-claim.net to receive your credits."
+    ],
+    "patternRegex": [
+      "/sg60.{0,20}voucher/i",
+      "/redeem.{0,30}sg60/i",
+      "/claim.{0,30}voucher/i",
+      "/go\\.gov\\.sg\\/SG60/i"
+    ],
+    "description": "Scammers impersonate government agencies and send emails or SMS messages containing links that direct victims to fake websites purportedly for SG60 Voucher redemption. When victims enter their personal or banking details on these fraudulent sites, the information is stolen. The legitimate redemption portal is exclusively at go.gov.sg/SG60vouchers.",
+    "targetDemographic": "General Public, Singapore residents eligible for SG60 Vouchers",
+    "redFlags": [
+      "Link does not lead to an official .gov.sg domain",
+      "Website requests banking login credentials or personal details for voucher redemption",
+      "SMS sender ID is not 'gov.sg'",
+      "Unsolicited email or SMS urging immediate voucher redemption",
+      "URL does not match go.gov.sg/SG60vouchers"
+    ],
+    "legitimacyContrast": "The official SG60 Voucher redemption is only available at go.gov.sg/SG60vouchers. All legitimate government SMSes are sent from the 'gov.sg' sender ID. Government officials will never ask victims to transfer money or provide bank login details over a phone call or via unofficial websites.",
+    "prevalence": "HIGH",
+    "firstReported": "2025-08-01",
+    "lastUpdated": "2025-08-01",
+    "confirmedVictims": 0,
+    "estimatedLoss": "Unknown",
+    "sources": [
+      {
+        "name": "Monthly Scams Bulletin Issue 08/25",
+        "organization": "SPF",
+        "url": "",
+        "date": "2025-08-01"
+      }
+    ],
+    "preventionTips": [
+      "Only redeem SG60 Vouchers at the official website: go.gov.sg/SG60vouchers",
+      "Verify that any government website URL contains '.gov.sg'",
+      "Check the sender ID of any SMS — all government SMSes use the 'gov.sg' sender ID",
+      "Do not click on unsolicited links in emails or SMS messages claiming to offer voucher redemption",
+      "Verify suspicious messages, phone numbers, and links via the ScamShield app or website",
+      "Contact the relevant government agency directly to verify the legitimacy of any communication"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield Helpline",
+        "action": "Call 1799 (24/7) to check and report suspected scams"
+      },
+      {
+        "method": "ScamShield App",
+        "action": "Report suspicious messages, phone numbers, and links via the ScamShield app"
+      },
+      {
+        "method": "ScamShield Website",
+        "action": "Check and report via the ScamShield website"
+      }
+    ]
+  },
+  {
+    "id": "ndp_ticket_fraud",
+    "name": "NDP 2025 Ticket Sale / Resale Scam",
+    "category": "e_commerce",
+    "family": "phantom",
+    "keywords": [
+      "NDP",
+      "National Day Parade",
+      "NDP 2025",
+      "tickets",
+      "sale",
+      "resale",
+      "fake tickets"
+    ],
+    "sampleTexts": [
+      "Selling 2x NDP 2025 tickets at S$50 each. DM me to arrange. Limited slots!",
+      "Get your NDP 2025 tickets now before they run out! Visit http://ndp2025tickets.com to purchase yours today."
+    ],
+    "patternRegex": [
+      "/ndp.{0,20}ticket/i",
+      "/national day.{0,20}ticket/i",
+      "/ndp 2025.{0,20}(sale|buy|purchase|resell)/i"
+    ],
+    "description": "Scammers exploit interest in the National Day Parade (NDP) 2025 by fraudulently offering NDP tickets for sale or resale through unofficial channels, websites, or social media. NDP tickets are not for sale and there are no authorised sale or reselling of tickets. Victims who pay for these tickets receive nothing or counterfeit tickets.",
+    "targetDemographic": "General Public, Singapore residents interested in attending NDP 2025",
+    "redFlags": [
+      "Any offer to sell or resell NDP tickets through any channel",
+      "Websites or social media posts advertising NDP 2025 tickets for purchase",
+      "Requests for payment in exchange for NDP tickets",
+      "Unofficial platforms or individuals claiming to have NDP tickets available"
+    ],
+    "legitimacyContrast": "NDP tickets are not for sale. There are no authorised sale or reselling of NDP tickets through any channel. Legitimate NDP ticket distribution is handled exclusively through official government channels at no cost.",
+    "prevalence": "MEDIUM",
+    "firstReported": "2025-08-01",
+    "lastUpdated": "2025-08-01",
+    "confirmedVictims": 0,
+    "estimatedLoss": "Unknown",
+    "sources": [
+      {
+        "name": "Monthly Scams Bulletin Issue 08/25",
+        "organization": "SPF",
+        "url": "",
+        "date": "2025-08-01"
+      }
+    ],
+    "preventionTips": [
+      "Be aware that NDP tickets are not for sale and no authorised reselling exists",
+      "Do not purchase NDP tickets from any individual, website, or platform",
+      "Report any offers to sell NDP tickets to the authorities",
+      "Verify information about NDP tickets directly with the official NDP organisers"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield Helpline",
+        "action": "Call 1799 (24/7) to check and report suspected scams"
+      },
+      {
+        "method": "ScamShield App",
+        "action": "Report suspicious listings or messages via the ScamShield app"
+      },
+      {
+        "method": "Police Hotline",
+        "action": "Call 999 or lodge a report at www.police.gov.sg/iwitness"
+      }
+    ]
+  },
+  {
+    "id": "sg_culture_pass_phishing",
+    "name": "SG Culture Pass Premature Redemption Scam",
+    "category": "phishing",
+    "family": "phantom",
+    "keywords": [
+      "SG Culture Pass",
+      "culture pass",
+      "credits",
+      "redemption",
+      "fake website",
+      "early access",
+      "banking details"
+    ],
+    "sampleTexts": [
+      "Your SG Culture Pass credits are ready! Redeem now before 1 Sep 2025 at http://sgculturepass-credits.com",
+      "Exclusive early access: Claim your SG Culture Pass credits today. Visit http://sg-culturepass-redeem.net and enter your details."
+    ],
+    "patternRegex": [
+      "/sg culture pass/i",
+      "/culture pass.{0,30}credit/i",
+      "/sgculturepass/i",
+      "/culture pass.{0,30}redeem/i"
+    ],
+    "description": "Scammers exploit the SG Culture Pass initiative by creating fraudulent websites or sending SMS messages offering SG Culture Pass credit redemption or purchases before the official launch date of 1 September 2025. Victims who interact with these fake platforms risk having their personal or banking details stolen. The official contact for SG Culture Pass is enquiries@sgculturepass.gov.sg.",
+    "targetDemographic": "General Public, Singapore residents anticipating the SG Culture Pass launch",
+    "redFlags": [
+      "Any website or SMS offering SG Culture Pass credit redemption before 1 September 2025",
+      "Links that do not lead to an official .gov.sg domain",
+      "Requests for personal or banking details to access SG Culture Pass credits",
+      "SMS sender ID is not 'gov.sg'",
+      "Unsolicited communications about early or exclusive SG Culture Pass access"
+    ],
+    "legitimacyContrast": "SG Culture Pass credits will only be available from 1 September 2025. Any website or SMS offering credit redemption or purchases before this date is fraudulent. Official enquiries should be directed to enquiries@sgculturepass.gov.sg. All government SMSes use the 'gov.sg' sender ID.",
+    "prevalence": "MEDIUM",
+    "firstReported": "2025-08-01",
+    "lastUpdated": "2025-08-01",
+    "confirmedVictims": 0,
+    "estimatedLoss": "Unknown",
+    "sources": [
+      {
+        "name": "Monthly Scams Bulletin Issue 08/25",
+        "organization": "SPF",
+        "url": "",
+        "date": "2025-08-01"
+      }
+    ],
+    "preventionTips": [
+      "Be aware that SG Culture Pass credits are only available from 1 September 2025",
+      "Treat any offer of SG Culture Pass credit redemption before 1 September 2025 as fraudulent",
+      "Only engage with official SG Culture Pass communications via enquiries@sgculturepass.gov.sg",
+      "Verify that any government website URL contains '.gov.sg'",
+      "Check suspicious messages and links via the ScamShield app or website",
+      "Do not provide personal or banking details on unverified websites"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield Helpline",
+        "action": "Call 1799 (24/7) to check and report suspected scams"
+      },
+      {
+        "method": "ScamShield App",
+        "action": "Report suspicious messages and links via the ScamShield app"
+      },
+      {
+        "method": "Official SG Culture Pass Contact",
+        "action": "Direct enquiries to enquiries@sgculturepass.gov.sg"
+      }
+    ]
+  },
+  {
+    "id": "government_agency_impersonation_initiative",
+    "name": "Government Agency Impersonation via National Initiative Lures",
+    "category": "impersonation",
+    "family": "illusion",
+    "keywords": [
+      "government impersonation",
+      "fake government SMS",
+      "gov.sg",
+      "phishing link",
+      "personal details",
+      "banking details",
+      "national initiative"
+    ],
+    "sampleTexts": [
+      "This is a message from the Ministry of Finance. You are eligible for your SG60 benefit. Click here to verify your details: http://mof-sg60.com",
+      "[MOF] Your SG60 Voucher redemption is pending. Log in to confirm your identity at http://sg60-gov-portal.net"
+    ],
+    "patternRegex": [
+      "/(ministry|agency|government).{0,30}(sg60|ndp|culture pass)/i",
+      "/gov\\.sg(?!\\/).{0,50}(redeem|claim|verify)/i",
+      "/(mof|mom|mha|mccy).{0,30}(voucher|ticket|pass)/i"
+    ],
+    "description": "Scammers impersonate government agencies by sending emails or SMS messages that reference legitimate national initiatives such as SG60 Vouchers, NDP 2025 tickets, and the SG Culture Pass. These messages contain links directing victims to fake websites that harvest personal and banking details. The scam exploits public trust in government communications and awareness of these high-profile national programmes.",
+    "targetDemographic": "General Public, Singapore residents aware of national government initiatives",
+    "redFlags": [
+      "SMS sender ID is not 'gov.sg'",
+      "Email or SMS contains a link that does not lead to a verified .gov.sg domain",
+      "Message requests personal information, banking credentials, or login details",
+      "Unsolicited contact referencing government initiatives and requiring immediate action",
+      "Website URL cannot be verified on gov.sg/trusted-sites",
+      "Caller or message claims to be from a government agency and requests money transfer or bank login details"
+    ],
+    "legitimacyContrast": "All legitimate government SMSes are sent from the 'gov.sg' sender ID. Official government websites use '.gov.sg' domains verifiable at gov.sg/trusted-sites. Government officials will never ask victims to transfer money or provide bank login details over a phone call or via unofficial websites or links.",
+    "prevalence": "HIGH",
+    "firstReported": "2025-08-01",
+    "lastUpdated": "2025-08-01",
+    "confirmedVictims": 0,
+    "estimatedLoss": "Unknown",
+    "sources": [
+      {
+        "name": "Monthly Scams Bulletin Issue 08/25",
+        "organization": "SPF",
+        "url": "",
+        "date": "2025-08-01"
+      }
+    ],
+    "preventionTips": [
+      "Verify that all government SMSes come from the 'gov.sg' sender ID",
+      "Check that government website URLs contain '.gov.sg' and verify them at gov.sg/trusted-sites",
+      "Never provide personal or banking details on websites accessed via unsolicited links",
+      "Do not transfer money or share bank login details based on phone calls or messages claiming to be from government officials",
+      "Use the ScamShield app or website to check suspicious messages, phone numbers, and links",
+      "Contact the relevant government agency directly through official channels to verify any communication"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield Helpline",
+        "action": "Call 1799 (24/7) to check and report suspected scams"
+      },
+      {
+        "method": "ScamShield App",
+        "action": "Report suspicious messages, phone numbers, and website links via the ScamShield app"
+      },
+      {
+        "method": "ScamShield Website",
+        "action": "Check and report via the ScamShield website"
+      },
+      {
+        "method": "Relevant Government Agency",
+        "action": "Contact the impersonated government agency directly through official channels to verify legitimacy"
+      }
+    ]
+  },
+  {
+    "id": "insurance_services_scam_2025",
+    "name": "Insurance Services Impersonation Scam",
+    "category": "phishing",
+    "family": "illusion",
+    "keywords": [
+      "insurance",
+      "cancellation",
+      "expiring trial",
+      "package",
+      "identity verification",
+      "money transfer",
+      "personal details"
+    ],
+    "sampleTexts": [
+      "Dear customer, your insurance trial package is expiring in 24 hours. To cancel and avoid charges, please verify your identity by providing your NRIC and transferring $1 to our secure account. Call us at 6XXX-XXXX immediately.",
+      "URGENT: Your insurance plan will auto-renew at $299. To cancel, reply with your full name, NRIC, and bank details for identity confirmation. Failure to act will result in charges."
+    ],
+    "patternRegex": [
+      "/insur(ance|ed).{0,40}(cancel|expir|trial|package)/i",
+      "/(verify|prove).{0,30}identity.{0,30}(transfer|payment|bank)/i",
+      "/expir(ing|ed).{0,30}(trial|plan|package).{0,40}cancel/i"
+    ],
+    "description": "Scammers pose as representatives of insurance companies, falsely claiming that victims must pay for packages or expiring trial insurance services unless they cancel their plans. To facilitate the supposed cancellation, victims are asked to share personal details and make money transfers purportedly to prove their identities. At least S$21.3 million has been lost to this scam type since January 2025.",
+    "targetDemographic": "General Public, particularly individuals with existing insurance policies or those unfamiliar with insurance processes",
+    "redFlags": [
+      "Unsolicited contact claiming to be from an insurance company",
+      "Urgency around expiring trials or packages requiring immediate action",
+      "Request for personal details (NRIC, bank account) over phone or message",
+      "Request to transfer money as a form of identity verification",
+      "Threat of charges unless cancellation is processed immediately"
+    ],
+    "legitimacyContrast": "Legitimate insurance companies will never ask customers to transfer money to verify their identity. Cancellations are handled through official written requests, customer service portals, or in-person at registered offices. Real insurers do not demand personal data via unsolicited calls or messages.",
+    "prevalence": "HIGH",
+    "firstReported": "2025-01-01",
+    "lastUpdated": "2025-09-05",
+    "confirmedVictims": 0,
+    "estimatedLoss": "S$21.3 million (January–June 2025)",
+    "sources": [
+      {
+        "name": "Monthly Scams Bulletin Issue 09/25",
+        "organization": "SPF",
+        "url": "go.gov.sg/spf-midyear-scams25",
+        "date": "2025-09-05"
+      }
+    ],
+    "preventionTips": [
+      "Never transfer money to verify your identity — no legitimate company requires this.",
+      "Do not share personal details (NRIC, bank account numbers) with unsolicited callers claiming to be from insurance companies.",
+      "Verify the caller's identity by hanging up and calling the insurance company's official hotline directly.",
+      "Check suspicious numbers and messages using the ScamShield app.",
+      "Call the ScamShield Helpline at 1799 if you are unsure whether a contact is legitimate."
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield App",
+        "action": "Report suspicious messages and numbers via the app"
+      },
+      {
+        "method": "ScamShield Helpline",
+        "action": "Call 1799 (24/7) to verify if something is a scam"
+      },
+      {
+        "method": "Singapore Police Force",
+        "action": "Lodge a police report at the nearest Neighbourhood Police Centre or online at police.gov.sg"
+      }
+    ]
+  },
+  {
+    "id": "government_officials_impersonation_scam_physical_handover_2025",
+    "name": "Government Officials Impersonation Scam — Physical Valuables Handover Variant",
+    "category": "impersonation",
+    "family": "coercion",
+    "keywords": [
+      "government official",
+      "police",
+      "investigation",
+      "gold bars",
+      "cash",
+      "physical handover",
+      "valuables",
+      "impersonation",
+      "GOIS"
+    ],
+    "sampleTexts": [
+      "This is Officer Tan from the Singapore Police Force. You are implicated in a money laundering investigation. To assist our investigation and protect your assets, you must hand over your cash and gold bars to our officer who will collect them from your address today.",
+      "SPF Investigation Unit: Your bank account has been flagged for illegal transactions. For your protection, please place your valuables including cash and gold at your front door for collection by our plainclothes officer within the hour. Do NOT inform anyone."
+    ],
+    "patternRegex": [
+      "/(police|cpf|ica|mas|government).{0,50}(investigation|case|warrant)/i",
+      "/(hand over|surrender|place|deposit).{0,40}(cash|gold|valuables|jewellery)/i",
+      "/investigation.{0,30}purposes?.{0,30}(collect|handover|deliver)/i",
+      "/(do not|don't).{0,20}(tell|inform|contact).{0,30}(anyone|family|bank)/i"
+    ],
+    "description": "Scammers impersonate government officials, including police officers, and pressure victims into handing over physical valuables such as cash or gold bars under the pretext of 'investigation purposes'. This is a rising trend identified by the Singapore Police Force. GOIS cases tripled from 589 to 1,762 cases in the first half of 2025, with at least S$126.5 million lost. A key emerging variant involves scammers directing victims to physically surrender or place valuables at a location for collection.",
+    "targetDemographic": "General Public, particularly elderly individuals and those susceptible to authority-based pressure tactics",
+    "redFlags": [
+      "Caller claims to be a government official, police officer, or from agencies such as CPF, ICA, or MAS",
+      "Victim is told they are under investigation for serious crimes such as money laundering",
+      "Request to hand over physical cash, gold bars, or other valuables to an 'officer'",
+      "Instruction to place money or valuables at a physical location for collection",
+      "Victim is pressured not to tell family members, friends, or their bank",
+      "Urgency and threats of arrest or legal consequences used to coerce compliance"
+    ],
+    "legitimacyContrast": "Government officials and police will NEVER ask you to transfer money or hand over valuables over a phone call. Legitimate investigations do not require citizens to surrender cash or gold bars to plainclothes officers at their homes. Real law enforcement agencies follow formal legal procedures and will never instruct you to keep the matter secret from family or your bank.",
+    "prevalence": "CRITICAL",
+    "firstReported": "2025-01-01",
+    "lastUpdated": "2025-09-05",
+    "confirmedVictims": 1762,
+    "estimatedLoss": "S$126.5 million (January–June 2025)",
+    "sources": [
+      {
+        "name": "Monthly Scams Bulletin Issue 09/25",
+        "organization": "SPF",
+        "url": "go.gov.sg/spf-midyear-scams25",
+        "date": "2025-09-05"
+      }
+    ],
+    "preventionTips": [
+      "Government officials will NEVER ask you to transfer money or hand over valuables over a call.",
+      "Never hand over cash, gold bars, or any valuables to persons whose identity you have not independently verified.",
+      "Never place money or valuables at a physical location for collection by an unknown party.",
+      "If you receive such a call, hang up and call the agency directly using the official number from their website.",
+      "Inform a trusted family member or friend immediately if you receive such a call.",
+      "Call the ScamShield Helpline at 1799 to verify if the contact is legitimate.",
+      "Add the ScamShield app to your mobile device to screen scam calls and messages."
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield App",
+        "action": "Report suspicious calls and messages via the app"
+      },
+      {
+        "method": "ScamShield Helpline",
+        "action": "Call 1799 (24/7) to verify if something is a scam"
+      },
+      {
+        "method": "Singapore Police Force",
+        "action": "Call 999 for emergencies or lodge a police report at police.gov.sg"
+      }
+    ]
+  },
+  {
+    "id": "money_mule_account_sharing",
+    "name": "Money Mule Account & SIM Sharing Exploitation",
+    "category": "impersonation",
+    "family": "coercion",
+    "keywords": [
+      "money mule",
+      "bank account sharing",
+      "Singpass sharing",
+      "SIM card sharing",
+      "eSIM sharing",
+      "illegal proceeds",
+      "criminal syndicate",
+      "local account",
+      "phone line"
+    ],
+    "sampleTexts": [
+      "Hi, I need to borrow your bank account for a few days to receive some funds. I will pay you S$500 for the use. No risk involved, just share your account details with me.",
+      "Can you register a SIM card under your name for me? I'll pay you well. It's just for business use.",
+      "We need your Singpass login to verify a transaction. You will be compensated S$300 for your help. Completely safe and legal.",
+      "Earn easy money by letting us use your bank account temporarily. Criminal record-free, guaranteed."
+    ],
+    "patternRegex": [
+      "/borrow.*bank account/i",
+      "/share.*singpass/i",
+      "/register.*sim.*your name/i",
+      "/use.*account.*pay you/i",
+      "/lend.*bank.*earn/i",
+      "/esim.*compensation/i"
+    ],
+    "description": "Criminal syndicates recruit individuals (knowingly or unknowingly) to share or lend their bank accounts, Singpass credentials, and SIM/eSIM cards. Scammers use these local accounts and phone lines to receive and quickly transfer illegal proceeds, making funds difficult to trace. The use of legitimate local accounts and phone numbers also enhances the perceived credibility of scams, increasing the success rate of deceiving victims. From October 2025, individuals under investigation for or convicted of money mule-related offences face additional restrictions on banking services, new mobile lines, and Singpass/Corppass access.",
+    "targetDemographic": "General Public, particularly individuals seeking easy income or those unaware of legal consequences",
+    "redFlags": [
+      "Requests to share or lend personal bank account details for a fee",
+      "Requests to register a SIM or eSIM card under your name for another person",
+      "Requests to share Singpass or Corppass login credentials",
+      "Offers of cash payment in exchange for temporary use of accounts or phone lines",
+      "Assurances that the activity is 'safe' or 'legal' when sharing personal accounts",
+      "Urgency to transfer or receive funds through your personal account quickly"
+    ],
+    "legitimacyContrast": "Legitimate employers, government agencies, and financial institutions will never ask individuals to share their Singpass credentials, bank account access, or SIM cards. Banks and government bodies communicate through official channels and do not offer cash incentives for account or credential sharing. SPF and MAS have confirmed that sharing these assets is a criminal offence punishable by imprisonment.",
+    "prevalence": "HIGH",
+    "firstReported": "2025-10-03",
+    "lastUpdated": "2025-10-03",
+    "confirmedVictims": 0,
+    "estimatedLoss": "Unknown",
+    "sources": [
+      {
+        "name": "Monthly Scams Bulletin Issue 10/25",
+        "organization": "SPF",
+        "url": "",
+        "date": "2025-10-03"
+      }
+    ],
+    "preventionTips": [
+      "Never share your bank account details, login credentials, or SIM/eSIM cards with anyone, regardless of the offered compensation.",
+      "Never share your Singpass or Corppass credentials with any third party.",
+      "Be aware that sharing your accounts or SIM cards is a criminal offence in Singapore, punishable by imprisonment.",
+      "Report any requests to borrow or use your personal accounts or SIM cards to the Police immediately.",
+      "From October 2025, individuals convicted of money mule offences face restrictions on banking services, new mobile lines, and Singpass/Corppass access.",
+      "If you suspect you have been recruited as a money mule, contact your bank and the Police immediately."
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield App",
+        "action": "Report suspicious messages or calls via the ScamShield app"
+      },
+      {
+        "method": "Singapore Police Force Hotline",
+        "action": "Call 1800-255-0000 to report money mule recruitment attempts"
+      },
+      {
+        "method": "999 Emergency",
+        "action": "Call 999 if you believe a crime is in progress"
+      },
+      {
+        "method": "Anti-Scam Helpline",
+        "action": "Call 1800-722-6688 for scam-related advice and reporting"
+      }
+    ]
+  },
+  {
+    "id": "holiday_sales_fake_deals_phishing",
+    "name": "Holiday Sales Fake Deals Phishing Scam",
+    "category": "e_commerce",
+    "family": "phantom",
+    "keywords": [
+      "11.11",
+      "Black Friday",
+      "Cyber Monday",
+      "fake advertisement",
+      "special deals",
+      "online marketplace",
+      "social media",
+      "phishing link",
+      "PayNow",
+      "DuitNow",
+      "bank transfer",
+      "OTP",
+      "scratch card",
+      "mystery bag",
+      "fake prizes",
+      "livestream"
+    ],
+    "sampleTexts": [
+      "🎉 MEGA 11.11 SALE! Get 90% off on top brands! Limited stocks only. Click here to claim your deal: http://secure-checkout-sg.xyz/deals",
+      "Congratulations! You've won a mystery bag prize worth S$500! Pay a small S$20 processing fee via PayNow to 9XXXXXXX to claim your reward now!",
+      "BLACK FRIDAY SPECIAL: Buy scratch cards LIVE now and win big prizes! Transfer S$30 via DuitNow to upgrade your winning chances. Join our livestream!"
+    ],
+    "patternRegex": [
+      "/11\\.11|black\\s*friday|cyber\\s*monday/i",
+      "/(scratch\\s*card|mystery\\s*bag|lucky\\s*draw)/i",
+      "/(paynow|duitnow|bank\\s*transfer|direct\\s*transfer)/i",
+      "/(claim\\s*your\\s*(prize|deal|reward)|upgrade.*winning|pay.*fee.*claim)/i",
+      "/(OTP|one.time.password|bank\\s*details)/i"
+    ],
+    "description": "During major online shopping events such as 11.11, Black Friday, and Cyber Monday, scammers post fake advertisements of special deals on online marketplaces and social media platforms. Some scammers conduct livestreams selling scratch cards and/or mystery bags with fake prizes. They steal money and banking credentials through three main methods: (1) sending phishing links that redirect victims to fraudulent payment or delivery sites designed to harvest bank details and OTPs; (2) instructing victims to pay via bank transfers, PayNow, or DuitNow instead of the secure payment options provided by legitimate e-commerce platforms; and (3) demanding additional payments to 'upgrade' winning chances or to pay fees to claim scratch card or mystery bag prizes that do not exist.",
+    "targetDemographic": "Online shoppers, bargain hunters, general public participating in major sales events",
+    "redFlags": [
+      "Advertisements offering unusually steep discounts during major sales events (11.11, Black Friday, Cyber Monday)",
+      "Seller requests payment via direct bank transfer, PayNow, or DuitNow instead of the platform's built-in secure payment system",
+      "Phishing links directing to external payment or delivery websites not affiliated with the official e-commerce platform",
+      "Livestream sellers promoting scratch cards or mystery bags with prizes",
+      "Requests for additional fees to 'upgrade' winning chances or to claim prizes",
+      "Requests for OTP or bank account details through unofficial channels",
+      "Advance payment required before goods are delivered"
+    ],
+    "legitimacyContrast": "Legitimate e-commerce platforms provide built-in secure payment options (e.g., credit card, platform wallets) and never ask buyers to pay sellers directly via bank transfer, PayNow, or DuitNow outside the platform. Real platforms do not require buyers to pay fees to claim prizes or upgrade winning chances. Official platforms also carry Transaction Safety Ratings verifiable at go.gov.sg/mhatsr.",
+    "prevalence": "HIGH",
+    "firstReported": "2025-11-10",
+    "lastUpdated": "2025-11-10",
+    "confirmedVictims": 0,
+    "estimatedLoss": "Unknown",
+    "sources": [
+      {
+        "name": "Monthly Scams Bulletin Issue 11/25",
+        "organization": "SPF",
+        "url": "go.gov.sg/mhatsr",
+        "date": "2025-11-10"
+      }
+    ],
+    "preventionTips": [
+      "Only install apps from official app stores (Apple App Store or Google Play Store)",
+      "Purchase only from reputable sources and check the e-commerce platform's Transaction Safety Ratings at go.gov.sg/mhatsr",
+      "Always pay using the secure payment options provided by the e-commerce platform",
+      "Avoid making advance payments or direct bank transfers to individual sellers",
+      "Never share your OTP or bank account details with sellers or through links sent via chat",
+      "Be highly sceptical of deals that seem too good to be true, especially during major sales events",
+      "Do not participate in livestream scratch card or mystery bag sales that require upfront payment or fees to claim prizes",
+      "If unsure, call the 24/7 ScamShield Helpline at 1799 before making any payment"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield Helpline",
+        "action": "Call 1799 (24/7) to verify if something is a scam"
+      },
+      {
+        "method": "ScamShield App",
+        "action": "Report scam messages or calls via the ScamShield app"
+      },
+      {
+        "method": "Singapore Police Force",
+        "action": "Lodge a police report at www.police.gov.sg/iwitness or at the nearest Neighbourhood Police Centre"
+      }
+    ]
+  },
+  {
+    "id": "job_scam_online_tasks_upfront_payment",
+    "name": "Online Task Job Scam (Upfront Payment Variant)",
+    "category": "job_scam",
+    "family": "toxic",
+    "keywords": [
+      "online tasks",
+      "brand promotion",
+      "app reviews",
+      "activate account",
+      "unlock earnings",
+      "upfront fee",
+      "commission",
+      "WhatsApp",
+      "Telegram",
+      "job advertisement"
+    ],
+    "sampleTexts": [
+      "Hi! We are hiring part-time brand promoters. Earn up to $300/day writing app reviews. No experience needed! Just pay a $50 activation fee to unlock your account and start earning. Message us on Telegram @easyjobs2025 to apply now!",
+      "URGENT HIRING: Work from home, flexible hours. Promote brands online and earn commissions. Small upfront fee required to activate your account. WhatsApp us at +65 9XXX XXXX to get started today!",
+      "Easy online job! Write reviews and earn $50-$150 per task. Pay $30 to unlock your first task. Withdraw earnings anytime. Limited slots available – reply YES to join!"
+    ],
+    "patternRegex": [
+      "/activate.{0,20}account/i",
+      "/unlock.{0,20}earn/i",
+      "/upfront.{0,20}fee/i",
+      "/pay.{0,20}commission/i",
+      "/app review.{0,30}earn/i",
+      "/brand promot.{0,30}fee/i",
+      "/(WhatsApp|Telegram).{0,40}job/i"
+    ],
+    "description": "Scammers post job advertisements on social media platforms, job portals, or send unsolicited messages via WhatsApp and Telegram. Victims are recruited to perform simple online tasks such as promoting brands or writing app reviews. They are told they must pay an upfront fee to 'activate' their account or 'unlock' their earnings. Victims may initially receive small commissions to build trust, but fees keep escalating. Victims only realise they have been scammed when the deposit amounts become too large or when they are unable to withdraw their supposed earnings.",
+    "targetDemographic": "General Public, particularly job seekers, students, and individuals seeking part-time or work-from-home income",
+    "redFlags": [
+      "Job requires upfront payment to activate an account or unlock earnings",
+      "Recruited via unsolicited WhatsApp or Telegram messages",
+      "Promises of easy commissions for simple tasks like writing reviews or promoting brands",
+      "Initial small commissions paid to build trust before escalating fee demands",
+      "Inability to withdraw earnings without paying additional fees",
+      "Job advertised on social media or job portals with vague company details"
+    ],
+    "legitimacyContrast": "Legitimate employers do not require job applicants to pay any fees to secure employment or to complete work tasks. Real companies do not ask employees to use their own money to fulfil job duties, nor do they request Singpass login credentials as part of any job application process.",
+    "prevalence": "CRITICAL",
+    "firstReported": "2025-10-01",
+    "lastUpdated": "2025-12-05",
+    "confirmedVictims": 0,
+    "estimatedLoss": "S$10,600,000",
+    "sources": [
+      {
+        "name": "Monthly Scams Bulletin Issue 12/25",
+        "organization": "SPF",
+        "url": "",
+        "date": "2025-12-05"
+      }
+    ],
+    "preventionTips": [
+      "Never pay any fee to secure a job or to activate an account for work purposes",
+      "Do not use your own money to complete tasks as part of any job",
+      "Never share your Singpass login details with any employer or recruiter",
+      "Be sceptical of job offers received via unsolicited WhatsApp or Telegram messages",
+      "Verify the legitimacy of the company through official channels before accepting any job offer",
+      "If promised commissions require upfront payments, treat it as a scam",
+      "Call the 24/7 ScamShield Helpline at 1799 if you are unsure whether a job offer is legitimate"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield Helpline",
+        "action": "Call 1799 (24/7) to verify or report a suspected scam"
+      },
+      {
+        "method": "ScamShield App",
+        "action": "Check suspicious messages, phone numbers, and website links via the ScamShield app"
+      },
+      {
+        "method": "Singapore Police Force",
+        "action": "Lodge a police report at www.police.gov.sg/iwitness or at the nearest Neighbourhood Police Centre"
+      }
+    ]
+  },
+  {
+    "id": "job_scam_fake_online_business_orders",
+    "name": "Fake Online Business Order Job Scam",
+    "category": "job_scam",
+    "family": "toxic",
+    "keywords": [
+      "fake business website",
+      "online orders",
+      "upfront payment",
+      "commission",
+      "deposit",
+      "fake issues",
+      "order fulfilment",
+      "job scam"
+    ],
+    "sampleTexts": [
+      "We are looking for online business assistants to help process orders on our platform. Earn $80-$200 per order in commissions. You will need to set up an account and pre-pay for each order you handle. Funds are refunded with commission after each order. Contact us on Telegram to register!",
+      "Part-time job opportunity: Help manage orders for our e-commerce platform. Initial deposit required per order, fully refunded with 15% commission. First 3 orders are small amounts to get you started. Message us now on WhatsApp +65 8XXX XXXX.",
+      "HIRING NOW: Online order processors needed. Set up your account today and start earning commissions. Note: A deposit is required to resolve any order issues that may arise. High earners make $500/day!"
+    ],
+    "patternRegex": [
+      "/process.{0,20}order.{0,30}deposit/i",
+      "/pre.?pay.{0,20}order/i",
+      "/commission.{0,30}deposit/i",
+      "/fake.{0,20}issue.{0,20}deposit/i",
+      "/online business.{0,30}account.{0,30}pay/i"
+    ],
+    "description": "Scammers advertise job opportunities requiring victims to set up accounts on fake business websites and pay upfront for each 'order' they handle. Victims initially receive small commissions to establish trust. However, fees continuously increase and victims are eventually asked to make additional deposits to resolve fabricated 'issues' with their orders. Victims only realise they have been scammed when the deposit amounts become unmanageable or when they are unable to withdraw their accumulated 'earnings'.",
+    "targetDemographic": "General Public, particularly individuals seeking flexible or part-time work-from-home income",
+    "redFlags": [
+      "Required to set up an account on an unfamiliar or unverifiable business website",
+      "Must pay upfront for each order handled as part of the job",
+      "Fees escalate progressively with fabricated reasons such as 'order issues'",
+      "Initial small commissions paid to build victim confidence",
+      "Inability to withdraw earnings without paying further deposits",
+      "Job offer received via WhatsApp or Telegram from an unknown contact"
+    ],
+    "legitimacyContrast": "Legitimate e-commerce or order-processing employers do not require employees to use personal funds to fulfil orders. Real businesses absorb operational costs and do not ask workers to pre-pay for business transactions. Genuine employers also do not manufacture 'issues' that require additional personal deposits to resolve.",
+    "prevalence": "CRITICAL",
+    "firstReported": "2025-10-01",
+    "lastUpdated": "2025-12-05",
+    "confirmedVictims": 0,
+    "estimatedLoss": "S$10,600,000",
+    "sources": [
+      {
+        "name": "Monthly Scams Bulletin Issue 12/25",
+        "organization": "SPF",
+        "url": "",
+        "date": "2025-12-05"
+      }
+    ],
+    "preventionTips": [
+      "Never pay upfront to process orders or complete tasks as part of a job",
+      "Do not trust job offers that require you to use your own money to fulfil work duties",
+      "Be wary of escalating deposit demands framed as resolving 'issues'",
+      "Verify the legitimacy of any business website before registering or making payments",
+      "Do not share Singpass login credentials with any recruiter or employer",
+      "Call the 24/7 ScamShield Helpline at 1799 if you suspect a job offer is fraudulent"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield Helpline",
+        "action": "Call 1799 (24/7) to verify or report a suspected scam"
+      },
+      {
+        "method": "ScamShield App",
+        "action": "Check suspicious messages, phone numbers, and website links via the ScamShield app"
+      },
+      {
+        "method": "Singapore Police Force",
+        "action": "Lodge a police report at www.police.gov.sg/iwitness or at the nearest Neighbourhood Police Centre"
+      }
+    ]
+  },
+  {
+    "id": "job_scam_paid_web_surveys_upfront",
+    "name": "Fake Paid Web Survey Job Scam",
+    "category": "job_scam",
+    "family": "toxic",
+    "keywords": [
+      "paid surveys",
+      "web surveys",
+      "unlock survey",
+      "upfront payment",
+      "escalating fees",
+      "withdraw earnings",
+      "commission",
+      "job scam"
+    ],
+    "sampleTexts": [
+      "Earn money completing online surveys from home! Each survey pays $20-$50. A small fee is required to unlock each survey. Fees start from $10 and increase with higher-paying surveys. Withdraw your total earnings at any time. Join via Telegram: @surveyearners2025",
+      "Part-time survey job available! Complete web surveys and earn commissions. Pay a one-time unlock fee per survey to access higher-paying tasks. Hundreds already earning daily. WhatsApp +65 9XXX XXXX to register now.",
+      "Hi, we are recruiting survey participants. Earn up to $200/day. Note: Each survey requires a small activation payment that increases with each level. Your earnings accumulate and can be withdrawn once you complete your assigned surveys."
+    ],
+    "patternRegex": [
+      "/unlock.{0,20}survey/i",
+      "/paid.{0,20}survey.{0,30}fee/i",
+      "/survey.{0,30}upfront/i",
+      "/complete.{0,20}survey.{0,30}earn/i",
+      "/survey.{0,30}withdraw.{0,30}earn/i"
+    ],
+    "description": "Scammers recruit victims for supposed paid web survey jobs advertised on social media or sent via WhatsApp and Telegram. Victims are told they must pay an upfront fee to 'unlock' each survey. The required fees gradually increase with each subsequent survey. Victims are never able to withdraw any of their accumulated 'earnings'. The scam is only discovered when the escalating fees become too large or when withdrawal attempts consistently fail.",
+    "targetDemographic": "General Public, particularly individuals seeking easy supplementary income or flexible part-time work",
+    "redFlags": [
+      "Required to pay a fee to unlock or access each survey",
+      "Fees escalate progressively with each survey completed",
+      "Promised earnings cannot be withdrawn without paying additional fees",
+      "Job offer received via unsolicited WhatsApp or Telegram message",
+      "No verifiable company name, registration, or physical address provided",
+      "Unusually high earnings promised for simple survey completion tasks"
+    ],
+    "legitimacyContrast": "Legitimate paid survey platforms do not require participants to pay fees to access or complete surveys. Real survey companies pay participants directly upon completion without any prerequisite payments. Genuine platforms allow earnings to be withdrawn freely without additional charges.",
+    "prevalence": "CRITICAL",
+    "firstReported": "2025-10-01",
+    "lastUpdated": "2025-12-05",
+    "confirmedVictims": 0,
+    "estimatedLoss": "S$10,600,000",
+    "sources": [
+      {
+        "name": "Monthly Scams Bulletin Issue 12/25",
+        "organization": "SPF",
+        "url": "",
+        "date": "2025-12-05"
+      }
+    ],
+    "preventionTips": [
+      "Never pay any fee to access, unlock, or complete online surveys as part of a job",
+      "Be suspicious of survey jobs where fees increase progressively with each task",
+      "Do not trust platforms that prevent you from withdrawing earnings without further payments",
+      "Verify the legitimacy of any survey platform before registering or making payments",
+      "Ignore unsolicited job offers received via WhatsApp or Telegram from unknown contacts",
+      "Call the 24/7 ScamShield Helpline at 1799 if you are unsure whether a survey job is legitimate"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield Helpline",
+        "action": "Call 1799 (24/7) to verify or report a suspected scam"
+      },
+      {
+        "method": "ScamShield App",
+        "action": "Check suspicious messages, phone numbers, and website links via the ScamShield app"
+      },
+      {
+        "method": "Singapore Police Force",
+        "action": "Lodge a police report at www.police.gov.sg/iwitness or at the nearest Neighbourhood Police Centre"
+      }
+    ]
+  },
+  {
+    "id": "job_scam_singpass_credential_harvesting",
+    "name": "Job Scam Singpass Credential Harvesting",
+    "category": "phishing",
+    "family": "phantom",
+    "keywords": [
+      "Singpass",
+      "login details",
+      "job application",
+      "credential theft",
+      "identity theft",
+      "job scam",
+      "account takeover"
+    ],
+    "sampleTexts": [
+      "To complete your job application, please provide your Singpass username and password so we can verify your identity and process your employment pass. This is a standard requirement for all applicants.",
+      "Hi, as part of our onboarding process, we require your Singpass login details to register you on our HR system. Please send your Singpass ID and password to proceed with your application.",
+      "Congratulations! You have been shortlisted for the position. To finalise your application, kindly share your Singpass credentials with our HR team via this secure link: [phishing link]"
+    ],
+    "patternRegex": [
+      "/singpass.{0,30}login/i",
+      "/singpass.{0,30}password/i",
+      "/singpass.{0,30}credential/i",
+      "/share.{0,30}singpass/i",
+      "/provide.{0,30}singpass.{0,30}detail/i"
+    ],
+    "description": "As part of job scam operations, scammers request victims to share their Singpass login credentials under the guise of identity verification or account registration during the job application process. This constitutes credential harvesting that can lead to identity theft, unauthorised access to government digital services, and further financial fraud. The Singapore government has explicitly identified this as a definitive red flag of a scam.",
+    "targetDemographic": "General Public, particularly active job seekers and individuals unfamiliar with legitimate government digital identity protocols",
+    "redFlags": [
+      "Any employer or recruiter requesting Singpass login credentials",
+      "Singpass details requested as part of a job application or onboarding process",
+      "Requests to share Singpass credentials via messaging apps such as WhatsApp or Telegram",
+      "Phishing links disguised as secure portals for Singpass submission",
+      "Urgency or pressure to provide Singpass details quickly to secure a job offer"
+    ],
+    "legitimacyContrast": "No legitimate employer, recruiter, or government agency will ever ask for your Singpass username or password. Singpass is a personal digital identity tool and its credentials should never be shared with any third party. Legitimate employers use official Singpass MyInfo integrations where applicants log in themselves and consent to share specific data — credentials are never directly requested.",
+    "prevalence": "HIGH",
+    "firstReported": "2025-10-01",
+    "lastUpdated": "2025-12-05",
+    "confirmedVictims": 0,
+    "estimatedLoss": "Unknown",
+    "sources": [
+      {
+        "name": "Monthly Scams Bulletin Issue 12/25",
+        "organization": "SPF",
+        "url": "",
+        "date": "2025-12-05"
+      }
+    ],
+    "preventionTips": [
+      "Never share your Singpass login credentials with any employer, recruiter, or third party under any circumstances",
+      "Understand that no legitimate employer requires your Singpass username or password directly",
+      "If a job application requests Singpass credentials, terminate contact immediately and report the incident",
+      "Use Singpass MyInfo only through the official Singpass app or website where you personally authorise data sharing",
+      "Call the 24/7 ScamShield Helpline at 1799 if you have been asked to share your Singpass details",
+      "Change your Singpass password immediately if you have already shared your credentials"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield Helpline",
+        "action": "Call 1799 (24/7) to report credential harvesting attempts"
+      },
+      {
+        "method": "ScamShield App",
+        "action": "Check suspicious messages, phone numbers, and website links via the ScamShield app"
+      },
+      {
+        "method": "Singpass Support",
+        "action": "Contact Singpass helpdesk immediately at 6335-3533 if credentials have been compromised"
+      },
+      {
+        "method": "Singapore Police Force",
+        "action": "Lodge a police report at www.police.gov.sg/iwitness or at the nearest Neighbourhood Police Centre"
+      }
+    ]
+  },
+  {
+    "id": "fake_school_fees_payment_request",
+    "name": "Fake School Fees Payment Request via Impersonated Educational Institution Email",
+    "category": "phishing",
+    "family": "illusion",
+    "keywords": [
+      "school fees",
+      "tuition fees",
+      "outstanding fees",
+      "educational institution",
+      "disciplinary action",
+      "urgent payment",
+      "compromised student email",
+      "fake email domain",
+      "QR code",
+      "fake bank website"
+    ],
+    "sampleTexts": [
+      "Dear Student, our records indicate that you have an outstanding school fee balance of S$1,250.00. Failure to make payment within 24 hours will result in disciplinary action and suspension of your student account. Please click the link below or scan the QR code to proceed with payment immediately: [LINK]",
+      "URGENT: This is a reminder from the Finance Office regarding your unpaid tuition fees. Please transfer the outstanding amount to the new bank account provided below. Failure to comply will result in academic consequences. Contact finance@sch00l-sg.edu for queries."
+    ],
+    "patternRegex": [
+      "/outstanding.{0,30}(school|tuition).{0,20}fee/i",
+      "/disciplinary.{0,30}action/i",
+      "/urgent.{0,30}payment.{0,30}(school|tuition|fee)/i",
+      "/(click|scan).{0,30}(link|QR code).{0,30}(pay|transfer)/i",
+      "/new.{0,20}bank account.{0,30}(payment|transfer)/i"
+    ],
+    "description": "Scammers impersonate educational institutions by using either compromised student email accounts or fake email domains closely resembling official institutional addresses. They send emails demanding urgent payment of outstanding school or tuition fees, threatening disciplinary action if payment is not made promptly. Victims are directed to use clickable links or QR codes that lead to fake bank websites designed to steal banking credentials.",
+    "targetDemographic": "Students, parents, and guardians associated with educational institutions in Singapore",
+    "redFlags": [
+      "Email requests urgent payment of outstanding school or tuition fees",
+      "Threats of disciplinary action if payment is not made immediately",
+      "Email domain closely resembles but does not exactly match the official institutional address",
+      "Email originates from a compromised student email account rather than an official finance or admin address",
+      "Payment instructions include new or suddenly changed bank account details",
+      "Clickable links or QR codes provided for payment that may redirect to fake bank websites",
+      "Pressure to act quickly without time to verify"
+    ],
+    "legitimacyContrast": "Legitimate educational institutions in Singapore will communicate fee payment instructions through official and verified channels, will not threaten immediate disciplinary action via email for outstanding fees, will not suddenly change bank account details without formal prior notice, and will never request payment via unverified links or QR codes sent by email. Students and parents can always verify payment instructions by calling the institution directly using contact details from the official school website.",
+    "prevalence": "HIGH",
+    "firstReported": "2026-03-01",
+    "lastUpdated": "2026-04-17",
+    "confirmedVictims": 0,
+    "estimatedLoss": "Unknown",
+    "sources": [
+      {
+        "name": "Monthly Scams Bulletin Issue 04/26",
+        "organization": "SPF",
+        "url": "",
+        "date": "2026-04-17"
+      }
+    ],
+    "preventionTips": [
+      "Always verify payment instructions directly with the educational institution using official contact details before making any payment",
+      "Be alert to any new or sudden changes in payment instructions or bank account numbers",
+      "Never use clickable links or QR codes provided in unsolicited emails to make payments or transfers",
+      "Check the sender's email domain carefully for subtle misspellings or variations from the official institutional address",
+      "Call the 24/7 ScamShield Helpline at 1799 if you are unsure whether a request is legitimate",
+      "Report suspicious emails to the institution's IT or security team immediately"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield Helpline",
+        "action": "Call 1799 (24/7) to verify or report the scam"
+      },
+      {
+        "method": "ScamShield App",
+        "action": "Report the scam via the ScamShield mobile application"
+      },
+      {
+        "method": "Singapore Police Force",
+        "action": "Lodge a Police report at the nearest Neighbourhood Police Centre or online at www.police.gov.sg"
+      }
+    ]
+  },
+  {
+    "id": "kpop_merchandise_ecommerce_scam",
+    "name": "K-Pop Merchandise E-Commerce Scam",
+    "category": "e_commerce",
+    "family": "phantom",
+    "keywords": [
+      "K-pop",
+      "G-Dragon",
+      "Carousell",
+      "merchandise",
+      "pre-order",
+      "PayNow",
+      "bank transfer",
+      "deposit",
+      "uncontactable seller",
+      "off-platform"
+    ],
+    "sampleTexts": [
+      "Hi! I have G-Dragon official merch available for pre-order at a great price. Send me a PayNow deposit of $50 to secure your item before stocks run out! 🎶",
+      "Selling authentic K-pop merchandise from G-Dragon's latest tour. Limited stock! Transfer deposit via PayNow to reserve. DM me to move to WhatsApp for faster deal 😊",
+      "Pre-order G-Dragon photobook – only $30! Pay 50% deposit via bank transfer now to lock in your order. Huge discount for quick transactions only!"
+    ],
+    "patternRegex": [
+      "/k-?pop|g.?dragon|carousell|pre.?order|paynow|bank.?transfer|deposit/i",
+      "/(uncontactable|cannot.?contact|seller.?disappeared|never.?received)/i",
+      "/(move.?to.?whatsapp|contact.?outside|off.?platform)/i"
+    ],
+    "description": "Scammers pose as sellers of K-pop merchandise (e.g., G-Dragon items) on platforms such as Carousell. After a victim expresses interest, the scammer persuades them to pay an initial deposit via PayNow or bank transfer to 'secure' the item. The scammer may also move the conversation off the platform to avoid detection. Victims only discover the scam when the products are never delivered or the seller becomes uncontactable.",
+    "targetDemographic": "K-pop fans, particularly younger consumers purchasing or pre-ordering merchandise from popular artists on second-hand or resale platforms",
+    "redFlags": [
+      "Seller requests upfront deposit via PayNow or bank transfer before delivering goods",
+      "Seller moves conversation off the e-commerce platform (e.g., to WhatsApp or Telegram)",
+      "Large discounts offered in exchange for faster or immediate transactions",
+      "Seller becomes uncontactable after payment is made",
+      "No option for cash-on-delivery or platform-secured payment offered",
+      "Listing involves high-demand or limited-edition K-pop merchandise"
+    ],
+    "legitimacyContrast": "Legitimate sellers on reputable e-commerce platforms offer secure in-platform payment options and cash-on-delivery, allowing buyers to inspect goods before paying. They do not request off-platform communication or upfront bank transfers/PayNow deposits to 'reserve' items.",
+    "prevalence": "HIGH",
+    "firstReported": "2026-02-06",
+    "lastUpdated": "2026-02-06",
+    "confirmedVictims": 0,
+    "estimatedLoss": "Unknown",
+    "sources": [
+      {
+        "name": "Monthly Scams Bulletin Issue 02/26",
+        "organization": "SPF",
+        "url": "msb_feb_2026.pdf",
+        "date": "2026-02-06"
+      }
+    ],
+    "preventionTips": [
+      "Always use the e-commerce platform's secure payment option or cash-on-delivery so you can inspect products before paying",
+      "Do not make any payment prior to receiving or inspecting the products",
+      "Be wary of large discounts offered to incentivise faster transactions",
+      "Only purchase K-pop merchandise from authorised sellers on online platforms or physical retail stores",
+      "Check the platform's transaction safety ratings at go.gov.sg/mhatsr to verify anti-scam measures",
+      "Do not move conversations off the platform at a seller's request",
+      "If unsure, call the 24/7 ScamShield Helpline at 1799"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield Helpline",
+        "action": "Call 1799 (24/7) to verify or report a scam"
+      },
+      {
+        "method": "ScamShield App",
+        "action": "Report suspicious sellers or messages via the ScamShield app"
+      },
+      {
+        "method": "Singapore Police Force",
+        "action": "Lodge a police report at www.police.gov.sg/iwitness or at the nearest Neighbourhood Police Centre"
+      },
+      {
+        "method": "E-Commerce Platform Report",
+        "action": "Report the suspicious listing or seller directly through the platform's in-app reporting feature"
+      }
+    ]
+  },
+  {
+    "id": "pokemon_card_preorder_ecommerce_scam",
+    "name": "Pokémon Trading Card Pre-Order E-Commerce Scam",
+    "category": "e_commerce",
+    "family": "phantom",
+    "keywords": [
+      "Pokémon",
+      "trading cards",
+      "pre-order",
+      "Carousell",
+      "PayNow",
+      "bank transfer",
+      "deposit",
+      "advance payment",
+      "collectibles"
+    ],
+    "sampleTexts": [
+      "Hi! I have Pokémon card booster boxes available for pre-order at 30% off retail price. Limited slots only! Send me a PayNow deposit of $50 to secure your order now before stocks run out.",
+      "Selling rare Pokémon cards at huge discount for fast deal. Transfer $200 via PayNow to reserve. Will deliver once stock arrives next week!",
+      "Pre-order Pokémon Scarlet & Violet booster box at $80 (usual $120). Bank transfer to confirm slot. Serious buyers only, fast lobang!"
+    ],
+    "patternRegex": [
+      "/pok[eé]mon.{0,30}(pre.?order|deposit|advance)/i",
+      "/(paynow|bank transfer).{0,40}(pok[eé]mon|trading card)/i",
+      "/(pre.?order|reserve).{0,30}(pok[eé]mon|card).{0,30}(paynow|transfer|deposit)/i",
+      "/carousell.{0,50}(pok[eé]mon|trading card)/i"
+    ],
+    "description": "Scammers post fraudulent pre-order listings for Pokémon trading cards on online platforms such as Carousell. When victims express interest, scammers persuade them to pay initial deposits via PayNow or direct bank transfers to secure the pre-order. Victims only discover they have been scammed when the products are never delivered or when the sellers become uncontactable. Since October 2025, at least S$958,000 has been lost to this scam variant.",
+    "targetDemographic": "Pokémon card collectors, hobbyists, and general online shoppers seeking discounted or hard-to-find collectibles",
+    "redFlags": [
+      "Pre-order listings on peer-to-peer platforms like Carousell for high-demand collectibles",
+      "Large discounts offered to incentivise faster transactions",
+      "Requests for advance payment or deposit via PayNow or direct bank transfer before goods are received",
+      "Seller becomes uncontactable after payment is made",
+      "Products never delivered after deposit is paid",
+      "Pressure to transact quickly to secure limited stock"
+    ],
+    "legitimacyContrast": "Authorised sellers of Pokémon trading cards operate through verified online platforms with buyer protection mechanisms or through physical retail stores where goods can be inspected before purchase. Legitimate sellers do not require direct bank transfers or PayNow deposits for unverified pre-orders, and they maintain contactable customer service channels.",
+    "prevalence": "HIGH",
+    "firstReported": "2025-10-01",
+    "lastUpdated": "2026-01-02",
+    "confirmedVictims": 0,
+    "estimatedLoss": "S$958,000",
+    "sources": [
+      {
+        "name": "Monthly Scams Bulletin 01/26",
+        "organization": "SPF",
+        "url": "",
+        "date": "2026-01-02"
+      }
+    ],
+    "preventionTips": [
+      "Only purchase Pokémon trading cards from authorised sellers on reputable online platforms or physical retail stores.",
+      "Avoid making advance payments or direct bank transfers to sellers you have not verified.",
+      "Use secure payment options that offer buyer protection rather than PayNow or direct bank transfers.",
+      "Consider cash-on-delivery arrangements so you can inspect the product before making payment.",
+      "Be wary of large discounts offered to pressure faster transactions — this is a common scam red flag.",
+      "Verify seller reviews, ratings, and transaction history before committing to any purchase.",
+      "If in doubt, call the 24/7 ScamShield Helpline at 1799 before making any payment."
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield Helpline",
+        "action": "Call 1799 (24/7) to verify if a listing or seller is a scam"
+      },
+      {
+        "method": "ScamShield App",
+        "action": "Report the scam listing or seller via the ScamShield app"
+      },
+      {
+        "method": "Police Report",
+        "action": "File a report at www.police.gov.sg/iwitness or at the nearest Neighbourhood Police Centre"
+      }
+    ]
+  },
+  {
+    "id": "iras_tax_refund_phishing",
+    "name": "IRAS Tax Refund Phishing Email Scam",
+    "category": "phishing",
+    "family": "phantom",
+    "keywords": [
+      "IRAS",
+      "tax refund",
+      "phishing",
+      "fake email",
+      "banking details",
+      "credit card",
+      "gov.sg"
+    ],
+    "sampleTexts": [
+      "Dear Taxpayer, IRAS has processed your tax refund of S$842.00. Please click the link below to verify your bank or card details to receive your refund within 3 business days: http://iras-refund-sg.com/verify",
+      "IRAS: You are eligible for a tax refund. Action required — submit your card details at the link provided to claim your refund: http://mytax-iras-sg.net/claim"
+    ],
+    "patternRegex": [
+      "/tax\\s*refund/i",
+      "/IRAS/i",
+      "/click.*link.*refund/i",
+      "/verify.*bank.*card/i",
+      "/credit.*debit.*card.*refund/i"
+    ],
+    "description": "Scammers impersonate the Inland Revenue Authority of Singapore (IRAS) by sending phishing emails claiming the recipient is owed a tax refund. The email contains a malicious link directing victims to a fake website designed to steal personal information and banking or card details. Victims typically discover the scam only after noticing unauthorised transactions on their accounts or when they verify directly with IRAS.",
+    "targetDemographic": "Singapore taxpayers, General Public",
+    "redFlags": [
+      "Email requests action to claim a tax refund via a link",
+      "Email asks for credit or debit card details to process a refund",
+      "Sender email address does not end with 'gov.sg'",
+      "Urgency to click a link to receive money",
+      "Refund directed to card rather than registered bank account or PayNow"
+    ],
+    "legitimacyContrast": "IRAS automatically credits tax refunds to taxpayers' bank accounts registered with IRAS or PayNow accounts linked to NRIC/FIN/UEN. No action is required from the taxpayer. IRAS does not process refunds to credit or debit cards. Official IRAS emails will come from addresses ending in 'gov.sg' and taxpayers should verify via the myTax Portal.",
+    "prevalence": "HIGH",
+    "firstReported": "2026-03-06",
+    "lastUpdated": "2026-03-06",
+    "confirmedVictims": 0,
+    "estimatedLoss": "Unknown",
+    "sources": [
+      {
+        "name": "Monthly Scams Bulletin 03/26",
+        "organization": "SPF",
+        "url": "",
+        "date": "2026-03-06"
+      }
+    ],
+    "preventionTips": [
+      "Do not click links in unsolicited emails claiming to be from IRAS",
+      "Verify tax refund status directly on IRAS myTax Portal at mytax.iras.gov.sg",
+      "Check that the sender's email address ends with '@iras.gov.sg' or another official 'gov.sg' domain",
+      "Remember that IRAS never processes refunds to credit or debit cards — no action is needed from you",
+      "Call the ScamShield Helpline at 1799 if unsure"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield Helpline",
+        "action": "Call 1799 (24/7) to verify or report"
+      },
+      {
+        "method": "ScamShield App",
+        "action": "Report the phishing email or link via the app"
+      },
+      {
+        "method": "IRAS myTax Portal",
+        "action": "Verify tax refund status directly at mytax.iras.gov.sg"
+      }
+    ]
+  },
+  {
+    "id": "lta_unpaid_toll_phishing",
+    "name": "LTA Outstanding Bill / Unpaid Vehicle Toll Phishing Scam",
+    "category": "phishing",
+    "family": "phantom",
+    "keywords": [
+      "LTA",
+      "Land Transport Authority",
+      "unpaid toll",
+      "outstanding bill",
+      "phishing",
+      "SMS",
+      "gov.sg",
+      "vehicle"
+    ],
+    "sampleTexts": [
+      "LTA: You have an outstanding vehicle toll charge of S$38.50. Failure to pay within 48 hours may result in penalties. Pay now: http://lta-toll-sg.com/pay",
+      "LTA Notice: An unpaid bill of S$62.00 is linked to your vehicle. Click here to settle immediately to avoid suspension of your road tax: http://onemotor-lta.net/settle"
+    ],
+    "patternRegex": [
+      "/LTA/i",
+      "/unpaid.*toll/i",
+      "/outstanding.*bill/i",
+      "/vehicle.*toll/i",
+      "/pay.*now.*link/i",
+      "/road\\s*tax.*suspend/i"
+    ],
+    "description": "Scammers impersonate Singapore's Land Transport Authority (LTA) by sending phishing SMS messages or emails claiming the recipient has outstanding bills or unpaid vehicle tolls. The message contains a malicious link leading to a fake website designed to steal personal and banking or card details. Victims discover the scam only after noticing unauthorised transactions or verifying with LTA directly.",
+    "targetDemographic": "Singapore vehicle owners, General Public",
+    "redFlags": [
+      "SMS or email claims you have an unpaid LTA toll or outstanding bill",
+      "Message contains a link to pay or verify details",
+      "SMS sender ID is not 'gov.sg'",
+      "Urgency or threat of penalty to pressure immediate action",
+      "Link does not direct to the official OneMotoring platform"
+    ],
+    "legitimacyContrast": "Legitimate LTA text messages are only sent via the official 'gov.sg' sender ID. Motorists should verify any outstanding bills directly on LTA's OneMotoring platform. LTA will not send SMSes from unofficial sender IDs or request payment via links in messages.",
+    "prevalence": "HIGH",
+    "firstReported": "2026-03-06",
+    "lastUpdated": "2026-03-06",
+    "confirmedVictims": 0,
+    "estimatedLoss": "Unknown",
+    "sources": [
+      {
+        "name": "Monthly Scams Bulletin 03/26",
+        "organization": "SPF",
+        "url": "",
+        "date": "2026-03-06"
+      }
+    ],
+    "preventionTips": [
+      "Do not click links in SMS messages or emails claiming to be from LTA",
+      "Verify outstanding bills directly on LTA's OneMotoring platform at onemotoring.lta.gov.sg",
+      "Check that any SMS from LTA uses the official 'gov.sg' sender ID",
+      "Do not provide banking or card details via links received in messages",
+      "Call the ScamShield Helpline at 1799 if unsure"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield Helpline",
+        "action": "Call 1799 (24/7) to verify or report"
+      },
+      {
+        "method": "ScamShield App",
+        "action": "Report the suspicious SMS or link via the app"
+      },
+      {
+        "method": "LTA OneMotoring Platform",
+        "action": "Verify vehicle-related bills directly at onemotoring.lta.gov.sg"
+      }
+    ]
+  },
+  {
+    "id": "rmp_foreign_law_enforcement_phishing",
+    "name": "Royal Malaysian Police (RMP) Impersonation Phishing Scam",
+    "category": "phishing",
+    "family": "coercion",
+    "keywords": [
+      "Royal Malaysian Police",
+      "RMP",
+      "foreign law enforcement",
+      "outstanding bill",
+      "phishing",
+      "email",
+      "SMS",
+      "investigation",
+      "jurisdiction"
+    ],
+    "sampleTexts": [
+      "ROYAL MALAYSIA POLICE: You have an outstanding traffic summons of RM 450 linked to your vehicle. Failure to settle will result in arrest upon entry to Malaysia. Click here: http://rmp-summons.com/pay",
+      "RMP Notice: You are required to assist in an ongoing investigation. Please click the link to submit your personal details and avoid legal action: http://rmp-sg-ops.net/verify"
+    ],
+    "patternRegex": [
+      "/Royal\\s*Malaysian\\s*Police/i",
+      "/RMP/i",
+      "/outstanding.*summons/i",
+      "/foreign.*police.*Singapore/i",
+      "/arrest.*investigation.*link/i"
+    ],
+    "description": "Scammers impersonate the Royal Malaysian Police (RMP) by sending phishing emails or SMS messages to Singapore residents, claiming they have outstanding bills, unpaid vehicle tolls, or are required to assist in investigations. The messages contain malicious links leading to fake websites designed to steal personal and banking or card details. Overseas law enforcement agencies have no jurisdiction to conduct operations in Singapore, arrest anyone, or request public assistance in investigations without Singapore Government approval.",
+    "targetDemographic": "Singapore residents who travel to Malaysia or own vehicles, General Public",
+    "redFlags": [
+      "Message claims to be from a foreign law enforcement agency such as the Royal Malaysian Police",
+      "Claims of outstanding fines, summons, or requests to assist in investigations",
+      "Contains a link to submit personal or payment details",
+      "Threatens arrest or legal consequences to pressure action",
+      "Foreign police agencies contacting Singapore residents directly without Singapore Government involvement"
+    ],
+    "legitimacyContrast": "Overseas law enforcement agencies have no jurisdiction to conduct operations in Singapore, arrest anyone, or ask members of the public to assist in any form of investigations without the approval of the Singapore Government. Legitimate government SMSes use the 'gov.sg' sender ID. Any such contact should be treated as suspicious and verified with Singapore authorities.",
+    "prevalence": "MEDIUM",
+    "firstReported": "2026-03-06",
+    "lastUpdated": "2026-03-06",
+    "confirmedVictims": 0,
+    "estimatedLoss": "Unknown",
+    "sources": [
+      {
+        "name": "Monthly Scams Bulletin 03/26",
+        "organization": "SPF",
+        "url": "",
+        "date": "2026-03-06"
+      }
+    ],
+    "preventionTips": [
+      "Do not click links in emails or SMS messages claiming to be from foreign law enforcement agencies",
+      "Be aware that overseas law enforcement agencies have no jurisdiction in Singapore without Singapore Government approval",
+      "Do not provide personal or banking details in response to such messages",
+      "Verify any claims with Singapore Police Force (SPF) directly",
+      "Call the ScamShield Helpline at 1799 if unsure"
+    ],
+    "reportingChannels": [
+      {
+        "method": "ScamShield Helpline",
+        "action": "Call 1799 (24/7) to verify or report"
+      },
+      {
+        "method": "ScamShield App",
+        "action": "Report the suspicious email or SMS via the app"
+      },
+      {
+        "method": "Singapore Police Force",
+        "action": "Lodge a police report at www.police.gov.sg or call 999 for emergencies"
+      }
+    ]
+  }
+]

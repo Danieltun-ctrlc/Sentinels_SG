@@ -1,0 +1,23 @@
+.card {
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  padding: var(--space-lg);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.card--elevated {
+  background: var(--color-elevated);
+}
+
+.card--interactive {
+  cursor: pointer;
+}
+
+.card--interactive:hover {
+  border-color: var(--color-cyan);
+  transform: translateY(-2px);
+}
+
+.card--game { border-color: rgba(0, 217, 255, 0.3); }
+.card--threats { border-color: rgba(255, 184, 0, 0.3); }
+.card--factcheck { border-color: rgba(16, 249, 129, 0.3); }

@@ -1,0 +1,123 @@
+.navbar {
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--space-md) var(--space-xl);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__logo {
+  text-decoration: none;
+}
+
+.navbar__logo-text {
+  font-family: var(--font-header);
+  font-size: 14px;
+  color: var(--color-cyan);
+  letter-spacing: 0.06em;
+  text-shadow: 0 0 10px rgba(0, 217, 255, 0.3);
+}
+
+.navbar__center {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.navbar__link {
+  font-family: var(--font-header);
+  font-size: 10px;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  transition: color var(--transition-fast);
+  padding: var(--space-xs) 0;
+}
+
+.navbar__link:hover {
+  text-decoration: none;
+}
+
+.navbar__link--game:hover { color: var(--color-cyan); }
+.navbar__link--threats:hover { color: var(--color-amber); }
+.navbar__link--factcheck:hover { color: var(--color-green); }
+.navbar__link:hover { color: var(--color-text-bright); }
+
+.navbar__auth {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.navbar__btn {
+  font-family: var(--font-header);
+  font-size: 10px;
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.navbar__btn--outline {
+  border: 1px solid var(--color-cyan);
+  color: var(--color-cyan);
+  background: transparent;
+}
+
+.navbar__btn--outline:hover {
+  background: rgba(0, 217, 255, 0.1);
+  text-decoration: none;
+  color: var(--color-cyan);
+}
+
+.navbar__btn--primary {
+  background: var(--color-cyan);
+  color: var(--color-bg);
+  border: 1px solid var(--color-cyan);
+}
+
+.navbar__btn--primary:hover {
+  opacity: 0.9;
+  text-decoration: none;
+  color: var(--color-bg);
+}
+
+.navbar__user-badge {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 13px;
+}
+
+.navbar__user-badge:hover {
+  text-decoration: none;
+  color: var(--color-cyan);
+}
+
+.navbar__user-icon {
+  font-size: 16px;
+}
+
+.navbar__user-name {
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .navbar__center {
+    display: none;
+  }
+}

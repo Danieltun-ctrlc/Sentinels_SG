@@ -1,0 +1,270 @@
+.pvp-battle {
+  padding: var(--space-md);
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Round Header */
+.pvp-battle__round-header {
+  text-align: center;
+  padding: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.pvp-battle__round-title {
+  font-family: var(--font-header);
+  font-size: 12px;
+  color: var(--color-gold);
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
+}
+
+.pvp-battle__round-matchup {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-muted);
+  margin-top: var(--space-xs);
+}
+
+.pvp-battle__score {
+  font-family: var(--font-header);
+  font-size: 10px;
+  color: var(--color-text);
+  margin-top: var(--space-sm);
+}
+
+.pvp-battle__score-player {
+  color: var(--color-cyan);
+}
+
+.pvp-battle__score-opponent {
+  color: var(--color-magenta);
+}
+
+/* Battle Arena */
+.pvp-battle__arena {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+/* Creature Display */
+.pvp-battle__creatures {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-md);
+}
+
+.pvp-battle__creature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.pvp-battle__creature-sprite {
+  width: 96px;
+  height: 96px;
+  image-rendering: pixelated;
+  object-fit: contain;
+}
+
+.pvp-battle__creature-name {
+  font-family: var(--font-header);
+  font-size: 9px;
+  color: var(--color-text);
+}
+
+.pvp-battle__creature-type {
+  font-family: var(--font-mono);
+  font-size: 8px;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+}
+
+/* HP Bar */
+.pvp-battle__hp-wrap {
+  width: 120px;
+}
+
+.pvp-battle__hp-label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--color-text-muted);
+  display: flex;
+  justify-content: space-between;
+}
+
+.pvp-battle__hp-bar {
+  width: 100%;
+  height: 8px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 2px;
+}
+
+.pvp-battle__hp-fill {
+  height: 100%;
+  background: var(--color-green);
+  transition: width 0.4s ease;
+  border-radius: 4px;
+}
+
+.pvp-battle__hp-fill--low {
+  background: var(--color-amber);
+}
+
+.pvp-battle__hp-fill--critical {
+  background: var(--color-red);
+}
+
+/* Move Buttons */
+.pvp-battle__moves {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+}
+
+.pvp-battle__move-btn {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  color: var(--color-text);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition-fast);
+  text-align: left;
+}
+
+.pvp-battle__move-btn:hover:not(:disabled) {
+  border-color: var(--color-cyan);
+  box-shadow: var(--glow-cyan);
+}
+
+.pvp-battle__move-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.pvp-battle__move-name {
+  display: block;
+  font-weight: bold;
+}
+
+.pvp-battle__move-info {
+  font-size: 9px;
+  color: var(--color-text-muted);
+}
+
+/* Battle Log */
+.pvp-battle__log {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-sm);
+  max-height: 120px;
+  overflow-y: auto;
+  margin: var(--space-md);
+}
+
+.pvp-battle__log-entry {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--color-text-muted);
+  padding: 2px 0;
+}
+
+.pvp-battle__log-entry--player {
+  color: var(--color-cyan);
+}
+
+.pvp-battle__log-entry--enemy {
+  color: var(--color-magenta);
+}
+
+.pvp-battle__log-entry--damage {
+  color: var(--color-red);
+}
+
+.pvp-battle__log-entry--effective {
+  color: var(--color-green);
+}
+
+.pvp-battle__log-entry--faint {
+  color: var(--color-gold);
+}
+
+/* Round Result Overlay */
+.pvp-battle__round-result {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  gap: var(--space-md);
+  animation: fadeIn 0.3s ease;
+}
+
+.pvp-battle__round-result-text {
+  font-family: var(--font-header);
+  font-size: 18px;
+}
+
+.pvp-battle__round-result-text--win {
+  color: var(--color-green);
+  text-shadow: var(--glow-green);
+}
+
+.pvp-battle__round-result-text--loss {
+  color: var(--color-red);
+  text-shadow: 0 0 12px rgba(255, 56, 56, 0.5);
+}
+
+.pvp-battle__round-result-sub {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+.pvp-battle__next-btn {
+  font-family: var(--font-header);
+  font-size: 10px;
+  padding: var(--space-sm) var(--space-lg);
+  background: var(--color-cyan);
+  color: var(--color-bg);
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  margin-top: var(--space-md);
+}
+
+.pvp-battle__next-btn:hover {
+  box-shadow: var(--glow-cyan);
+}
+
+/* Waiting for enemy */
+.pvp-battle__waiting {
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-muted);
+  padding: var(--space-md);
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}

@@ -1,0 +1,189 @@
+.home {
+  animation: fadeIn 0.4s ease;
+}
+
+/* ===========================
+   TOP BAR
+   =========================== */
+.home__topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+  animation: slideUp 0.3s ease;
+}
+
+.home__topbar-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.home__avatar {
+  width: 42px;
+  height: 42px;
+  background: var(--color-elevated);
+  border: 2px solid var(--color-border-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-header);
+  font-size: 14px;
+  color: var(--color-cyan);
+}
+
+.home__user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.home__username {
+  font-family: var(--font-header);
+  font-size: 13px;
+  color: var(--color-text-bright);
+  letter-spacing: 0.04em;
+}
+
+.home__user-tier {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--color-cyan);
+}
+
+.home__topbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.home__awareness-badge {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-gold);
+}
+
+/* ===========================
+   HEADER
+   =========================== */
+.home__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-xl);
+  animation: slideUp 0.3s ease 0.05s both;
+}
+
+.home__page-title {
+  font-size: 16px;
+  color: var(--color-text-bright);
+  letter-spacing: 0.06em;
+}
+
+.home__stat-pill {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-gold);
+  border: 1px solid var(--color-gold);
+  padding: 3px 12px;
+}
+
+/* ===========================
+   PILLARS
+   =========================== */
+.home__pillars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-lg);
+  animation: slideUp 0.4s ease 0.15s both;
+}
+
+.home__pillar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-xl);
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  text-decoration: none;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.home__pillar:hover {
+  text-decoration: none;
+  transform: translateY(-5px);
+}
+
+.home__pillar--game:hover { border-color: var(--color-cyan); }
+.home__pillar--threats:hover { border-color: var(--color-amber); }
+.home__pillar--factcheck:hover { border-color: var(--color-green); }
+
+.home__pillar-tag {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--color-text-muted);
+  opacity: 0.4;
+  margin-bottom: var(--space-md);
+}
+
+.home__pillar-icon {
+  font-size: 32px;
+  margin-bottom: var(--space-md);
+  transition: transform 0.25s ease;
+}
+
+.home__pillar-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.home__pillar:hover .home__pillar-icon {
+  transform: scale(1.15);
+}
+
+.home__pillar-name {
+  font-size: 12px;
+  margin-bottom: var(--space-sm);
+}
+
+.home__pillar--game .home__pillar-name { color: var(--color-cyan); }
+.home__pillar--threats .home__pillar-name { color: var(--color-amber); }
+.home__pillar--factcheck .home__pillar-name { color: var(--color-green); }
+
+.home__pillar-desc {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  flex: 1;
+  margin-bottom: var(--space-md);
+}
+
+.home__pillar-cta {
+  font-family: var(--font-header);
+  font-size: 9px;
+  color: var(--color-text-muted);
+  letter-spacing: 0.06em;
+  transition: transform 0.2s ease, color 0.2s ease;
+  display: inline-block;
+}
+
+.home__pillar:hover .home__pillar-cta {
+  transform: translateX(4px);
+}
+
+.home__pillar--game:hover .home__pillar-cta { color: var(--color-cyan); }
+.home__pillar--threats:hover .home__pillar-cta { color: var(--color-amber); }
+.home__pillar--factcheck:hover .home__pillar-cta { color: var(--color-green); }
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+@media (max-width: 768px) {
+  .home__pillars {
+    grid-template-columns: 1fr;
+  }
+}
