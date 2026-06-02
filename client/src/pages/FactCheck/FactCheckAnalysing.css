@@ -1,0 +1,220 @@
+.factcheck-analysing {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: var(--space-3xl) var(--space-md);
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.factcheck-analysing__container {
+  width: 100%;
+  text-align: center;
+}
+
+/* Header */
+.factcheck-analysing__header {
+  margin-bottom: var(--space-2xl);
+}
+
+.factcheck-analysing__shield {
+  font-size: 48px;
+  display: block;
+  margin-bottom: var(--space-md);
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.factcheck-analysing__title {
+  font-family: var(--font-header);
+  font-size: 14px;
+  color: var(--color-cyan);
+  letter-spacing: 2px;
+  margin-bottom: var(--space-sm);
+}
+
+.factcheck-analysing__subtitle {
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+/* Pipeline Stages */
+.factcheck-analysing__stages {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-xl);
+  text-align: left;
+}
+
+.factcheck-analysing__stage {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-sm) 0;
+  opacity: 0.3;
+  transition: all var(--transition-normal);
+}
+
+.factcheck-analysing__stage--active {
+  opacity: 1;
+}
+
+.factcheck-analysing__stage--done {
+  opacity: 0.7;
+}
+
+.factcheck-analysing__stage-indicator {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--color-text-muted);
+  width: 20px;
+  text-align: center;
+}
+
+.factcheck-analysing__stage--active .factcheck-analysing__stage-indicator {
+  color: var(--color-cyan);
+  animation: blink-indicator 1s steps(2) infinite;
+}
+
+.factcheck-analysing__stage--done .factcheck-analysing__stage-indicator {
+  color: var(--color-green);
+}
+
+.factcheck-analysing__stage-label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.factcheck-analysing__stage--active .factcheck-analysing__stage-label {
+  color: var(--color-text-bright);
+}
+
+.factcheck-analysing__stage--done .factcheck-analysing__stage-label {
+  color: var(--color-text-muted);
+  text-decoration: line-through;
+}
+
+/* Progress Bar */
+.factcheck-analysing__progress-container {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.factcheck-analysing__progress-bar {
+  flex: 1;
+  height: 6px;
+  background: var(--color-elevated);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+}
+
+.factcheck-analysing__progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-cyan), var(--color-green));
+  transition: width 100ms linear;
+  box-shadow: 0 0 8px rgba(0, 217, 255, 0.4);
+}
+
+.factcheck-analysing__progress-pct {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-cyan);
+  min-width: 40px;
+}
+
+/* Scan lines animation */
+.factcheck-analysing__scan-lines {
+  position: relative;
+  height: 40px;
+  margin-bottom: var(--space-lg);
+  overflow: hidden;
+}
+
+.factcheck-analysing__scan-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-cyan), transparent);
+  animation: scan-move 3s linear infinite;
+}
+
+.factcheck-analysing__scan-line--delayed {
+  animation-delay: 1.5s;
+  opacity: 0.5;
+}
+
+.factcheck-analysing__note {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--color-text-muted);
+  letter-spacing: 1px;
+}
+
+/* Error State */
+.factcheck-analysing__error {
+  text-align: center;
+  padding: var(--space-2xl);
+  background: var(--color-surface);
+  border: 1px solid var(--color-red);
+}
+
+.factcheck-analysing__error-icon {
+  font-size: 48px;
+  display: block;
+  margin-bottom: var(--space-md);
+}
+
+.factcheck-analysing__error-title {
+  font-family: var(--font-header);
+  font-size: 14px;
+  color: var(--color-red);
+  letter-spacing: 2px;
+  margin-bottom: var(--space-md);
+}
+
+.factcheck-analysing__error-msg {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-xl);
+  line-height: 1.6;
+}
+
+.factcheck-analysing__retry-btn {
+  font-family: var(--font-header);
+  font-size: 11px;
+  padding: 12px 24px;
+  background: transparent;
+  border: 2px solid var(--color-cyan);
+  color: var(--color-cyan);
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: all var(--transition-fast);
+}
+
+.factcheck-analysing__retry-btn:hover {
+  background: var(--color-cyan);
+  color: var(--color-bg);
+  box-shadow: var(--glow-cyan);
+}
+
+/* Animations */
+@keyframes pulse-glow {
+  0%, 100% { filter: drop-shadow(0 0 4px rgba(0, 217, 255, 0.3)); }
+  50% { filter: drop-shadow(0 0 16px rgba(0, 217, 255, 0.7)); }
+}
+
+@keyframes blink-indicator {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0.3; }
+}
+
+@keyframes scan-move {
+  0% { top: 0; }
+  100% { top: 100%; }
+}

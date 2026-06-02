@@ -3,6 +3,65 @@ import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import './FactCheckUpload.css';
 
+/**
+ * Extract frames from a video file in the browser.
+ * Returns array of base64 strings (without data: prefix).
+ * Frames: 1 per 2 seconds, max 5 frames.
+ */
+function extractVideoFrames(file) {
+  return new Promise((resolve) => {
+    const video = document.createElement('video');
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+    const frames = [];
+
+    video.preload = 'metadata';
+    video.muted = true;
+    video.playsInline = true;
+
+    video.onloadedmetadata = () => {
+      const duration = video.duration;
+      // Min 10 frames, +5 frames per 30 seconds of video, max 20 frames
+      const numFrames = Math.min(20, Math.max(10, Math.floor(duration / 3)));
+      const interval = duration / (numFrames + 1);
+
+      canvas.width = Math.min(video.videoWidth, 1280);
+      canvas.height = Math.min(video.videoHeight, 720);
+
+      let captured = 0;
+
+      function captureFrame(time) {
+        video.currentTime = time;
+      }
+
+      video.onseeked = () => {
+        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+        const dataUrl = canvas.toDataURL('image/jpeg', 0.7);
+        frames.push(dataUrl.split(',')[1]);
+        captured++;
+
+        if (captured < numFrames) {
+          captureFrame(interval * (captured + 1));
+        } else {
+          URL.revokeObjectURL(video.src);
+          resolve(frames);
+        }
+      };
+
+      video.onerror = () => {
+        URL.revokeObjectURL(video.src);
+        resolve([]);
+      };
+
+      // Start capturing first frame
+      captureFrame(interval);
+    };
+
+    video.onerror = () => resolve([]);
+    video.src = URL.createObjectURL(file);
+  });
+}
+
 export default function FactCheckUpload() {
   const navigate = useNavigate();
   const fileInputRef = useRef(null);
@@ -23,11 +82,69 @@ export default function FactCheckUpload() {
     if (selected) setFile(selected);
   };
 
-  const handleAnalyse = () => {
+  const handleAnalyse = async () => {
     if (!file && !textInput.trim()) return;
-    // Navigate to analysing screen with the input
+
+    let imageBase64 = null;
+    let finalText = textInput.trim();
+
+    if (file) {
+      const fileType = file.type || '';
+      const fileName = file.name || '';
+
+      if (fileType.startsWith('image/') || fileName.match(/\.(png|jpg|jpeg|gif|webp|bmp)$/i)) {
+        // Images: PNG, JPG, screenshots — send as base64 for vision AI
+        imageBase64 = await new Promise((resolve, reject) => {
+          const reader = new FileReader();
+          reader.onload = () => resolve(reader.result.split(',')[1]);
+          reader.onerror = reject;
+          reader.readAsDataURL(file);
+        });
+        if (!finalText) finalText = `Uploaded image: ${fileName}`;
+
+      } else if (fileType === 'text/plain' || fileName.endsWith('.txt')) {
+        // Text files: read content directly
+        finalText = await new Promise((resolve, reject) => {
+          const reader = new FileReader();
+          reader.onload = () => resolve(reader.result);
+          reader.onerror = reject;
+          reader.readAsText(file);
+        });
+
+      } else if (fileType === 'application/pdf' || fileName.endsWith('.pdf')) {
+        // PDF: send as base64 image (Claude can read PDFs via vision)
+        imageBase64 = await new Promise((resolve, reject) => {
+          const reader = new FileReader();
+          reader.onload = () => resolve(reader.result.split(',')[1]);
+          reader.onerror = reject;
+          reader.readAsDataURL(file);
+        });
+        if (!finalText) finalText = `Uploaded PDF: ${fileName}. Please extract and analyse the text content.`;
+
+      } else if (fileType.startsWith('video/') || fileName.match(/\.(mp4|mov|avi|webm)$/i)) {
+        // Video: extract frames based on duration, send as images
+        const frames = await extractVideoFrames(file);
+        if (frames.length > 0) {
+          // Send all frames — store as array, backend will process multiple
+          imageBase64 = frames[0]; // Primary frame for the API image field
+          finalText = `User uploaded video: ${fileName}. ${frames.length} frames extracted. Analyse ALL frames for scam indicators, text overlays, suspicious content.`;
+          // Pass extra frames in state for the analysing page to send
+          navigate('/factcheck/analysing', {
+            state: { text: finalText, imageBase64, videoFrames: frames, inputType }
+          });
+          return;
+        } else {
+          finalText = `User uploaded video: ${fileName}. Could not extract frames — please try uploading a screenshot instead.`;
+        }
+
+      } else {
+        // Other file types
+        if (!finalText) finalText = `User uploaded file: ${fileName} (${fileType || 'unknown'})`;
+      }
+    }
+
     navigate('/factcheck/analysing', {
-      state: { file, textInput, inputType }
+      state: { text: finalText, imageBase64, inputType }
     });
   };
 
@@ -98,7 +215,7 @@ export default function FactCheckUpload() {
         <input
           ref={fileInputRef}
           type="file"
-          accept="image/*,.pdf,.txt,.mp4"
+          accept="image/*,.pdf,.txt,.mp4,.mov,.webm"
           style={{ display: 'none' }}
           onChange={handleFileSelect}
         />
