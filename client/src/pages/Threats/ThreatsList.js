@@ -99,11 +99,11 @@ export default function ThreatsList() {
             <div className="stat-label">Total Victims</div>
           </div>
           <div className="stat-card">
-            <div className="stat-value">{formatCurrency(stats.totalLoss)}</div>
+            <div className="stat-value">{stats.totalLoss?.display || formatCurrency(stats.totalLoss?.value || 0)}</div>
             <div className="stat-label">Total Losses</div>
           </div>
           <div className="stat-card">
-            <div className="stat-value">{stats.byFamily ? Object.keys(stats.byFamily).length : '—'}</div>
+            <div className="stat-value">{stats.byFamily ? stats.byFamily.length : '—'}</div>
             <div className="stat-label">Families</div>
           </div>
         </div>
