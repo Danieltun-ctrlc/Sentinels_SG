@@ -320,6 +320,7 @@ export default function Battle() {
     }
     if (newState.lastAction?.isCrit) { playCriticalHit(); setScreenShake(true); setTimeout(() => setScreenShake(false), 300); }
     if (newState.lastAction?.effectiveness >= 2) { playSuperEffective(); setEffectText('SUPER EFFECTIVE!'); setTimeout(() => setEffectText(null), 1200); }
+    if (newState.lastAction?.effectiveness < 1 && newState.lastAction?.damage > 0) { setEffectText('NOT VERY EFFECTIVE...'); setTimeout(() => setEffectText(null), 1200); }
 
     await delay(500);
     setEnemyHit(false);
@@ -607,7 +608,7 @@ export default function Battle() {
         {/* Layered move effects */}
         <BattleEffects effect={battleEffect} onComplete={() => setBattleEffect(null)} />
 
-        {effectText && <div className="battle__effect-text">{effectText}</div>}
+        {effectText && <div className={`battle__effect-text ${effectText.includes('NOT') ? 'battle__effect-text--weak' : ''}`}>{effectText}</div>}
         {impactFlash && <div className={`battle__impact battle__impact--${impactFlash}`}></div>}
 
         {/* Enemy (nameplate left, sprite right) */}
