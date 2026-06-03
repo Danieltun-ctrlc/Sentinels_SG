@@ -57,10 +57,10 @@ export const MOVES = {
     name: 'CONSULT A FAMILY MEMBER',
     type: 'logic',
     category: 'attack',
-    power: 70,
+    power: 60,
     pp: 10,
-    description: 'Counter manipulation with logic.',
-    realMeaning: 'Scammers want you isolated. A second opinion breaks the manipulation.',
+    description: 'Counter manipulation with a second opinion. Moderate damage.',
+    realMeaning: 'Scammers want you isolated. Asking a family member breaks the spell — but they may not know the technical signs of phishing either. Effective, but not the strongest counter.',
   },
   vpn_shield: {
     id: 'vpn_shield',

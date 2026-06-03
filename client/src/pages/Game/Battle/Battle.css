@@ -216,14 +216,13 @@
   background: repeating-linear-gradient(
     0deg,
     transparent,
-    transparent 2px,
-    rgba(0, 0, 0, 0.03) 2px,
-    rgba(0, 0, 0, 0.03) 4px
+    transparent 3px,
+    rgba(0, 0, 0, 0.02) 3px,
+    rgba(0, 0, 0, 0.02) 6px
   );
-  animation: scanlineDrift 10s linear infinite;
   pointer-events: none;
   z-index: 4;
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 @keyframes scanlineDrift {
@@ -271,30 +270,58 @@
   97.2% { opacity: 0; }
 }
 
-/* --- ENEMY: nameplate top-left, sprite top-right --- */
+/* --- ENEMY: nameplate upper-left, sprite upper-right (classic diagonal) --- */
 .battle__enemy-area {
   position: absolute;
-  top: 3%;
+  top: 5%;
   left: 0;
   right: 0;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 0 20px;
+  height: 45%;
   z-index: 6;
+  pointer-events: none;
 }
 
-/* --- PLAYER: sprite bottom-left, nameplate bottom-right --- */
+.battle__enemy-area > * { pointer-events: auto; }
+
+.battle__enemy-area .battle__nameplate {
+  position: absolute;
+  top: 5%;
+  left: 3%;
+}
+
+.battle__enemy-area .battle__sprite {
+  position: absolute;
+  top: 5%;
+  right: 8%;
+  width: 220px;
+  height: 220px;
+}
+
+/* --- PLAYER: sprite lower-left, nameplate lower-right (classic diagonal) --- */
 .battle__player-area {
   position: absolute;
-  bottom: 3%;
+  bottom: 2%;
   left: 0;
   right: 0;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  padding: 0 20px;
+  height: 50%;
   z-index: 6;
+  pointer-events: none;
+}
+
+.battle__player-area > * { pointer-events: auto; }
+
+.battle__player-area .battle__nameplate {
+  position: absolute;
+  bottom: 5%;
+  right: 3%;
+}
+
+.battle__player-area .battle__sprite {
+  position: absolute;
+  bottom: 0;
+  left: 8%;
+  width: 280px;
+  height: 280px;
 }
 
 /* ===========================
@@ -429,7 +456,6 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  animation: breathingBob 2.8s ease-in-out infinite;
 }
 
 .battle__sprite img {
@@ -438,45 +464,17 @@
   object-fit: contain;
   image-rendering: pixelated;
   transition: filter 0.3s ease;
+  will-change: transform, filter;
 }
 
-/* Player sprite — LARGE, cyan layered glow */
-.battle__player-area .battle__sprite {
-  width: 320px;
-  height: 320px;
-  margin-left: 20px;
-}
-
+/* Player sprite glow */
 .battle__player-area .battle__sprite img {
-  filter:
-    drop-shadow(0 0 5px rgba(0, 217, 255, 0.6))
-    drop-shadow(0 0 25px rgba(0, 217, 255, 0.3))
-    drop-shadow(0 6px 12px rgba(0, 0, 0, 0.6));
-  animation: playerGlowPulse 2.8s ease-in-out infinite;
+  filter: drop-shadow(0 0 4px rgba(0, 217, 255, 0.4)) drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
 }
 
-/* Enemy sprite — slightly smaller, magenta layered glow */
-.battle__enemy-area .battle__sprite {
-  width: 260px;
-  height: 260px;
-}
-
+/* Enemy sprite glow */
 .battle__enemy-area .battle__sprite img {
-  filter:
-    drop-shadow(0 0 5px rgba(255, 46, 99, 0.6))
-    drop-shadow(0 0 25px rgba(255, 46, 99, 0.3))
-    drop-shadow(0 6px 12px rgba(0, 0, 0, 0.6));
-  animation: enemyGlowPulse 2.8s ease-in-out infinite;
-}
-
-@keyframes playerGlowPulse {
-  0%, 100% { filter: drop-shadow(0 0 5px rgba(0,217,255,0.5)) drop-shadow(0 0 20px rgba(0,217,255,0.25)) drop-shadow(0 6px 12px rgba(0,0,0,0.6)); }
-  50% { filter: drop-shadow(0 0 8px rgba(0,217,255,0.7)) drop-shadow(0 0 35px rgba(0,217,255,0.4)) drop-shadow(0 6px 12px rgba(0,0,0,0.6)); }
-}
-
-@keyframes enemyGlowPulse {
-  0%, 100% { filter: drop-shadow(0 0 5px rgba(255,46,99,0.5)) drop-shadow(0 0 20px rgba(255,46,99,0.25)) drop-shadow(0 6px 12px rgba(0,0,0,0.6)); }
-  50% { filter: drop-shadow(0 0 8px rgba(255,46,99,0.7)) drop-shadow(0 0 35px rgba(255,46,99,0.4)) drop-shadow(0 6px 12px rgba(0,0,0,0.6)); }
+  filter: drop-shadow(0 0 4px rgba(255, 46, 99, 0.4)) drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
 }
 
 /* Active turn intensified glow */
@@ -501,23 +499,22 @@
   width: 180px;
   height: 28px;
   border-radius: 50%;
-  animation: platformPulse 2.8s ease-in-out infinite;
 }
 
 .battle__platform--player {
+  width: 200px;
   background:
-    radial-gradient(ellipse 60% 80% at 50% 50%, rgba(0, 217, 255, 0.7) 0%, transparent 50%),
-    radial-gradient(ellipse 80% 90% at 50% 50%, rgba(0, 217, 255, 0.3) 0%, transparent 65%),
-    radial-gradient(ellipse 100% 100% at 50% 50%, rgba(0, 217, 255, 0.12) 0%, transparent 80%);
-  box-shadow: 0 0 30px rgba(0, 217, 255, 0.2), 0 0 60px rgba(0, 217, 255, 0.08);
+    radial-gradient(ellipse 60% 80% at 50% 50%, rgba(0, 217, 255, 0.5) 0%, transparent 50%),
+    radial-gradient(ellipse 80% 90% at 50% 50%, rgba(0, 217, 255, 0.2) 0%, transparent 65%);
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.15);
 }
 
 .battle__platform--enemy {
+  width: 140px;
   background:
-    radial-gradient(ellipse 60% 80% at 50% 50%, rgba(255, 46, 99, 0.7) 0%, transparent 50%),
-    radial-gradient(ellipse 80% 90% at 50% 50%, rgba(255, 46, 99, 0.3) 0%, transparent 65%),
-    radial-gradient(ellipse 100% 100% at 50% 50%, rgba(255, 46, 99, 0.12) 0%, transparent 80%);
-  box-shadow: 0 0 30px rgba(255, 46, 99, 0.2), 0 0 60px rgba(255, 46, 99, 0.08);
+    radial-gradient(ellipse 60% 80% at 50% 50%, rgba(255, 46, 99, 0.4) 0%, transparent 50%),
+    radial-gradient(ellipse 80% 90% at 50% 50%, rgba(255, 46, 99, 0.15) 0%, transparent 65%);
+  box-shadow: 0 0 12px rgba(255, 46, 99, 0.1);
 }
 
 /* Platform ring outline */
@@ -525,10 +522,8 @@
   content: '';
   position: absolute;
   inset: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  animation: platformRingSpin 7s linear infinite;
-  background: repeating-conic-gradient(transparent 0deg, transparent 80deg, rgba(255,255,255,0.08) 80deg, rgba(255,255,255,0.08) 90deg);
 }
 
 @keyframes platformRingSpin {
@@ -1289,12 +1284,12 @@
    =========================== */
 @media (max-width: 768px) {
   .battle { grid-template-rows: 4vh 46vh 16vh 34vh; }
-  .battle__sprite { width: 180px !important; height: 180px !important; }
-  .battle__player-area .battle__sprite { width: 200px !important; height: 200px !important; }
+  .battle__player-area .battle__sprite { width: 180px !important; height: 180px !important; }
+  .battle__enemy-area .battle__sprite { width: 140px !important; height: 140px !important; }
   .battle__nameplate { min-width: 140px; padding: 6px 10px; width: 48%; }
   .battle__dialogue { padding: 10px 16px; margin: 4px 8px; }
   .battle__nameplate-name { font-size: 14px; }
-  .battle__platform { width: 140px; }
+  .battle__platform { width: 120px !important; }
 }
 
 /* Extra confetti pieces */

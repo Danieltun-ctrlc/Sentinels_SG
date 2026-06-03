@@ -66,7 +66,7 @@ export const CREATURES = {
     type: 'phantom',
     role: 'attacker',
     tier: 1,
-    baseStats: { hp: 200, atk: 130, def: 70, spd: 95 },
+    baseStats: { hp: 140, atk: 90, def: 70, spd: 95 },
     abilities: { default: 'false_legitimacy', hidden: null },
     movePool: { core: ['false_urgency', 'sender_id_spoof', 'thread_injection', 'ocbc_phish'] },
     lore: "Born from every spoofed sender ID. Wears the face of trust. Falls only to verification.",

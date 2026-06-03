@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { initBattle, executePlayerMove, executeEnemyAI, isBattleOver, swapCreature, canSwap, getActivePlayer } from '../../../engine/battleEngine';
+import { getEffectivenessDialogue } from '../../../data/effectivenessDialogue';
 import { MISSIONS } from '../../../data/missions';
 import { CREATURES } from '../../../data/creatures';
 import MoveSelector from '../../../components/game/MoveSelector';
@@ -50,7 +51,7 @@ export default function Battle() {
   // Memoize particle positions so they don't re-randomize on re-render
   const particles = useMemo(() => {
     const colors = ['rgba(0,217,255,0.3)', 'rgba(255,46,99,0.25)', 'rgba(255,184,0,0.2)', 'rgba(0,217,255,0.2)', 'rgba(255,46,99,0.2)'];
-    return Array.from({ length: 50 }, (_, i) => ({
+    return Array.from({ length: 15 }, (_, i) => ({
       left: `${Math.random() * 100}%`,
       top: `${60 + Math.random() * 40}%`,
       background: colors[i % colors.length],
@@ -246,6 +247,10 @@ export default function Battle() {
     msgs.push(`${newState.enemy.name} used ${enemyMove?.name || 'an attack'}!`);
     if (newState.lastAction?.damage > 0) msgs.push(`${getActivePlayer(newState).name} took ${newState.lastAction.damage} damage!`);
     if (newState.lastAction?.effectiveness >= 2) msgs.push("It's super effective!");
+    if (newState.lastAction?.effectiveness < 1) msgs.push("It's not very effective...");
+    // Educational dialogue
+    const eduMsg = getEffectivenessDialogue(enemyMove?.type, getActivePlayer(newState).type, newState.lastAction?.effectiveness || 1, enemyMoveId);
+    if (eduMsg) msgs.push(eduMsg);
     if (enemyMove?.realMeaning) msgs.push(`⚠️ ${enemyMove.realMeaning}`);
     await showMessages(msgs);
 
@@ -332,7 +337,11 @@ export default function Battle() {
     } else if (newState.lastAction?.damage > 0) {
       playerMsgs.push(`${newState.enemy.name} took ${newState.lastAction.damage} damage!`);
       if (newState.lastAction?.effectiveness >= 2) playerMsgs.push("It's super effective!");
+      if (newState.lastAction?.effectiveness < 1) playerMsgs.push("It's not very effective...");
       if (newState.lastAction?.isCrit) playerMsgs.push("Critical hit!");
+      // Educational dialogue explaining WHY the matchup works
+      const eduDialogue = getEffectivenessDialogue(move?.type, newState.enemy.type, newState.lastAction.effectiveness, moveId);
+      if (eduDialogue) playerMsgs.push(eduDialogue);
     }
     const prevLogLen = currentState.log.length;
     const newLogs = newState.log.slice(prevLogLen);
@@ -422,6 +431,10 @@ export default function Battle() {
     } else if (enemyState.lastAction?.damage > 0) {
       enemyMsgs.push(`${activePlayer.name} took ${enemyState.lastAction.damage} damage!`);
       if (enemyState.lastAction?.effectiveness >= 2) enemyMsgs.push("It's super effective!");
+      if (enemyState.lastAction?.effectiveness < 1) enemyMsgs.push("It's not very effective...");
+      // Educational dialogue for enemy attacks
+      const eduDialogue = getEffectivenessDialogue(enemyMove?.type, activePlayer.type, enemyState.lastAction.effectiveness, enemyMoveId);
+      if (eduDialogue) enemyMsgs.push(eduDialogue);
     }
     for (const l of newEnemyLogs) {
       if (l.type === 'stat') { enemyMsgs.push(l.text); if (l.text.includes('fell')) flashBuff('player', 'down'); if (l.text.includes('rose')) flashBuff('enemy', 'up'); }
