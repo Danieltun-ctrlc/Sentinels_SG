@@ -1283,13 +1283,114 @@
    RESPONSIVE
    =========================== */
 @media (max-width: 768px) {
-  .battle { grid-template-rows: 4vh 46vh 16vh 34vh; }
-  .battle__player-area .battle__sprite { width: 180px !important; height: 180px !important; }
-  .battle__enemy-area .battle__sprite { width: 140px !important; height: 140px !important; }
-  .battle__nameplate { min-width: 140px; padding: 6px 10px; width: 48%; }
-  .battle__dialogue { padding: 10px 16px; margin: 4px 8px; }
-  .battle__nameplate-name { font-size: 14px; }
-  .battle__platform { width: 120px !important; }
+  .battle {
+    grid-template-rows: 4vh 40vh 14vh 42vh;
+  }
+
+  .battle__player-area .battle__sprite {
+    width: 140px !important;
+    height: 140px !important;
+    left: 3% !important;
+  }
+
+  .battle__enemy-area .battle__sprite {
+    width: 110px !important;
+    height: 110px !important;
+    right: 3% !important;
+  }
+
+  .battle__nameplate {
+    min-width: 120px;
+    padding: 6px 10px;
+    width: 50%;
+  }
+
+  .battle__nameplate-name {
+    font-size: 11px;
+  }
+
+  .battle__nameplate-level {
+    font-size: 10px;
+  }
+
+  .battle__hp-text {
+    font-size: 10px;
+    min-width: 50px;
+  }
+
+  .battle__dialogue {
+    padding: 8px 12px;
+    margin: 2px 6px;
+    min-height: 36px;
+  }
+
+  .battle__dialogue-text,
+  .typewriter__text {
+    font-size: 11px !important;
+  }
+
+  .battle__platform {
+    width: 100px !important;
+  }
+
+  .battle__platform--enemy {
+    width: 80px !important;
+  }
+
+  .battle__moves-zone {
+    grid-template-columns: 1fr;
+    padding: 6px 10px;
+    gap: 8px;
+  }
+
+  .battle__topbar {
+    padding: 0 10px;
+  }
+
+  .battle__mission-name {
+    font-size: 8px;
+  }
+
+  .battle__turn {
+    font-size: 9px;
+  }
+
+  .battle__phase-indicator {
+    font-size: 7px;
+  }
+
+  .move-selector {
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+  }
+
+  .move-selector__btn {
+    min-height: 0;
+    padding: 0;
+  }
+
+  .move-selector__content {
+    padding: 6px 8px;
+    gap: 3px;
+  }
+
+  .move-selector__name {
+    font-size: 9px;
+  }
+
+  .move-selector__type-badge {
+    font-size: 7px;
+    padding: 1px 4px;
+  }
+
+  .move-selector__pp,
+  .move-selector__category {
+    font-size: 8px;
+  }
+
+  .battle__side-actions {
+    display: none;
+  }
 }
 
 /* Extra confetti pieces */
