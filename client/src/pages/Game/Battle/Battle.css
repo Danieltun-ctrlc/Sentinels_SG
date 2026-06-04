@@ -1389,7 +1389,21 @@
   }
 
   .battle__side-actions {
-    display: none;
+    position: fixed;
+    bottom: 8px;
+    right: 10px;
+    z-index: 20;
+    height: auto;
+    overflow: visible;
+  }
+
+  .battle__move-info {
+    display: none !important;
+  }
+
+  .battle__swap-btn {
+    padding: 10px 14px;
+    font-size: 10px;
   }
 }
 
