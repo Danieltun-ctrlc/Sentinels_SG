@@ -1409,6 +1409,19 @@
     padding: 10px;
     font-size: 10px;
   }
+
+  .battle__victory-overlay {
+    padding: 20px;
+  }
+
+  .battle__victory-text {
+    font-size: 24px !important;
+    letter-spacing: 0.08em !important;
+  }
+
+  .battle__loss-text {
+    font-size: 20px !important;
+  }
 }
 
 /* Extra confetti pieces */
