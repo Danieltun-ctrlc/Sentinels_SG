@@ -1389,10 +1389,7 @@
   }
 
   .battle__side-actions {
-    position: fixed;
-    bottom: 8px;
-    right: 10px;
-    z-index: 20;
+    position: static;
     height: auto;
     overflow: visible;
   }
@@ -1401,8 +1398,15 @@
     display: none !important;
   }
 
+  .battle__moves-zone {
+    grid-template-columns: 1fr;
+    padding: 6px 10px;
+    gap: 6px;
+  }
+
   .battle__swap-btn {
-    padding: 10px 14px;
+    width: 100%;
+    padding: 10px;
     font-size: 10px;
   }
 }
