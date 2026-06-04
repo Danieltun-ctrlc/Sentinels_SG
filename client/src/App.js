@@ -82,9 +82,9 @@ function App() {
           <Route path="/game/pvp/debrief" element={<ProtectedRoute><PVPDebrief /></ProtectedRoute>} />
           <Route path="/game/pvp/leaderboard" element={<ProtectedRoute><Leaderboard /></ProtectedRoute>} />
           <Route path="/game/customisation" element={<ProtectedRoute><Customisation /></ProtectedRoute>} />
-          <Route path="/factcheck" element={<ProtectedRoute><FactCheckUpload /></ProtectedRoute>} />
-          <Route path="/factcheck/analysing" element={<ProtectedRoute><FactCheckAnalysing /></ProtectedRoute>} />
-          <Route path="/factcheck/result/:id" element={<ProtectedRoute><FactCheckResult /></ProtectedRoute>} />
+          <Route path="/factcheck" element={<FactCheckUpload />} />
+          <Route path="/factcheck/analysing" element={<FactCheckAnalysing />} />
+          <Route path="/factcheck/result/:id" element={<FactCheckResult />} />
         </Routes>
         </PageTransition>
       </main>
