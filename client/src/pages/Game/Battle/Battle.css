@@ -285,7 +285,7 @@
 
 .battle__enemy-area .battle__nameplate {
   position: absolute;
-  top: 8%;
+  top: 10%;
   left: 3%;
 }
 
@@ -312,7 +312,7 @@
 
 .battle__player-area .battle__nameplate {
   position: absolute;
-  bottom: 12%;
+  bottom: 15%;
   right: 3%;
 }
 
