@@ -286,13 +286,13 @@
 .battle__enemy-area .battle__nameplate {
   position: absolute;
   top: 5%;
-  left: 3%;
+  right: 3%;
 }
 
 .battle__enemy-area .battle__sprite {
   position: absolute;
   top: 5%;
-  right: 8%;
+  right: 35%;
   width: 220px;
   height: 220px;
 }
@@ -313,13 +313,13 @@
 .battle__player-area .battle__nameplate {
   position: absolute;
   bottom: 5%;
-  right: 3%;
+  left: 3%;
 }
 
 .battle__player-area .battle__sprite {
   position: absolute;
   bottom: 0;
-  left: 8%;
+  left: 35%;
   width: 280px;
   height: 280px;
 }
