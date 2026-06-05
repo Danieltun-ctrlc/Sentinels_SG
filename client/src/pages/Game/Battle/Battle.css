@@ -285,8 +285,8 @@
 
 .battle__enemy-area .battle__nameplate {
   position: absolute;
-  bottom: 0;
-  right: 3%;
+  top: 5%;
+  left: 3%;
 }
 
 .battle__enemy-area .battle__sprite {
@@ -312,8 +312,8 @@
 
 .battle__player-area .battle__nameplate {
   position: absolute;
-  top: 0;
-  left: 3%;
+  bottom: 10%;
+  right: 3%;
 }
 
 .battle__player-area .battle__sprite {
